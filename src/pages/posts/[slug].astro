@@ -12,7 +12,7 @@ const posts = await response.json();
 const post = posts.objects[0];
 
 ---
-<Layout title="Blog">
+<Layout title={post.title}>
 	<article>
 		<div style={{display: 'flex', justifyContent: 'space-between'}}>
 			<h4>{post.title}</h4>
