@@ -1,0 +1,15 @@
+---
+import { format } from "date-fns";
+
+interface Props {
+  title: String;
+  date: String;
+}
+
+const { title, date } = Astro.props;
+---
+
+<div class="blog-header">
+  <h4>{title}</h4>
+  <h5>{`🗓️ ${format(new Date(date), "MMM do, y")}`}</h5>
+</div>
