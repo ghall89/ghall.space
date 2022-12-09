@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import { Markup } from "astro-remote";
 
 import Layout from "../../layouts/Layout.astro";
+import BlogHeader from "../../components/BlogHeader.astro";
 
 const { slug } = Astro.params;
 
@@ -27,10 +28,9 @@ const post = posts.objects[0];
         </div>
       ) : null
     }
-    <div style={{ display: "flex", justifyContent: "space-between" }}>
-      <h4>{post.title}</h4>
-      <h5>{`🗓️ ${format(new Date(post.published_at), "MMM do, y")}`}</h5>
+    <div>
+      <BlogHeader title={post.title} date={post.published_at} />
+      <Markup content={post.content} />
     </div>
-    <Markup content={post.content} />
   </article>
 </Layout>
