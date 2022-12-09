@@ -20,6 +20,13 @@ const post = posts.objects[0];
 
 <Layout title={post.title}>
   <article>
+    {
+      post.thumbnail ? (
+        <div style={{ marginBottom: "25px" }}>
+          <img src={post.thumbnail} alt={`Thumbnail for ${post.title}`} />
+        </div>
+      ) : null
+    }
     <div style={{ display: "flex", justifyContent: "space-between" }}>
       <h4>{post.title}</h4>
       <h5>{`🗓️ ${format(new Date(post.published_at), "MMM do, y")}`}</h5>

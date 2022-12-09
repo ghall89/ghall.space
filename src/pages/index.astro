@@ -20,6 +20,11 @@ const posts = await response.json();
     {
       posts.objects.map((post) => (
         <article>
+          {post.thumbnail ? (
+            <div style={{ marginBottom: "25px" }}>
+              <img src={post.thumbnail} alt={`Thumbnail for ${post.title}`} />
+            </div>
+          ) : null}
           <div>
             <div style={{ display: "flex", justifyContent: "space-between" }}>
               <h4>{post.title}</h4>
