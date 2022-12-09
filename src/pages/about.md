@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/Layout.astro
-title: 'About'
+title: "About"
 ---
 
 ## Hello World!
