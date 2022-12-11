@@ -1,13 +1,13 @@
 ---
 import { format } from "date-fns";
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 
 const response = await fetch(
   `https://api.cosmicjs.com/v2/buckets/${
     import.meta.env.BUCKET_SLUG
   }/objects?pretty=true&query=%7B%22type%22%3A%22blog-posts%22%7D&read_key=${
     import.meta.env.BUCKET_READ_KEY
-  }&skip=5&limit=25`
+  }&limit=25`
 );
 
 const posts = await response.json();
