@@ -9,7 +9,7 @@ const response = await fetch(
     import.meta.env.BUCKET_SLUG
   }/objects?pretty=true&query=%7B%22type%22%3A%22blog-posts%22%7D&read_key=${
     import.meta.env.BUCKET_READ_KEY
-  }&limit=10`
+  }&limit=5`
 );
 
 const posts = await response.json();
@@ -33,5 +33,6 @@ const posts = await response.json();
         </article>
       ))
     }
+    {posts.objects.length < 5 ? null : <a href="/archive">More Posts</a>}
   </div>
 </Layout>
