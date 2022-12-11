@@ -15,24 +15,28 @@ const response = await fetch(
 const posts = await response.json();
 ---
 
-<Layout title="Blog">
-  <div>
-    {
-      posts.objects.map((post) => (
-        <article>
-          {post.thumbnail ? (
-            <div style={{ marginBottom: "25px" }}>
-              <img src={post.thumbnail} alt={`Thumbnail for ${post.title}`} />
-            </div>
-          ) : null}
-          <div>
-            <BlogHeader title={post.title} date={post.published_at} />
-            <Markup content={`<p>${post.content.split("</p>")[0]}`} />
-            <a href={`/posts/${post.slug}`}>Read More</a>
+<Layout title="Home">
+  {
+    posts.objects.map((post) => (
+      <article>
+        {post.thumbnail ? (
+          <div style={{ marginBottom: "25px" }}>
+            <img src={post.thumbnail} alt={`Thumbnail for ${post.title}`} />
           </div>
-        </article>
-      ))
-    }
-    {posts.objects.length < 5 ? null : <a href="/archive">More Posts</a>}
-  </div>
+        ) : null}
+        <div>
+          <BlogHeader title={post.title} date={post.published_at} />
+          <Markup content={`<p>${post.content.split("</p>")[0]}`} />
+          <a href={`/posts/${post.slug}`}>Read More</a>
+        </div>
+      </article>
+    ))
+  }
+  {posts.objects.length < 5 ? null : <a href="/archive">All Posts</a>}
 </Layout>
+
+<!-- <style>
+  blog-post {
+    article
+  }
+</style> -->
