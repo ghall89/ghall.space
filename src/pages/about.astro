@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro";
+import AboutText from "../content/about.md";
+
+const styles = {
+  img: {
+    display: "block",
+    maxWidth: "300px",
+    margin: "auto",
+    marginBottom: "26px",
+  },
+};
+---
+
+<Layout title="About">
+  <img src="/portrait.jpg" alt="me" style={styles.img} />
+  <AboutText />
+</Layout>
