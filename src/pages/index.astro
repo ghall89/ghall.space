@@ -18,12 +18,7 @@ const posts = await response.json();
 <Layout title="Home">
   {
     posts.objects.map((post) => (
-      <article>
-        {post.thumbnail ? (
-          <div style={{ marginBottom: "25px" }}>
-            <img src={post.thumbnail} alt={`Thumbnail for ${post.title}`} />
-          </div>
-        ) : null}
+      <article class="post-preview">
         <div>
           <BlogHeader title={post.title} date={post.published_at} />
           <Markup content={`<p>${post.content.split("</p>")[0]}`} />
@@ -32,7 +27,7 @@ const posts = await response.json();
       </article>
     ))
   }
-  {posts.objects.length < 5 ? null : <a href="/archive">All Posts</a>}
+  {posts.objects.length < 5 ? null : <a href="/posts">All Posts</a>}
 </Layout>
 
 <!-- <style>
