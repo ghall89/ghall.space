@@ -10,8 +10,8 @@ const { title, date } = Astro.props;
 ---
 
 <div class="blog-header">
-  <h4>{title}</h4>
-  <h5>
+  <h2>{title}</h2>
+  <h4>
     {`🗓️ ${formatInTimeZone(new Date(date), "America/New_York", "MMM do, y")}`}
-  </h5>
+  </h4>
 </div>
