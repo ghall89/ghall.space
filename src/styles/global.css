@@ -3,6 +3,7 @@
   src: url(./fonts/Manrope-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -10,13 +11,14 @@
   src: url(./fonts/Manrope-Bold.ttf) format("truetype");
   font-weight: bold;
   font-style: normal;
+  font-display: swap;
 }
 
 :root {
   --blue: #3274ce;
   --red: #ce3446;
   --orange: #e56045;
-  --text: #757575;
+  --text: #444444;
   --background: white;
 }
 
