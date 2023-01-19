@@ -1,0 +1,18 @@
+---
+import Layout from "@layouts/Layout.astro";
+import BlogHeader from "@components/BlogHeader.astro";
+
+const { title, pubDate } = Astro.props.frontmatter;
+---
+
+<Layout title={title}>
+  <BlogHeader title={title} date={pubDate} />
+  <slot />
+</Layout>
+
+<style is:global>
+  img {
+    display: block;
+    margin: auto;
+  }
+</style>
