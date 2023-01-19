@@ -1,5 +1,5 @@
 ---
-import { format } from "date-fns";
+import { formatInTimeZone } from "date-fns-tz";
 import Layout from "../../layouts/Layout.astro";
 
 const response = await fetch(
@@ -17,8 +17,12 @@ const posts = await response.json();
   {
     posts.objects.map((post) => (
       <div>
-        <a href={`/${post.slug}`}>{post.title}</a> -{" "}
-        {format(new Date(post.published_at), "MMM do, y")}
+        <a href={`/posts/${post.slug}`}>{post.title}</a> -{" "}
+        {formatInTimeZone(
+          new Date(post.published_at),
+          "America/New_York",
+          "MMM do, y"
+        )}
       </div>
     ))
   }
