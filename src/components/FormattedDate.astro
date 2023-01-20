@@ -1,0 +1,11 @@
+---
+import { format, add } from "date-fns";
+
+interface Props {
+  date: String;
+}
+
+const { date } = Astro.props;
+---
+
+<span>{format(add(new Date(date), { hours: 6 }), "MMM do, y")}</span>
