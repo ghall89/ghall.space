@@ -5,11 +5,15 @@ import Layout from "@layouts/Layout.astro";
 import BlogHeader from "@components/BlogHeader.astro";
 
 const posts = await Astro.glob("./posts/*.md");
+posts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
 ---
 
 <Layout title="Home">
   {
-    posts.map((post) => (
+    posts.slice(0, 5).map((post) => (
       <article class="post-preview">
         <div>
           <BlogHeader

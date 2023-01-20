@@ -1,8 +1,13 @@
 ---
 import { formatInTimeZone } from "date-fns-tz";
 import Layout from "@layouts/Layout.astro";
+import FormattedDate from "@components/FormattedDate.astro";
 
 const posts = await Astro.glob("./posts/*.md");
+posts.sort(
+  (a, b) =>
+    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
+);
 ---
 
 <Layout title="Blog Archive">
@@ -10,11 +15,7 @@ const posts = await Astro.glob("./posts/*.md");
     posts.map((post) => (
       <div>
         <a href={post.url}>{post.frontmatter.title}</a> -{" "}
-        {formatInTimeZone(
-          new Date(post.frontmatter.pubDate),
-          "America/New_York",
-          "MMM do, y"
-        )}
+        <FormattedDate date={post.frontmatter.pubDate} />
       </div>
     ))
   }

@@ -1,5 +1,6 @@
 ---
-import { format } from "date-fns-tz";
+import { format, add } from "date-fns";
+import FormattedDate from "@components/FormattedDate.astro";
 
 interface Props {
   title: String;
@@ -12,6 +13,6 @@ const { title, date } = Astro.props;
 <div class="blog-header">
   <h2>{title}</h2>
   <h3 style={{ fontSize: "1.1rem" }}>
-    {`🗓️ ${format(new Date(date), "MMM do, y")}`}
+    🗓️ <FormattedDate date={date} />
   </h3>
 </div>
