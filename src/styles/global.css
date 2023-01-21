@@ -108,6 +108,13 @@ a:hover {
   opacity: 0.6;
 }
 
+code {
+  color: var(--orange);
+  border: lightgray solid 1px;
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
 /* List Styles */
 
 ul,
