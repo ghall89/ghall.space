@@ -10,13 +10,13 @@ But I did find a rather salty post I wrote about a Mac theme I created back when
 
 If you were around the Mac customization scene–specifically on the now-defunct MacThemes.net–around 2007, you probably remember a little project called iLeopard. Admittedly, the chance that you’re in that extremely specific niché is incredibly small. The best data I could find is this [Ars Technica article](https://arstechnica.com/gadgets/2007/03/7296/) from March 2007 saying the Mac hit about 6% marketshare. And only a tiny subset of those users even had the thought that customizing the look of Mac OS X was something they wanted to do.
 
-<img src="/media/mac-os-10-1.png" width="90%" alt="a screenshot of Mac OS X 10.1 with various apps open" />
+<img src="/media/ileopard/mac-os-10-1.png" width="90%" alt="a screenshot of Mac OS X 10.1 with various apps open" />
 
 *Mac OS X 10.1 and the Aqua Interface, from* [_GUIdebook_](https://guidebookgallery.org/screenshots/macosx101)
 
 I was one of the few that had that had that idea pop into my head. I was super into finding and downloading cool themes, including one I distinctly remember that looked like Windows Vista for some reason. It was 2007, the Aqua Interface (the playful, plastic-looking interface style Apple used for about a decade) was already feeling a little passé to me. I wanted something new, and weirdly enough that new thing came from Apple, in the form of iTunes 7.
 
-<img src="/media/itunes-7.gif" width="80%" alt="a screenshot iTunes 7 with the iTunes Music Store open" />
+<img src="/media/ileopard/itunes-7.gif" width="80%" alt="a screenshot iTunes 7 with the iTunes Music Store open" />
 
 _iTunes 7 screenshot, from [AppleInsider](https://appleinsider.com/articles/06/09/12/apple_introduces_itunes_7_previews_itv_device)_
 
@@ -40,7 +40,7 @@ Being that I was a bored teenager in high school with way too much time on my ha
 
 After dozens of restarts, and a couple corrupted OS installs, I had figured out a good chunk of the building blocks making up Leopard’s UI. Even still, after weeks of this, there was still so much to be done. Bear in mind, there was no documentation on any of this stuff. I was about to create, as far as I know, the first theme for Mac OS X Leopard.
 
-<img src="/media/ileopard-2-0-1.png" width="75%" alt="a screenshot of the Mac OS X Appearance preference pane showing off the modifications made by iLeopard" />
+<img src="/media/ileopard/ileopard-2-0-1.png" width="75%" alt="a screenshot of the Mac OS X Appearance preference pane showing off the modifications made by iLeopard" />
 
 _iLeopard 2.0.1 screenshot, from [AmazingHenry on MacRumors](https://forums.macrumors.com/threads/ileopard-theme.2045553/), released by fellow MacThemes.net user ‘gcamp' after I essentially handed off the project_
 

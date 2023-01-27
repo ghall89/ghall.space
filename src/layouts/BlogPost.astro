@@ -7,7 +7,9 @@ const { title, pubDate } = Astro.props.frontmatter;
 
 <Layout title={title}>
   <BlogHeader title={title} date={pubDate} />
-  <slot />
+  <article>
+    <slot />
+  </article>
 </Layout>
 
 <style is:global>
