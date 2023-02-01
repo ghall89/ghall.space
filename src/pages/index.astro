@@ -1,30 +1,18 @@
 ---
-import { Markup } from "astro-remote";
+import { getCollection } from "astro:content";
 
 import Layout from "@layouts/Layout.astro";
-import BlogHeader from "@components/BlogHeader.astro";
+import PostPreview from "@components/PostPreview.astro";
 
-const posts = await Astro.glob("./posts/*.md");
-posts.sort(
-  (a, b) =>
-    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
-);
+const posts = await getCollection("blog");
 ---
 
 <Layout title="Home">
   {
-    posts.slice(0, 5).map((post) => (
-      <article class="post-preview">
-        <div>
-          <BlogHeader
-            title={post.frontmatter.title}
-            date={post.frontmatter.pubDate}
-          />
-          <Markup content={`<p>${post.compiledContent().split("</p>")[0]}`} />
-          <a href={post.url}>Read More</a>
-        </div>
-      </article>
-    ))
+    posts
+      .sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate))
+      .slice(0, 5)
+      .map((post) => <PostPreview post={post} />)
   }
   {posts.length < 5 ? null : <a href="/archive">All Posts</a>}
 </Layout>

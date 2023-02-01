@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "iLeopard - A Retrospective"
 pubDate: 2022-12-26
 ---

@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Next.js 13 and Exploring New Technologies"
 pubDate: 2022-10-28
 ---

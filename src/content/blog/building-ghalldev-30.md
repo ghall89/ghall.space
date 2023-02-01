@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Building ghall.dev 3.0"
 pubDate: 2022-10-16
 ---

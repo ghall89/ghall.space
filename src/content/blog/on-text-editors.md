@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "On Text Editors"
 pubDate: 2022-10-22
 ---

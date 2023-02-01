@@ -1,3 +1,8 @@
+---
+layout: ../layouts/About.astro
+title: Page Not Found
+---
+
 My name is **Graham**, a web developer from Rhode Island.
 
 When I'm not writing code, I'm usually enjoying one of my other hobbies; video games, music, hiking, photography, art, the list goes on...

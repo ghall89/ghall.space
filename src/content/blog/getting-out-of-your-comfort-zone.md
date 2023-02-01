@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Getting Out of Your Comfort Zone"
 pubDate: 2022-12-10
 ---

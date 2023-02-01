@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "An Update on my AI Dating Profile"
 pubDate: 2023-01-14
 ---
