@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "My Favorite Little Apps"
 pubDate: 2022-11-28
 ---

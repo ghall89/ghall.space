@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Handheld Gaming"
 pubDate: 2023-01-07
 ---

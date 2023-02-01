@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Creating a Dating Profile With AI"
 pubDate: 2022-12-10
 ---

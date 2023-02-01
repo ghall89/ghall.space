@@ -1,21 +1,18 @@
 ---
-import { formatInTimeZone } from "date-fns-tz";
+import { getCollection } from "astro:content";
+
 import Layout from "@layouts/Layout.astro";
 import FormattedDate from "@components/FormattedDate.astro";
 
-const posts = await Astro.glob("./posts/*.md");
-posts.sort(
-  (a, b) =>
-    Date.parse(b.frontmatter.pubDate) - Date.parse(a.frontmatter.pubDate)
-);
+const posts = await getCollection("blog");
 ---
 
 <Layout title="Blog Archive">
   {
-    posts.map((post) => (
+    posts.map(({ slug, data }) => (
       <div>
-        <a href={post.url}>{post.frontmatter.title}</a> -{" "}
-        <FormattedDate date={post.frontmatter.pubDate} />
+        <a href={`/posts/${slug}`}>{data.title}</a> -{" "}
+        <FormattedDate date={data.pubDate} />
       </div>
     ))
   }

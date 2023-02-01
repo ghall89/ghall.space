@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Ask The Darn Question!"
 pubDate: 2022-11-05
 ---

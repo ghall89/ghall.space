@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "My Gunpla Adventure"
 pubDate: 2023-01-28
 ---

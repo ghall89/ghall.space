@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "Coding With Depression"
 pubDate: 2022-11-11
 ---

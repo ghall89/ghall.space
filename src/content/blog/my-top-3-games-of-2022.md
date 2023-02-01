@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "My Top 3 Games of 2022"
 pubDate: 2022-12-09
 ---

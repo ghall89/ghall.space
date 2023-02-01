@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "@astrojs/netlify": "^1.2.2",
-    "astro": "^1.6.13",
+    "@astrojs/rss": "^2.1.0",
+    "astro": "^2.0.4",
     "astro-remote": "^0.2.3",
     "date-fns-tz": "^1.3.7"
   },

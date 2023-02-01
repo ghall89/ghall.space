@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/BlogPost.astro
 title: "My MacOS Home Directory Overview"
 pubDate: 2022-12-23
 ---
