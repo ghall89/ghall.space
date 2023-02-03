@@ -11,6 +11,6 @@ I also like writing about stuff, so I put together this site to share whatever's
 
 If your interested in checking out my web dev projects, check out [my portfolio](https://ghall.dev/blog).
 
-If you want to get in touch, I'm on [Mastodon](https://home.social/@ghalldev).
+If you want to get in touch, I'm on <a rel="me" href="https://home.social/@ghalldev">Mastodon</a>.
 
 My portrait was done by [Natalia Vazquez](https://www.nataliavazquezgarcia.com).
