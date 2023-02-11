@@ -1,5 +1,6 @@
 ---
-import { getCollection, getEntryBySlug } from "astro:content";
+export const prerender = true;
+import { getCollection } from "astro:content";
 
 import Layout from "@layouts/Layout.astro";
 import BlogHeader from "@components/BlogHeader.astro";
@@ -28,6 +29,8 @@ const { Content } = await post.render();
 
 <style is:global>
   article img {
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
     display: block;
     margin: auto;
   }

@@ -178,7 +178,7 @@ li {
   margin: 0.5rem 0;
 }
 
-/* Button Styles */
+/* Input Styles */
 button,
 .link-button {
   background-color: gray;
@@ -201,6 +201,39 @@ button:active,
   opacity: 0.9;
   scale: 0.98;
 }
+
+select {
+  /* appearance: none;
+  padding: 6px 40px 6px 10px;
+  border-radius: var(--radius);
+  border: none; */
+  font-size: 1rem;
+  /* background: none;
+  z-index: 10; */
+}
+
+/* .select-container {
+  position: relative;
+  width: max-content;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.select-container::before {
+  position: absolute;
+  content: "▾";
+  top: 0px;
+  right: 0px;
+  height: 10px;
+  width: 10px;
+  color: white;
+  font-size: 1rem;
+  height: 100%;
+  width: 30px;
+  background-color: var(--blue);
+  text-align: center;
+} */
 
 /* Text Inputs */
 
