@@ -14,5 +14,19 @@ const posts = await getCollection("blog");
       .slice(0, 5)
       .map((post) => <PostPreview post={post} />)
   }
-  {posts.length < 5 ? null : <a href="/archive">All Posts</a>}
+  {
+    posts.length < 5 ? null : (
+      <div class="more-posts">
+        <a class="link-button blue-btn" href="/archive">
+          All Posts
+        </a>
+      </div>
+    )
+  }
 </Layout>
+
+<style>
+  .more-posts {
+    text-align: center;
+  }
+</style>
