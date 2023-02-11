@@ -1,5 +1,8 @@
 import rss from "@astrojs/rss";
 import { getCollection } from "astro:content";
+import sanitizeHtml from "sanitize-html";
+import MarkdownIt from "markdown-it";
+const parser = new MarkdownIt({ html: true });
 
 export async function get(context) {
   const blog = await getCollection("blog");
@@ -12,12 +15,9 @@ export async function get(context) {
     items: blog
       .sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate))
       .map((post) => ({
-        title: post.data.title,
-        pubDate: post.data.pubDate,
-        // description: post.body,
-        // Compute RSS link from post `slug`
-        // This example assumes all posts are rendered as `/blog/[slug]` routes
         link: `/posts/${post.slug}/`,
+        content: sanitizeHtml(parser.render(post.body)),
+        ...post.data,
       })),
   });
 }
