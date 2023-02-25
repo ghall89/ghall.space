@@ -1,37 +1,40 @@
 ---
-export const prerender = true;
-import { getCollection } from "astro:content";
+export const prerender = true
+import { getCollection } from 'astro:content'
 
-import Layout from "@layouts/Layout.astro";
-import BlogHeader from "@components/BlogHeader.astro";
+import Layout from '@layouts/Layout.astro'
+import BlogHeader from '@components/BlogHeader.astro'
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { slug: post.slug },
-    props: { post },
-  }));
+	const posts = await getCollection('blog')
+	return posts.map((post) => ({
+		params: { slug: post.slug },
+		props: { post },
+	}))
 }
 
-const { post } = Astro.props;
+const { post } = Astro.props
 
-const { data } = post;
+const { data } = post
 
-const { Content } = await post.render();
+const { Content } = await post.render()
 ---
 
 <Layout title={data.title}>
-  <BlogHeader title={data.title} date={data.pubDate} />
-  <article>
-    <Content />
-  </article>
+	<BlogHeader title={data.title} date={data.pubDate} />
+	<article>
+		<Content />
+	</article>
 </Layout>
 
 <style is:global>
-  article img {
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    display: block;
-    margin: auto;
-  }
+	article img {
+		border-radius: var(--radius);
+		box-shadow: var(--shadow);
+		display: block;
+		margin: auto;
+	}
+	.no-shadow {
+		box-shadow: none;
+	}
 </style>

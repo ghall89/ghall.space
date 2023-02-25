@@ -1,27 +1,27 @@
 ---
-import FormattedDate from "@components/FormattedDate.astro";
+import FormattedDate from '@components/FormattedDate.astro'
 
 interface Props {
-  title: String;
-  date: String;
+	title: String
+	date: String
 }
 
-const { title, date } = Astro.props;
+const { title, date } = Astro.props
 ---
 
 <div class="blog-header">
-  <h2>{title}</h2>
-  <h3>
-    <img src="/media/icons/calendar-2iconImage24px.svg" alt="" />
-    <FormattedDate date={date} />
-  </h3>
+	<h2>{title}</h2>
+	<h3>
+		<img src="/media/icons/calendar-2iconImage24px.svg" alt="" />
+		<FormattedDate date={date} />
+	</h3>
 </div>
 
 <style>
-  h3 {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 1.1rem;
-  }
+	h3 {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-size: 1.1rem;
+	}
 </style>

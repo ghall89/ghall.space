@@ -1,20 +1,17 @@
 ---
-import BlogHeader from "@components/BlogHeader.astro";
+import BlogHeader from '@components/BlogHeader.astro'
 
 interface Props {
-  post: Object;
+	post: Object
 }
 
-const { post } = Astro.props;
-const { data, slug } = post;
-
-const preview = post.body.split("\n")[1];
+const { post } = Astro.props
+const { data, slug } = post
 ---
 
 <article class="post-preview">
-  <div>
-    <BlogHeader title={post.data.title} date={post.data.pubDate} />
-    <p>{preview}</p>
-    <a href={`/posts/${slug}`}>Read More</a>
-  </div>
+	<div>
+		<BlogHeader title={post.data.title} date={post.data.pubDate} />
+		<a href={`/posts/${slug}`}>Read Post</a>
+	</div>
 </article>

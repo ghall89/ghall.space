@@ -1,11 +1,11 @@
 ---
-import { format, add } from "date-fns";
+import { format, add } from 'date-fns'
 
 interface Props {
-  date: Date;
+	date: Date
 }
 
-const { date } = Astro.props;
+const { date } = Astro.props
 ---
 
-<span>{format(add(new Date(date), { hours: 6 }), "MMM do, y")}</span>
+<span>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</span>

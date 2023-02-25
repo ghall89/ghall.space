@@ -1,29 +1,29 @@
 ---
-const { pathname } = Astro.url;
+const { pathname } = Astro.url
 
 const navLinks = [
-  { label: "Blog", icon: "website-with-texticonImage24px", path: "/" },
-  { label: "About", icon: "usericonImage24px", path: "/about/" },
-];
+	{ label: 'Blog', icon: 'website-with-texticonImage24px', path: '/' },
+	{ label: 'About', icon: 'usericonImage24px', path: '/about/' },
+]
 ---
 
 <header>
-  <h1>Graham's Blog</h1>
-  <nav>
-    <ul>
-      {
-        navLinks.map((link) => (
-          <li>
-            <a
-              class={pathname === link.path ? "active-nav" : null}
-              href={link.path}
-            >
-              <img src={`/media/icons/${link.icon}.svg`} />
-              <span>{link.label}</span>
-            </a>
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
+	<h1>Graham's Blog</h1>
+	<nav>
+		<ul>
+			{
+				navLinks.map((link) => (
+					<li>
+						<a
+							class={pathname === link.path ? 'active-nav' : null}
+							href={link.path}
+						>
+							<img src={`/media/icons/${link.icon}.svg`} />
+							<span>{link.label}</span>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</nav>
 </header>

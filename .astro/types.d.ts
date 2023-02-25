@@ -172,6 +172,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
+"the-right-way-to-code.md": {
+  id: "the-right-way-to-code.md",
+  slug: "the-right-way-to-code",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+},
 },
 
 	};
