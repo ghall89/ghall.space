@@ -172,9 +172,9 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
-"the-right-way-to-code.md": {
-  id: "the-right-way-to-code.md",
-  slug: "the-right-way-to-code",
+"reflecting-on-building-my-first-app.md": {
+  id: "reflecting-on-building-my-first-app.md",
+  slug: "reflecting-on-building-my-first-app",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
