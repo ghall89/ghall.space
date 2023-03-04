@@ -1,9 +1,12 @@
 ---
+import UserIcon from './icons/UserIcon.astro'
+import Website from './icons/Website.astro'
+
 const { pathname } = Astro.url
 
 const navLinks = [
-	{ label: 'Blog', icon: 'website-with-texticonImage24px', path: '/' },
-	{ label: 'About', icon: 'usericonImage24px', path: '/about/' },
+	{ label: 'Blog', path: '/' },
+	{ label: 'About', path: '/about/' },
 ]
 ---
 
@@ -18,7 +21,14 @@ const navLinks = [
 							class={pathname === link.path ? 'active-nav' : null}
 							href={link.path}
 						>
-							<img src={`/media/icons/${link.icon}.svg`} />
+							{() => {
+								switch (link.label) {
+									case 'Blog':
+										return <Website />
+									case 'About':
+										return <UserIcon />
+								}
+							}}
 							<span>{link.label}</span>
 						</a>
 					</li>
