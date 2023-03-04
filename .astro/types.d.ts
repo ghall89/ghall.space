@@ -165,6 +165,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
+"nostaliga.md": {
+  id: "nostaliga.md",
+  slug: "nostaliga",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+},
 "on-text-editors.md": {
   id: "on-text-editors.md",
   slug: "on-text-editors",
