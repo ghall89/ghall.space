@@ -9,7 +9,7 @@ Metroid Prime originally came out on the GameCube in 2002, my the extent of my k
 
 To contrast, Minish Cap came out on the GameBoy Advance in 2004, and I've been a Zelda fan since Link's Awakening DX on the GameBoy Color. I played this game to death when it released, and spent countless hours searching the (admittedly small) game world seeking out secrets and collectables.
 
-These 2 games are both well-regarded and loved among their respective fans. Both of them are quality, well-made games in their own right. But I've found myself enjoying the time I've spent replaying Minish Cap more than my time much of Metroid Prime for the first time. Is Minish Cap just more my style of game? Could it just be a better game? Or maybe my nostalgia is influencing my opinions.
+These 2 games are both well-regarded and loved among their respective fans. Both of them are quality, well-made games in their own right. But I've found myself enjoying the time I've spent replaying Minish Cap more than my time experiencing much of Metroid Prime for the first time. Is Minish Cap just more my style of game? Could it just be a better game? Or maybe my nostalgia is influencing my opinions.
 
 There's also the fact that my first experience with the Wii version of Metroid Prime was suboptimal. Could that be coloring my opinion of the Switch version, even though none of the issues I had on the Wii exist–or, more accurately, they are not mandatory, as motion controls can be turned on in the game's settings.
 
