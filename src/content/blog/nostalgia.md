@@ -1,6 +1,7 @@
 ---
 title: 'Nostalgia'
-pubDate: 2023-03-04
+pubDate: '2023-03-04'
+tags: ['Life', 'Gaming', 'Movies']
 ---
 
 I've recently been playing 2 games that would be considered "retro", but referring to them as such would make me feel old, so we'll call them "classics". These classics are Metroid Prime, via the recent remaster on Switch, and The Legend of Zelda: The Minish Cap, via the Switch Online GameBoy Advance collection. It got me thinking about how nostalgia can color our opinions of certain pieces of media, primarily when comparing media of a similar vintage.

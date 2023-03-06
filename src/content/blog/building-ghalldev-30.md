@@ -1,6 +1,7 @@
 ---
-title: "Building ghall.dev 3.0"
-pubDate: 2022-10-16
+title: 'Building ghall.dev 3.0'
+pubDate: '2022-10-16'
+tags: ['Web Dev', 'Making Stuff']
 ---
 
 Welcome to my brand new website, the 3rd iteration of ghall.dev! For the last year-and-a-half this has simply been home to my portfolio, but for a while now I’ve wanted to expand from a simple, single-page site to a multi-page site with a blog (which you are of course reading right now).

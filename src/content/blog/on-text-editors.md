@@ -1,6 +1,7 @@
 ---
-title: "On Text Editors"
-pubDate: 2022-10-22
+title: 'On Text Editors'
+pubDate: '2022-10-22'
+tags: ['Tech', 'Apps', 'Web Dev']
 ---
 
 Among the various types of software tools I use every day, the one I spend a majority of my time in is a text editor. If I’m going to be spending most of my working day using one of these tools, I want it to be something that I enjoy using, and helps me work the way I like to work.

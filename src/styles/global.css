@@ -39,62 +39,12 @@
 * {
 	font-family: 'Manrope', sans-serif;
 	color: var(--text);
+	letter-spacing: 0.03rem;
 }
 
 body {
 	background-color: var(--background);
 	margin: 0;
-}
-
-header {
-	margin: 0;
-	padding: 0.5rem 1rem;
-	max-width: 800px;
-	display: flex;
-	flex-direction: column;
-	margin: auto;
-	justify-content: space-between;
-	align-items: center;
-}
-
-header h1 {
-	text-align: center;
-}
-
-nav ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 1.5rem;
-	padding: 0;
-	margin: 0;
-}
-
-nav ul li {
-	height: 40px;
-	align-items: center;
-}
-
-nav ul li a {
-	position: relative;
-	font-size: 1.2rem;
-	display: flex;
-	gap: 0.5rem;
-	align-items: center;
-}
-
-.active-nav::before {
-	content: '';
-	position: absolute;
-	left: -10px;
-	width: 6px;
-	height: 6px;
-	border-radius: 10px;
-	background-color: var(--blue);
-}
-
-nav ul li::before {
-	content: '';
 }
 
 main {
@@ -115,6 +65,10 @@ h2,
 h3,
 h4 {
 	font-weight: bold;
+}
+
+p {
+	font-size: 1.05rem;
 }
 
 blockquote {
@@ -284,12 +238,13 @@ dialog {
 }
 
 .post-preview {
-	padding: 0.1rem 1rem 1.5rem;
+	padding: 0.1rem 1rem 2rem;
 	margin: 0 0 1.5rem 0;
 }
 
 .post-preview:not(:last-of-type) {
 	border-bottom: var(--border);
+	margin: 0;
 }
 
 svg {

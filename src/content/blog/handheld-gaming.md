@@ -1,6 +1,7 @@
 ---
-title: "Handheld Gaming"
-pubDate: 2023-01-07
+title: 'Handheld Gaming'
+pubDate: '2023-01-07'
+tags: ['Gaming']
 ---
 
 I don’t know if it’s the particular mood I’ve been in, the colder weather, or some combination of the 2, but something about cozying up with a handheld game console has been incredibly appealing lately. My PS5 sits under my TV, streaming the occasional movie or show, and begging me to jump into that Witcher 3 update, or continue playing Tales of Arise. Meanwhile, my Switch Lite is getting all the love.

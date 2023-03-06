@@ -1,6 +1,7 @@
 ---
-title: "My MacOS Home Directory Overview"
-pubDate: 2022-12-23
+title: 'My MacOS Home Directory Overview'
+pubDate: '2022-12-23'
+tags: ['MacOS', 'Tech']
 ---
 
 On [the latest episode of ATP](https://atp.fm/514), Casey, John, and Marco discussed MacOS home directories. After I was done cringing at John keeping his git clones in the root level of his home directory, I started thinking about how I use my own home folder, and how I keep it organized. I won’t go into the hidden items, because I don’t think either of us want that (with hidden items included, my home directory has 34 documents, and 47 folders 😅).

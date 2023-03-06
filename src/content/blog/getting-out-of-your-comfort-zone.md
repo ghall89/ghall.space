@@ -1,6 +1,7 @@
 ---
-title: "Getting Out of Your Comfort Zone"
-pubDate: 2022-12-10
+title: 'Getting Out of Your Comfort Zone'
+pubDate: '2022-12-10'
+tags: ['Life', 'Learning', 'Web Dev']
 ---
 
 When it comes to frameworks, I’ve been firmly stuck in the React–and React-adjacent–world. Basically, my “coding comfort zone” has been vanilla JavaScript, React, and Next.js. The world of web development is much broader than that, but I’m going to be honest, I was a little scared to branch out.

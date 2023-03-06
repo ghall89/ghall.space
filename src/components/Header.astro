@@ -1,6 +1,6 @@
 ---
 import UserIcon from './icons/UserIcon.astro'
-import Website from './icons/Website.astro'
+import WebsiteIcon from './icons/Website.astro'
 
 const { pathname } = Astro.url
 
@@ -24,9 +24,9 @@ const navLinks = [
 							{() => {
 								switch (link.label) {
 									case 'Blog':
-										return <Website />
+										return <WebsiteIcon class="icon" />
 									case 'About':
-										return <UserIcon />
+										return <UserIcon class="icon" />
 								}
 							}}
 							<span>{link.label}</span>
@@ -37,3 +37,62 @@ const navLinks = [
 		</ul>
 	</nav>
 </header>
+
+<style>
+	header {
+		margin: 0;
+		padding: 0.5rem 1rem;
+		max-width: 800px;
+		display: flex;
+		flex-direction: column;
+		margin: auto;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	header h1 {
+		text-align: center;
+	}
+
+	nav ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1.5rem;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav ul li {
+		height: 40px;
+		align-items: center;
+	}
+
+	nav ul li a {
+		position: relative;
+		font-size: 1.2rem;
+		display: flex;
+		gap: 0.5rem;
+		align-items: center;
+	}
+
+	svg {
+		position: absolute;
+		left: -100;
+		top: 0;
+	}
+
+	.active-nav::before {
+		content: '';
+		position: absolute;
+		left: -10px;
+		width: 6px;
+		height: 6px;
+		border-radius: 10px;
+		background-color: var(--blue);
+	}
+
+	nav ul li::before {
+		content: '';
+	}
+</style>

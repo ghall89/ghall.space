@@ -1,6 +1,7 @@
 ---
-title: "An Update on my AI Dating Profile"
-pubDate: 2023-01-14
+title: 'An Update on my AI Dating Profile'
+pubDate: '2023-01-14'
+tags: ['Life', 'Tech']
 ---
 
 Back in early December I posted about [how I created a dating profile using AI](https://ghall.blog/posts/creating-a-dating-profile-with-ai). I haven't forgotten about my promise to follow up on the results from that very unscientific experiment. Though I stated I'd commit to using my AI profile for a week, I quickly realized that was not a reasonable amount of time. So a week, turned into 2, which turned into just over a month, and I finally reached a point where I feel like a follow up is warranted.

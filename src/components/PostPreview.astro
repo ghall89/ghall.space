@@ -1,5 +1,6 @@
 ---
 import BlogHeader from '@components/BlogHeader.astro'
+import Tags from '@components/Tags.astro'
 
 interface Props {
 	post: Object
@@ -11,7 +12,7 @@ const { data, slug } = post
 
 <article class="post-preview">
 	<div>
-		<BlogHeader title={post.data.title} date={post.data.pubDate} />
-		<a href={`/posts/${slug}`}>Read Post</a>
+		<BlogHeader title={post.data.title} date={data.pubDate} slug={slug} />
+		<Tags tags={data.tags} />
 	</div>
 </article>

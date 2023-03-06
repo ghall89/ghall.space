@@ -1,6 +1,7 @@
 ---
-title: "My Top 3 Games of 2022"
-pubDate: 2022-12-09
+title: 'My Top 3 Games of 2022'
+pubDate: '2022-12-09'
+tags: ['Gaming']
 ---
 
 The Game Awards were last night, so I was inspired to take some time and write about my personal game of the year. But I couldn't narrow it down to just one, so I picked 3 games which were nominated for several awards but didn't get much, if any, recognition.

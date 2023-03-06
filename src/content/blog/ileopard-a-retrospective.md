@@ -1,6 +1,7 @@
 ---
-title: "iLeopard - A Retrospective"
-pubDate: 2022-12-26
+title: 'iLeopard - A Retrospective'
+pubDate: '2022-12-26'
+tags: ['Tech', 'MacOS', 'Making Stuff']
 ---
 
 I few months ago I rediscovered among some old project folders the source code and markdown files for an old blog I ran in the early 2010s. With nothing to do on the afternoon of Christmas Eve, which was a brisk 15°F, I decided I wanted to search through and try to find a rather lengthy retrospective I wrote on Star Trek: The Next Generation. Now that I’ve finally started up a new blog I thought it would be fun to touch it up and republish it, since I put so many hours worth of work into it back in the day. Upsettingly, it was not there.

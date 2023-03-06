@@ -1,6 +1,7 @@
 ---
-title: "Ask The Darn Question!"
-pubDate: 2022-11-05
+title: 'Ask The Darn Question!'
+pubDate: '2022-11-05'
+tags: ['Web Dev', 'Mental Health']
 ---
 
 One of the areas I struggle with when it comes to working in a professional web development environment is asking questions. Whether it’s a problem I’m stuck on, or something about the codebase I don’t quite understand, I’m more likely to end up banging my head against the wall trying to find the answers myself than reach out and ask someone a question.

@@ -1,6 +1,7 @@
 ---
-title: "Coding With Depression"
-pubDate: 2022-11-11
+title: 'Coding With Depression'
+pubDate: '2022-11-11'
+tags: ['Web Dev', 'Mental Health']
 ---
 
 One of the reasons I started this blog, aside from wanting to share my thoughts and experiences as someone early in my web development career, was to write about mental illness as it relates to development. As you can imagine, it's not an easy topic by any means, as it's something that profoundly affects me personally on a daily basis.

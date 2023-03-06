@@ -1,0 +1,32 @@
+---
+import { getCollection } from 'astro:content'
+
+import Layout from '@layouts/Layout.astro'
+import FormattedDate from '@components/FormattedDate.astro'
+
+const { tag } = Astro.params
+console.log(tag)
+const posts = await getCollection('blog', ({ data }) => {
+	if (tag === 'all') {
+		return true
+	}
+	return data.tags.includes(tag)
+})
+
+if (posts.length === 0) {
+	return Astro.redirect('/404')
+}
+
+posts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate))
+---
+
+<Layout title="Blog Archive">
+	{
+		posts.map(({ slug, data }) => (
+			<div>
+				<a href={`/posts/${slug}`}>{data.title}</a> -{' '}
+				<FormattedDate date={data.pubDate} />
+			</div>
+		))
+	}
+</Layout>

@@ -1,6 +1,7 @@
 ---
-title: "Creating a Dating Profile With AI"
-pubDate: 2022-12-10
+title: 'Creating a Dating Profile With AI'
+pubDate: '2022-12-10'
+tags: ['Life', 'Tech']
 ---
 
 I’ve been single for a few years now, and I haven’t had a whole lot of success in the dating game. I’m very introverted and socially anxious, so dating apps seemed like the way to go for me. Sadly, I’ve not had a lot of success, and since Covid it seems like the dating scene has only got worse. I’ve been feeling pretty down about it, but I decided to have a little fun and let an AI help me assemble a brand new profile.

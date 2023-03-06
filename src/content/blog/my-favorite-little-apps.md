@@ -1,6 +1,7 @@
 ---
-title: "My Favorite Little Apps"
-pubDate: 2022-11-28
+title: 'My Favorite Little Apps'
+pubDate: '2022-11-28'
+tags: ['MacOS', 'Apps']
 ---
 
 There are a lot of apps on my Macs that I use every day. There’s the big ones like Nova for coding, Brave for testing and dev tools, Craft for taking notes and keeping track of projects, and many more. But I wanted to pay special attention to the smaller apps that I use that just hang out in the menu bar or the background that make working in MacOS that much more seamless and enjoyable.

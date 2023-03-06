@@ -1,6 +1,7 @@
 ---
-title: "My Gunpla Adventure"
-pubDate: 2023-01-28
+title: 'My Gunpla Adventure'
+pubDate: '2023-01-28'
+tags: ['Making Stuff']
 ---
 
 Back in my teenage years I used to build model kits. Mostly Star Trek, some Star Wars, and 1 or 2 model planes. It was sort of a continuation of my Lego obsession from my pre-teen days, but at some point I just kind of fell of. Fast-forward Summer 2022, I was going through a rough patch and wanted to focus on some hobbies that would get me away from the screen, and I decided to pick up model building again. Because the YouTube algorithm is a thing, as I watched more and more reviews and tutorials, I naturally ended up in a strange corner of the model kit scene called Gunpla.
