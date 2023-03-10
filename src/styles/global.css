@@ -88,11 +88,11 @@ hr {
 a {
 	color: var(--blue);
 	text-decoration: none;
-	transition: opacity 0.15s;
 }
 
 a:hover {
-	opacity: 0.6;
+	text-decoration: underline;
+	filter: saturate(120%);
 }
 
 code {
@@ -146,12 +146,13 @@ button,
 	outline: none;
 	border: none;
 	border-radius: 5px;
-	transition: all 0.15s;
+	transition: filter 0.15s;
 }
 
 button:hover,
 .link-button:hover {
-	opacity: 0.8;
+	text-decoration: none;
+	filter: saturate(120%);
 }
 
 button:active,

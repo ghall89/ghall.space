@@ -76,13 +76,7 @@ const navLinks = [
 		align-items: center;
 	}
 
-	svg {
-		position: absolute;
-		left: -100;
-		top: 0;
-	}
-
-	.active-nav::before {
+	nav ul li a::before {
 		content: '';
 		position: absolute;
 		left: -10px;
@@ -90,6 +84,19 @@ const navLinks = [
 		height: 6px;
 		border-radius: 10px;
 		background-color: var(--blue);
+		opacity: 0;
+	}
+
+	nav ul li a:hover {
+		text-decoration: none;
+	}
+
+	nav ul li a:hover::before {
+		opacity: 0.6;
+	}
+
+	.active-nav::before {
+		opacity: 1;
 	}
 
 	nav ul li::before {

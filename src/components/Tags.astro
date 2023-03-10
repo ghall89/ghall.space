@@ -24,6 +24,12 @@ const { tags } = Astro.props
 		border-radius: 25px;
 		background: var(--blue);
 		line-height: 2rem;
+		transition: filter 0.15s;
+	}
+
+	.tag:hover {
+		text-decoration: none;
+		filter: saturate(120%);
 	}
 
 	.tag:not(:last-child) {
