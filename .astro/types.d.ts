@@ -186,6 +186,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 },
+"using-tailwind-with-mui-base.md": {
+  id: "using-tailwind-with-mui-base.md",
+  slug: "using-tailwind-with-mui-base",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+},
 },
 
 	};
