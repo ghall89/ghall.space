@@ -1,7 +1,44 @@
 declare module 'astro:content' {
+	interface Render {
+		'.mdx': Promise<{
+			Content: import('astro').MarkdownInstance<{}>['Content'];
+			headings: import('astro').MarkdownHeading[];
+			remarkPluginFrontmatter: Record<string, any>;
+		}>;
+	}
+}
+declare module 'astro:content' {
+	interface Render {
+		'.md': Promise<{
+			Content: import('astro').MarkdownInstance<{}>['Content'];
+			headings: import('astro').MarkdownHeading[];
+			remarkPluginFrontmatter: Record<string, any>;
+		}>;
+	}
+}
+
+declare module 'astro:content' {
 	export { z } from 'astro/zod';
 	export type CollectionEntry<C extends keyof typeof entryMap> =
-		(typeof entryMap)[C][keyof (typeof entryMap)[C]] & Render;
+		(typeof entryMap)[C][keyof (typeof entryMap)[C]];
+
+	// This needs to be in sync with ImageMetadata
+	export const image: () => import('astro/zod').ZodObject<{
+		src: import('astro/zod').ZodString;
+		width: import('astro/zod').ZodNumber;
+		height: import('astro/zod').ZodNumber;
+		format: import('astro/zod').ZodUnion<
+			[
+				import('astro/zod').ZodLiteral<'png'>,
+				import('astro/zod').ZodLiteral<'jpg'>,
+				import('astro/zod').ZodLiteral<'jpeg'>,
+				import('astro/zod').ZodLiteral<'tiff'>,
+				import('astro/zod').ZodLiteral<'webp'>,
+				import('astro/zod').ZodLiteral<'gif'>,
+				import('astro/zod').ZodLiteral<'svg'>
+			]
+		>;
+	}>;
 
 	type BaseSchemaWithoutEffects =
 		| import('astro/zod').AnyZodObject
@@ -57,14 +94,6 @@ declare module 'astro:content' {
 		Required<ContentConfig['collections'][C]>['schema']
 	>;
 
-	type Render = {
-		render(): Promise<{
-			Content: import('astro').MarkdownInstance<{}>['Content'];
-			headings: import('astro').MarkdownHeading[];
-			remarkPluginFrontmatter: Record<string, any>;
-		}>;
-	};
-
 	const entryMap: {
 		"blog": {
 "an-update-on-my-ai-dating-profile.md": {
@@ -73,126 +102,133 @@ declare module 'astro:content' {
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "ask-the-darn-question.md": {
   id: "ask-the-darn-question.md",
   slug: "ask-the-darn-question",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "building-ghalldev-30.md": {
   id: "building-ghalldev-30.md",
   slug: "building-ghalldev-30",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "coding-with-depression.md": {
   id: "coding-with-depression.md",
   slug: "coding-with-depression",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "creating-a-dating-profile-with-ai.md": {
   id: "creating-a-dating-profile-with-ai.md",
   slug: "creating-a-dating-profile-with-ai",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "getting-out-of-your-comfort-zone.md": {
   id: "getting-out-of-your-comfort-zone.md",
   slug: "getting-out-of-your-comfort-zone",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "handheld-gaming.md": {
   id: "handheld-gaming.md",
   slug: "handheld-gaming",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "ileopard-a-retrospective.md": {
   id: "ileopard-a-retrospective.md",
   slug: "ileopard-a-retrospective",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "my-favorite-little-apps-part-2.md": {
   id: "my-favorite-little-apps-part-2.md",
   slug: "my-favorite-little-apps-part-2",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "my-favorite-little-apps.md": {
   id: "my-favorite-little-apps.md",
   slug: "my-favorite-little-apps",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "my-gunpla-adventure.md": {
   id: "my-gunpla-adventure.md",
   slug: "my-gunpla-adventure",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "my-macos-home-directory-overview.md": {
   id: "my-macos-home-directory-overview.md",
   slug: "my-macos-home-directory-overview",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "my-top-3-games-of-2022.md": {
   id: "my-top-3-games-of-2022.md",
   slug: "my-top-3-games-of-2022",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "nextjs-13-and-exploring-new-technologies.md": {
   id: "nextjs-13-and-exploring-new-technologies.md",
   slug: "nextjs-13-and-exploring-new-technologies",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "nostalgia.md": {
   id: "nostalgia.md",
   slug: "nostalgia",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "on-text-editors.md": {
   id: "on-text-editors.md",
   slug: "on-text-editors",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 "reflecting-on-building-my-first-app.md": {
   id: "reflecting-on-building-my-first-app.md",
   slug: "reflecting-on-building-my-first-app",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
+"using-json-for-data-storage.md": {
+  id: "using-json-for-data-storage.md",
+  slug: "using-json-for-data-storage",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "using-tailwind-with-mui-base.md": {
   id: "using-tailwind-with-mui-base.md",
   slug: "using-tailwind-with-mui-base",
   body: string,
   collection: "blog",
   data: InferEntrySchema<"blog">
-},
+} & { render(): Render[".md"] },
 },
 
 	};
