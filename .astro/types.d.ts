@@ -208,6 +208,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"on-using-chat-gpt.md": {
+  id: "on-using-chat-gpt.md",
+  slug: "on-using-chat-gpt",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "reflecting-on-building-my-first-app.md": {
   id: "reflecting-on-building-my-first-app.md",
   slug: "reflecting-on-building-my-first-app",
