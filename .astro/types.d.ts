@@ -131,6 +131,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"finding-home-in-hyrule.md": {
+  id: "finding-home-in-hyrule.md",
+  slug: "finding-home-in-hyrule",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "getting-out-of-your-comfort-zone.md": {
   id: "getting-out-of-your-comfort-zone.md",
   slug: "getting-out-of-your-comfort-zone",
