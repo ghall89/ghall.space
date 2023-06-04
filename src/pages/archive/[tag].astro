@@ -5,7 +5,7 @@ import Layout from '@layouts/Layout.astro'
 import FormattedDate from '@components/FormattedDate.astro'
 
 const { tag } = Astro.params
-console.log(tag)
+
 const posts = await getCollection('blog', ({ data }) => {
 	if (tag === 'all') {
 		return true

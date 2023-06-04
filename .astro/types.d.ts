@@ -229,6 +229,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"thoughs-on-macos.md": {
+  id: "thoughs-on-macos.md",
+  slug: "thoughs-on-macos",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "using-json-for-data-storage.md": {
   id: "using-json-for-data-storage.md",
   slug: "using-json-for-data-storage",
