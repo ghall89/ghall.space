@@ -1,0 +1,16 @@
+# {•̃_•̃} < Beep boop!
+
+User-agent: Baiduspider
+Disallow: /
+
+User-agent: YandexBot
+Disallow: /
+
+User-agent: facebot
+Disallow: /
+
+User-agent: TwitterBot
+Disallow: /
+
+User-agent: GPTBot
+Disallow: /
