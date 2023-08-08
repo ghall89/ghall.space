@@ -4,7 +4,7 @@ pubDate: '8/7/23'
 tags: ['Life', 'Learning', 'Programming']
 ---
 
-This week will mark the end of my first year (of hopefully many more) working as a software developer. This fact blows my mind, and feels wholly unreal. It’s still difficult for me to believe that I made it this far. I still remember thinking my interview was a total disaster and being genuinely shocked when I got the job offer.
+Next week will mark the end of my first year (of hopefully many more) working as a software developer. This fact blows my mind, and feels wholly unreal. It’s still difficult for me to believe that I made it this far. I still remember thinking my interview was a total disaster and being genuinely shocked when I got the job offer.
 
 I can’t understate how life changing this last year has been. Last summer I was at a low point. My year-long job search was proving unfruitful, and I was not really feeling good about myself. I had been working at a small startup doing quality control for short-form video clips on a contract basis, and I was slowly losing my mind.
 
