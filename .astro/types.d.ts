@@ -222,6 +222,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"questlogger-from-ios-to-mac.md": {
+  id: "questlogger-from-ios-to-mac.md",
+  slug: "questlogger-from-ios-to-mac",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "reflecting-on-building-my-first-app.md": {
   id: "reflecting-on-building-my-first-app.md",
   slug: "reflecting-on-building-my-first-app",
