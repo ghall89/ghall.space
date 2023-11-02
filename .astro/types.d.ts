@@ -110,6 +110,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"baldurs-gate-3-feels.md": {
+  id: "baldurs-gate-3-feels.md",
+  slug: "baldurs-gate-3-feels",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "building-ghalldev-30.md": {
   id: "building-ghalldev-30.md",
   slug: "building-ghalldev-30",
