@@ -166,6 +166,13 @@ declare module 'astro:content' {
   collection: "blog",
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] },
+"journal-app-impressions.md": {
+  id: "journal-app-impressions.md",
+  slug: "journal-app-impressions",
+  body: string,
+  collection: "blog",
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] },
 "my-favorite-little-apps-part-2.md": {
   id: "my-favorite-little-apps-part-2.md",
   slug: "my-favorite-little-apps-part-2",
