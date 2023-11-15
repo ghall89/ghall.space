@@ -87,7 +87,8 @@ hr {
 
 a {
 	color: var(--blue);
-	text-decoration: none;
+	text-decoration: underline;
+	text-decoration-style: dotted;
 }
 
 a:hover {
@@ -149,6 +150,7 @@ button,
 	border: none;
 	border-radius: 5px;
 	transition: filter 0.15s;
+	text-decoration: none;
 }
 
 button:hover,

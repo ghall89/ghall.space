@@ -5,6 +5,7 @@ import Calendar from './icons/Calendar.astro'
 interface Props {
 	title: String
 	date: String
+	slug: String
 }
 
 const { title, date, slug } = Astro.props
@@ -13,19 +14,26 @@ const { title, date, slug } = Astro.props
 <div class="blog-header">
 	<h2>
 		{slug ? <a href={`/posts/${slug}`}>{title}</a> : title}
-		<h3>
-			<!-- <img class="svg-icon" src={calendarIcon} alt="" /> -->
-			<Calendar />
-			<FormattedDate date={date} />
-		</h3>
 	</h2>
-
-	<style>
-		h3 {
-			display: flex;
-			align-items: center;
-			gap: 6px;
-			font-size: 1.1rem;
-		}
-	</style>
+	<h3>
+		<!-- <img class="svg-icon" src={calendarIcon} alt="" /> -->
+		<Calendar />
+		<FormattedDate date={date} />
+	</h3>
 </div>
+
+<style>
+	a {
+		text-decoration: none;
+	}
+	a:hover {
+		text-decoration: none;
+	}
+
+	h3 {
+		display: flex;
+		align-items: center;
+		gap: 6px;
+		font-size: 1.1rem;
+	}
+</style>
