@@ -6,6 +6,10 @@ import FormattedDate from '@components/FormattedDate.astro'
 
 const { tag } = Astro.params
 
+const page = Number.parseInt(Astro.url.searchParams.get('page'))
+const prevPage = page - 1
+const nextPage = page + 1
+
 const posts = await getCollection('blog', ({ data }) => {
 	if (tag === 'all') {
 		return true
@@ -18,15 +22,69 @@ if (posts.length === 0) {
 }
 
 posts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate))
+const totalPosts = posts.length
+
+const start = (page - 1) * 10
+const end = page * 10
+
+const displayPosts = posts.slice(start, end)
 ---
 
 <Layout title="Blog Archive">
 	{
-		posts.map(({ slug, data }) => (
-			<div>
-				<a href={`/posts/${slug}`}>{data.title}</a> -{' '}
+		displayPosts.map(({ slug, data }) => (
+			<div class="archive-post">
+				<a href={`/posts/${slug}`}>{data.title}</a>
 				<FormattedDate date={data.pubDate} />
 			</div>
 		))
 	}
+	<div class="navigation">
+		<div>
+			{
+				page === 1 ? null : (
+					<a class="link-button blue-btn" href={`?page=${prevPage}`}>
+						← Previous
+					</a>
+				)
+			}
+		</div>
+		<div>
+			{
+				end >= totalPosts ? null : (
+					<a class="link-button blue-btn" href={`?page=${nextPage}`}>
+						Next →
+					</a>
+				)
+			}
+		</div>
+	</div>
 </Layout>
+
+<style>
+	.archive-post {
+		display: flex;
+		justify-content: space-between;
+	}
+	.archive-post:not(:last-of-type) {
+		margin-bottom: 26px;
+	}
+	.archive-post a {
+		max-width: 400px;
+		font-weight: bold;
+	}
+
+	.navigation {
+		max-width: 400px;
+		margin: auto;
+		display: flex;
+		padding: 30px;
+		justify-content: space-between;
+	}
+
+	@media screen and (max-width: 800px) {
+		.archive-post {
+			flex-direction: column;
+		}
+	}
+</style>
