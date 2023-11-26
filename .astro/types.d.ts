@@ -1,5 +1,15 @@
 declare module 'astro:content' {
 	interface Render {
+		'.mdx': Promise<{
+			Content: import('astro').MarkdownInstance<{}>['Content'];
+			headings: import('astro').MarkdownHeading[];
+			remarkPluginFrontmatter: Record<string, any>;
+		}>;
+	}
+}
+
+declare module 'astro:content' {
+	interface Render {
 		'.md': Promise<{
 			Content: import('astro').MarkdownInstance<{}>['Content'];
 			headings: import('astro').MarkdownHeading[];
@@ -213,6 +223,13 @@ declare module 'astro:content' {
 "creating-a-dating-profile-with-ai.md": {
 	id: "creating-a-dating-profile-with-ai.md";
   slug: "creating-a-dating-profile-with-ai";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
+"default-apps-2023.md": {
+	id: "default-apps-2023.md";
+  slug: "default-apps-2023";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
