@@ -6,7 +6,7 @@ tags: ['Tech', 'Apps', 'Mental Health']
 
 With the upcoming iOS 17.2 update, we’ll finally get our hands on the new Journal app Apple announced at WWDC earlier this year. I decided to be brave and install the public beta so I could take a look and get some first impressions. As someone with mental health struggles, I appreciate the recent efforts Apple has put into making these kinds of features available, so I was really excited to take a look at this latest addition.
 
-First off, I like the simplicity of the interface. It doesn’t have much going on, and I think that’s a point in its favor. You can open the app and get journalling right away. It even offers you journalling prompt which is excellent for those like me who are not always sure what to write about. [^1]
+First off, I like the simplicity of the interface. It doesn’t have much going on, and I think that’s a point in its favor. You can open the app and get journaling right away. It even offers you journaling prompt which is excellent for those like me who are not always sure what to write about. [^1]
 
 It doesn’t have the bells and whistles an app like Day One has, but when it comes to writing a journal entry you’re given the option to add photos, location, and even an audio recording. It’s pretty barebones, but I think that’s ok. The one thing I would like is the ability to tie into the mood tracking on Apple Watch and either be able to set your current mood from the app, or tie mood tracking into the Journaling Suggestions feature.
 

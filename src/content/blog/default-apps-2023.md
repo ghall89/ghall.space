@@ -66,4 +66,4 @@ I changed up some of the categories to avoid any entries with "none" or "N/A".
 
 - [Collections](https://collectionsdb.com/) - Personal Database
 - [Vinegar](https://andadinosaur.com/launch-vinegar) - Replaces YouTube player with standard HTML `<video>` tag
-- [Contexts](https://contexts.co/) - `CMD + tab` replacement
+- [Contexts](https://contexts.co/) - <kbd>⌘</kbd> + <kbd>tab</kbd> replacement
