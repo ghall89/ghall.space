@@ -1,11 +1,11 @@
 ---
-export const prerender = true
-import { getCollection } from 'astro:content'
+export const prerender = true;
+import { getCollection } from 'astro:content';
 
-import Layout from '@layouts/Layout.astro'
-import PostPreview from '@components/PostPreview.astro'
+import Layout from '@layouts/Layout.astro';
+import PostPreview from '@components/PostPreview.astro';
 
-const posts = await getCollection('blog')
+const posts = await getCollection('blog');
 ---
 
 <Layout title="Home">
@@ -18,9 +18,7 @@ const posts = await getCollection('blog')
 	{
 		posts.length < 5 ? null : (
 			<div class="more-posts">
-				<a class="link-button blue-btn" href="/archive/all?page=1">
-					All Posts
-				</a>
+				<a href="/archive/all?page=1">All Posts</a>
 			</div>
 		)
 	}

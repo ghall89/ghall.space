@@ -1,15 +1,13 @@
 @font-face {
-	font-family: Manrope;
-	src: url(./fonts/Manrope-Regular.ttf) format('truetype');
-	font-weight: normal;
+	font-family: CrimsonText;
+	src: url(./fonts/CrimsonText-Regular.ttf) format('truetype');
 	font-style: normal;
 	font-display: block;
 }
 
 @font-face {
-	font-family: Manrope;
-	src: url(./fonts/Manrope-Bold.ttf) format('truetype');
-	font-weight: bold;
+	font-family: JetBrainsMono;
+	src: url(./fonts/JetBrainsMono-VariableFont_wght.ttf) format('truetype');
 	font-style: normal;
 	font-display: block;
 }
@@ -19,25 +17,17 @@
 	--red: #ce3446;
 	--orange: #e56045;
 	--text: #444444;
-	--background: white;
+	--background: #fffef5;
+	--flat-bg: white;
 	--radius: 5px;
 	--shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	--border: 1px solid rgb(239, 239, 239);
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--blue: #5996e9;
-		--red: #e75969;
-		--orange: #e87c66;
-		--text: white;
-		--background: color(display-p3 0.141 0.149 0.216);
-		--border: 1px solid rgb(102, 102, 102);
-	}
+	--border: 1px solid #7f7f7f;
 }
 
 * {
-	font-family: 'Manrope', sans-serif;
+	/* font-family: 'CrimsonText', serif; */
+	font-family: 'CrimsonText', serif;
+	font-size: 1.2rem;
 	color: var(--text);
 	letter-spacing: 0.03rem;
 }
@@ -68,7 +58,7 @@ h4 {
 }
 
 p {
-	font-size: 1.05rem;
+	line-height: 1.8rem;
 }
 
 blockquote {
@@ -81,6 +71,17 @@ blockquote {
 hr {
 	border-top: 1px solid var(--text);
 	margin: 2rem 0;
+}
+
+kbd {
+	padding: 2px 8px;
+	font-size: 0.8rem;
+	font-family: sans-serif;
+	border: var(--border);
+	border-radius: var(--radius);
+	background: var(--flat-bg);
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 
 /* Links */
@@ -99,7 +100,8 @@ a:hover {
 pre code,
 code {
 	color: var(--orange);
-	font-family: monospace;
+	font-family: 'JetBrainsMono', monospace;
+	font-size: 1rem;
 	padding: 2px 4px;
 	border-radius: var(--radius);
 	background: rgba(155, 155, 155, 0.2);
@@ -243,7 +245,7 @@ dialog {
 }
 
 .post-preview {
-	padding: 0.1rem 1rem 2rem;
+	padding: 0.1rem 0rem 2rem;
 	margin: 0 0 1.5rem 0;
 }
 

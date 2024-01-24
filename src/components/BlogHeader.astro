@@ -1,14 +1,13 @@
 ---
-import FormattedDate from '@components/FormattedDate.astro'
-import Calendar from './icons/Calendar.astro'
+import FormattedDate from '@components/FormattedDate.astro';
 
 interface Props {
-	title: String
-	date: String
-	slug: String
+	title: String;
+	date: String;
+	slug?: String;
 }
 
-const { title, date, slug } = Astro.props
+const { title, date, slug } = Astro.props;
 ---
 
 <div class="blog-header">
@@ -17,8 +16,8 @@ const { title, date, slug } = Astro.props
 	</h2>
 	<h3>
 		<!-- <img class="svg-icon" src={calendarIcon} alt="" /> -->
-		<Calendar />
-		<FormattedDate date={date} />
+
+		🗓️ <FormattedDate date={date} />
 	</h3>
 </div>
 
@@ -30,10 +29,15 @@ const { title, date, slug } = Astro.props
 		text-decoration: none;
 	}
 
+	h2,
+	h2 a {
+		font-size: 1.4rem;
+	}
+
 	h3 {
 		display: flex;
 		align-items: center;
 		gap: 6px;
-		font-size: 1.1rem;
+		font-size: 0.9rem;
 	}
 </style>

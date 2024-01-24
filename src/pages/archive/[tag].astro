@@ -1,33 +1,37 @@
 ---
-import { getCollection } from 'astro:content'
+import { getCollection } from 'astro:content';
 
-import Layout from '@layouts/Layout.astro'
-import FormattedDate from '@components/FormattedDate.astro'
+import Layout from '@layouts/Layout.astro';
+import FormattedDate from '@components/FormattedDate.astro';
 
-const { tag } = Astro.params
+const { tag } = Astro.params;
 
-const page = Number.parseInt(Astro.url.searchParams.get('page'))
-const prevPage = page - 1
-const nextPage = page + 1
+const page = Number.parseInt(Astro.url.searchParams.get('page'));
+const prevPage = page - 1;
+const nextPage = page + 1;
 
 const posts = await getCollection('blog', ({ data }) => {
 	if (tag === 'all') {
-		return true
+		return true;
 	}
-	return data.tags.includes(tag)
-})
+	return data.tags.includes(tag);
+});
 
 if (posts.length === 0) {
-	return Astro.redirect('/404')
+	return Astro.redirect('/404');
 }
 
-posts.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate))
-const totalPosts = posts.length
+posts.sort(
+	(a, b) =>
+		Date.parse(String(b.data.pubDate)) - Date.parse(String(a.data.pubDate))
+);
 
-const start = (page - 1) * 10
-const end = page * 10
+const totalPosts = posts.length;
 
-const displayPosts = posts.slice(start, end)
+const start = (page - 1) * 10;
+const end = page * 10;
+
+const displayPosts = posts.slice(start, end);
 ---
 
 <Layout title="Blog Archive">
@@ -41,22 +45,10 @@ const displayPosts = posts.slice(start, end)
 	}
 	<div class="navigation">
 		<div>
-			{
-				page === 1 ? null : (
-					<a class="link-button blue-btn" href={`?page=${prevPage}`}>
-						← Previous
-					</a>
-				)
-			}
+			{page === 1 ? null : <a href={`?page=${prevPage}`}>← Previous</a>}
 		</div>
 		<div>
-			{
-				end >= totalPosts ? null : (
-					<a class="link-button blue-btn" href={`?page=${nextPage}`}>
-						Next →
-					</a>
-				)
-			}
+			{end >= totalPosts ? null : <a href={`?page=${nextPage}`}>Next →</a>}
 		</div>
 	</div>
 </Layout>
