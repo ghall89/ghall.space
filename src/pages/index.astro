@@ -11,7 +11,11 @@ const posts = await getCollection('blog');
 <Layout title="Home">
 	{
 		posts
-			.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate))
+			.sort(
+				(a, b) =>
+					new Date(b.data.pubDate).valueOf() -
+					new Date(a.data.pubDate).valueOf()
+			)
 			.slice(0, 5)
 			.map((post) => <PostPreview post={post} />)
 	}
