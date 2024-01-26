@@ -1,13 +1,13 @@
 ---
-import BlogHeader from '@components/BlogHeader.astro'
-import Tags from '@components/Tags.astro'
+import BlogHeader from '@components/BlogHeader.astro';
+import Tags from '@components/Tags.astro';
 
 interface Props {
-	post: Object
+	post: Object;
 }
 
-const { post } = Astro.props
-const { data, slug } = post
+const { post } = Astro.props;
+const { data, slug } = post;
 ---
 
 <article class="post-preview">

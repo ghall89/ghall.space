@@ -1,17 +1,14 @@
 ---
-import UserIcon from './icons/UserIcon.astro'
-import WebsiteIcon from './icons/Website.astro'
-
-const { pathname } = Astro.url
+const { pathname } = Astro.url;
 
 const navLinks = [
-	{ label: 'Blog', path: '/' },
-	{ label: 'About', path: '/about/' },
-]
+	{ label: '📝 Blog', path: '/' },
+	{ label: '👤 About', path: '/about/' },
+];
 ---
 
 <header>
-	<h1>Graham's Blog</h1>
+	<h1>ghall.blog</h1>
 	<nav>
 		<ul>
 			{
@@ -21,14 +18,6 @@ const navLinks = [
 							class={pathname === link.path ? 'active-nav' : null}
 							href={link.path}
 						>
-							{() => {
-								switch (link.label) {
-									case 'Blog':
-										return <WebsiteIcon class="icon" />
-									case 'About':
-										return <UserIcon class="icon" />
-								}
-							}}
 							<span>{link.label}</span>
 						</a>
 					</li>
@@ -41,7 +30,7 @@ const navLinks = [
 <style>
 	header {
 		margin: 0;
-		padding: 0.5rem 1rem;
+		padding: 1.5rem 1rem;
 		max-width: 800px;
 		display: flex;
 		flex-direction: column;
@@ -50,8 +39,13 @@ const navLinks = [
 		align-items: center;
 	}
 
-	header h1 {
+	h1 {
 		text-align: center;
+		font-size: 1.8rem;
+	}
+
+	.title {
+		text-decoration: none;
 	}
 
 	nav ul {
@@ -66,6 +60,7 @@ const navLinks = [
 	nav ul li {
 		height: 40px;
 		align-items: center;
+		margin: 0;
 	}
 
 	nav ul li a {
@@ -78,13 +73,10 @@ const navLinks = [
 	}
 
 	nav ul li a::before {
-		content: '';
+		content: '❯';
 		position: absolute;
-		left: -10px;
-		width: 6px;
-		height: 6px;
-		border-radius: 10px;
-		background-color: var(--blue);
+		left: -12px;
+		color: var(--blue);
 		opacity: 0;
 	}
 
