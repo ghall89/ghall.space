@@ -185,198 +185,198 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
-"an-update-on-my-ai-dating-profile.md": {
-	id: "an-update-on-my-ai-dating-profile.md";
-  slug: "an-update-on-my-ai-dating-profile";
+"2022/ask-the-darn-question.md": {
+	id: "2022/ask-the-darn-question.md";
+  slug: "2022/ask-the-darn-question";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"ask-the-darn-question.md": {
-	id: "ask-the-darn-question.md";
-  slug: "ask-the-darn-question";
+"2022/building-ghalldev-30.md": {
+	id: "2022/building-ghalldev-30.md";
+  slug: "2022/building-ghalldev-30";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"baldurs-gate-3-feels.md": {
-	id: "baldurs-gate-3-feels.md";
-  slug: "baldurs-gate-3-feels";
+"2022/coding-with-depression.md": {
+	id: "2022/coding-with-depression.md";
+  slug: "2022/coding-with-depression";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"building-ghalldev-30.md": {
-	id: "building-ghalldev-30.md";
-  slug: "building-ghalldev-30";
+"2022/creating-a-dating-profile-with-ai.md": {
+	id: "2022/creating-a-dating-profile-with-ai.md";
+  slug: "2022/creating-a-dating-profile-with-ai";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"coding-with-depression.md": {
-	id: "coding-with-depression.md";
-  slug: "coding-with-depression";
+"2022/getting-out-of-your-comfort-zone.md": {
+	id: "2022/getting-out-of-your-comfort-zone.md";
+  slug: "2022/getting-out-of-your-comfort-zone";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"creating-a-dating-profile-with-ai.md": {
-	id: "creating-a-dating-profile-with-ai.md";
-  slug: "creating-a-dating-profile-with-ai";
+"2022/ileopard-a-retrospective.md": {
+	id: "2022/ileopard-a-retrospective.md";
+  slug: "2022/ileopard-a-retrospective";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"default-apps-2023.md": {
-	id: "default-apps-2023.md";
-  slug: "default-apps-2023";
+"2022/my-favorite-little-apps.md": {
+	id: "2022/my-favorite-little-apps.md";
+  slug: "2022/my-favorite-little-apps";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"finding-home-in-hyrule.md": {
-	id: "finding-home-in-hyrule.md";
-  slug: "finding-home-in-hyrule";
+"2022/my-macos-home-directory-overview.md": {
+	id: "2022/my-macos-home-directory-overview.md";
+  slug: "2022/my-macos-home-directory-overview";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"getting-out-of-your-comfort-zone.md": {
-	id: "getting-out-of-your-comfort-zone.md";
-  slug: "getting-out-of-your-comfort-zone";
+"2022/my-top-3-games-of-2022.md": {
+	id: "2022/my-top-3-games-of-2022.md";
+  slug: "2022/my-top-3-games-of-2022";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"handheld-gaming.md": {
-	id: "handheld-gaming.md";
-  slug: "handheld-gaming";
+"2022/nextjs-13-and-exploring-new-technologies.md": {
+	id: "2022/nextjs-13-and-exploring-new-technologies.md";
+  slug: "2022/nextjs-13-and-exploring-new-technologies";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"ileopard-a-retrospective.md": {
-	id: "ileopard-a-retrospective.md";
-  slug: "ileopard-a-retrospective";
+"2022/on-text-editors.md": {
+	id: "2022/on-text-editors.md";
+  slug: "2022/on-text-editors";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"journal-app-impressions.md": {
-	id: "journal-app-impressions.md";
-  slug: "journal-app-impressions";
+"2023/an-update-on-my-ai-dating-profile.md": {
+	id: "2023/an-update-on-my-ai-dating-profile.md";
+  slug: "2023/an-update-on-my-ai-dating-profile";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"my-backup-solution.md": {
-	id: "my-backup-solution.md";
-  slug: "my-backup-solution";
+"2023/baldurs-gate-3-feels.md": {
+	id: "2023/baldurs-gate-3-feels.md";
+  slug: "2023/baldurs-gate-3-feels";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"my-favorite-little-apps-part-2.md": {
-	id: "my-favorite-little-apps-part-2.md";
-  slug: "my-favorite-little-apps-part-2";
+"2023/default-apps-2023.md": {
+	id: "2023/default-apps-2023.md";
+  slug: "2023/default-apps-2023";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"my-favorite-little-apps.md": {
-	id: "my-favorite-little-apps.md";
-  slug: "my-favorite-little-apps";
+"2023/finding-home-in-hyrule.md": {
+	id: "2023/finding-home-in-hyrule.md";
+  slug: "2023/finding-home-in-hyrule";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"my-gunpla-adventure.md": {
-	id: "my-gunpla-adventure.md";
-  slug: "my-gunpla-adventure";
+"2023/handheld-gaming.md": {
+	id: "2023/handheld-gaming.md";
+  slug: "2023/handheld-gaming";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"my-macos-home-directory-overview.md": {
-	id: "my-macos-home-directory-overview.md";
-  slug: "my-macos-home-directory-overview";
+"2023/journal-app-impressions.md": {
+	id: "2023/journal-app-impressions.md";
+  slug: "2023/journal-app-impressions";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"my-top-3-games-of-2022.md": {
-	id: "my-top-3-games-of-2022.md";
-  slug: "my-top-3-games-of-2022";
+"2023/my-favorite-little-apps-part-2.md": {
+	id: "2023/my-favorite-little-apps-part-2.md";
+  slug: "2023/my-favorite-little-apps-part-2";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"nextjs-13-and-exploring-new-technologies.md": {
-	id: "nextjs-13-and-exploring-new-technologies.md";
-  slug: "nextjs-13-and-exploring-new-technologies";
+"2023/my-gunpla-adventure.md": {
+	id: "2023/my-gunpla-adventure.md";
+  slug: "2023/my-gunpla-adventure";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"nostalgia.md": {
-	id: "nostalgia.md";
-  slug: "nostalgia";
+"2023/nostalgia.md": {
+	id: "2023/nostalgia.md";
+  slug: "2023/nostalgia";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"on-text-editors.md": {
-	id: "on-text-editors.md";
-  slug: "on-text-editors";
+"2023/on-using-chat-gpt.md": {
+	id: "2023/on-using-chat-gpt.md";
+  slug: "2023/on-using-chat-gpt";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"on-using-chat-gpt.md": {
-	id: "on-using-chat-gpt.md";
-  slug: "on-using-chat-gpt";
+"2023/questlogger-from-ios-to-mac.md": {
+	id: "2023/questlogger-from-ios-to-mac.md";
+  slug: "2023/questlogger-from-ios-to-mac";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"questlogger-from-ios-to-mac.md": {
-	id: "questlogger-from-ios-to-mac.md";
-  slug: "questlogger-from-ios-to-mac";
+"2023/reflecting-on-building-my-first-app.md": {
+	id: "2023/reflecting-on-building-my-first-app.md";
+  slug: "2023/reflecting-on-building-my-first-app";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"reflecting-on-building-my-first-app.md": {
-	id: "reflecting-on-building-my-first-app.md";
-  slug: "reflecting-on-building-my-first-app";
+"2023/reflecting-on-my-first-year-as-a-developer.md": {
+	id: "2023/reflecting-on-my-first-year-as-a-developer.md";
+  slug: "2023/reflecting-on-my-first-year-as-a-developer";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"reflecting-on-my-first-year-as-a-developer.md": {
-	id: "reflecting-on-my-first-year-as-a-developer.md";
-  slug: "reflecting-on-my-first-year-as-a-developer";
+"2023/thoughs-on-macos.md": {
+	id: "2023/thoughs-on-macos.md";
+  slug: "2023/thoughs-on-macos";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"thoughs-on-macos.md": {
-	id: "thoughs-on-macos.md";
-  slug: "thoughs-on-macos";
+"2023/using-json-for-data-storage.md": {
+	id: "2023/using-json-for-data-storage.md";
+  slug: "2023/using-json-for-data-storage";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"using-json-for-data-storage.md": {
-	id: "using-json-for-data-storage.md";
-  slug: "using-json-for-data-storage";
+"2023/using-tailwind-with-mui-base.md": {
+	id: "2023/using-tailwind-with-mui-base.md";
+  slug: "2023/using-tailwind-with-mui-base";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
-"using-tailwind-with-mui-base.md": {
-	id: "using-tailwind-with-mui-base.md";
-  slug: "using-tailwind-with-mui-base";
+"2024/my-backup-solution.md": {
+	id: "2024/my-backup-solution.md";
+  slug: "2024/my-backup-solution";
   body: string;
   collection: "blog";
   data: InferEntrySchema<"blog">

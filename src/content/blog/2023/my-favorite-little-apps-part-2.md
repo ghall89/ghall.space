@@ -4,7 +4,7 @@ pubDate: '2023-01-21'
 tags: ['MacOS', 'Apps']
 ---
 
-A few months ago, I wrote about [my favorite little Mac apps](/posts/my-favorite-little-apps). This post was originally published on my portfolio blog (which I have since merged with this one), so it had more of a focus on web development and productivity, so I wanted to write up a part 2 with more general-use apps I use frequently.
+A few months ago, I wrote about [my favorite little Mac apps](/posts/2022/my-favorite-little-apps). This post was originally published on my portfolio blog (which I have since merged with this one), so it had more of a focus on web development and productivity, so I wanted to write up a part 2 with more general-use apps I use frequently.
 
 ### Vinegar
 

@@ -4,7 +4,7 @@ pubDate: '11/25/23'
 tags: ['Apps', 'Tech']
 ---
 
-Inspired by [this post](https://chriscoyier.net/2023/11/25/default-apps-2023/) from Chris Coyier (which was in turn inpsired by [this post](https://mattcool.tech/posts/default-apps-2023/)).
+Inspired by [this post](https://chriscoyier.net/2023/11/25/default-apps-2023/) from Chris Coyier (which was in turn inpsired by [this post](https://mattcool.tech/posts/default-apps-2023)).
 
 I changed up some of the categories to avoid any entries with "none" or "N/A".
 
