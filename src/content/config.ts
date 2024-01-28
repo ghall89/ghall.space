@@ -7,6 +7,7 @@ const blogCollection = defineCollection({
 		tags: z.array(
 			z.enum([
 				'Apps',
+				'Digital Life',
 				'Gaming',
 				'Learning',
 				'Life',

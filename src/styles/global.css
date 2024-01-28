@@ -115,7 +115,7 @@ pre code,
 code {
 	color: var(--orange);
 	font-family: 'JetBrainsMono', monospace;
-	font-size: 1rem;
+	font-size: 0.9rem;
 	padding: 2px 4px;
 	border-radius: var(--radius);
 	background: rgba(155, 155, 155, 0.2);

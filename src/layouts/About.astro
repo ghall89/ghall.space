@@ -1,19 +1,19 @@
 ---
 export const prerender = true;
 import Layout from '@layouts/Layout.astro';
-
-const styles = {
-	img: {
-		display: 'block',
-		maxWidth: '300px',
-		margin: 'auto',
-		marginBottom: '26px',
-		borderRadius: '200px',
-	},
-};
 ---
 
 <Layout title="About">
-	<img src="/portrait.jpg" alt="me" style={styles.img} />
+	<img src="/portrait.jpg" alt="me" class="portrait" />
 	<slot />
 </Layout>
+
+<style>
+	.portrait {
+		display: block;
+		max-width: 300px;
+		margin: auto;
+		margin-bottom: 26px;
+		border-radius: 200px;
+	}
+</style>
