@@ -271,3 +271,21 @@ dialog {
 svg {
 	color: var(--text);
 }
+
+/* Not By AI badge */
+
+.not-by-ai {
+	display: block;
+	width: 134px;
+	height: 45px;
+	background-image: url(Written-By-Human-Not-By-AI-Badge-white.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	/* border: 1px solid red; */
+}
+
+@media (prefers-color-scheme: dark) {
+	.not-by-ai {
+		background-image: url(Written-By-Human-Not-By-AI-Badge-black.svg);
+	}
+}
