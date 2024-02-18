@@ -381,6 +381,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2024/ramblings-on-the-macintosh.md": {
+	id: "2024/ramblings-on-the-macintosh.md";
+  slug: "2024/ramblings-on-the-macintosh";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
