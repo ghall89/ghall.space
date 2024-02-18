@@ -16,7 +16,7 @@ I don't actually remember what model we had at home at the time, it looked like 
 
 I remember it had an earlier version of System 7 (what I consider to be the quintissential "Classic Mac OS") so it was missing some small features that were on the newer university computers. A couple of those features that come to mind are the Control Strip, and the more 3D-esque UI style, both introduced in later version of System 7. I discovered that these features were merely system extensions so I resolved to copy those extensions onto a floppy disk, copy them into the Extensions folder on our Mac at home, and cross my fingers. To my shock and awe, it worked, and that's where my love for tinkering with computers blossomed.
 
-Not too long after I discovered the application ResEdit which could have been dangerous but thankfully I was usually smart enough to make duplicates of anything before modifying them (guess I was born with good data hygene) and lucky enough to not trash any crucial system files.
+Not too long after, I discovered the application ResEdit, which could have been dangerous, but thankfully I was usually smart enough to make duplicates of anything before modifying them (guess I was born with good data hygene) and lucky enough to not trash any crucial system files.
 
 Later, in middle school and high school, I started making real simple websites, set up a forum (remember those?!), and learned some rudimentary C, tried (and failed) to learn Objective C. In addition, the Unix underpinnings of Mac OS X introduced me to tinkering via the command line.
 
