@@ -2,8 +2,17 @@
 import BlogHeader from '@components/BlogHeader.astro';
 import Tags from '@components/Tags.astro';
 
+interface Post {
+	data: {
+		title: string;
+		pubDate: Date;
+		tags: string[];
+	};
+	slug: string;
+}
+
 interface Props {
-	post: Object;
+	post: Post;
 }
 
 const { post } = Astro.props;
