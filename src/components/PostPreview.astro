@@ -1,4 +1,6 @@
 ---
+import { Tag } from 'src/content/config';
+
 import BlogHeader from '@components/BlogHeader.astro';
 import Tags from '@components/Tags.astro';
 
@@ -6,7 +8,7 @@ interface Post {
 	data: {
 		title: string;
 		pubDate: Date;
-		tags: string[];
+		tags: Tag[];
 	};
 	slug: string;
 }

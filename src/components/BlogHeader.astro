@@ -15,8 +15,6 @@ const { title, date, slug } = Astro.props;
 		{slug ? <a href={`/posts/${slug}`}>{title}</a> : title}
 	</h2>
 	<h3>
-		<!-- <img class="svg-icon" src={calendarIcon} alt="" /> -->
-
 		🗓️ <FormattedDate date={date} />
 	</h3>
 </div>

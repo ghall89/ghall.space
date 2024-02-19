@@ -1,19 +1,25 @@
 ---
 import { getCollection } from 'astro:content';
+import { Tag as TagEnum } from '../../content/config';
 
 import Layout from '@layouts/Layout.astro';
 import FormattedDate from '@components/FormattedDate.astro';
 
-const { tag } = Astro.params;
+const { tag }: { tag?: TagEnum } = Astro.params;
 
-const page = Number.parseInt(Astro.url.searchParams.get('page'));
+const page = Number.parseInt(Astro.url.searchParams.get('page') || '1');
 const prevPage = page - 1;
 const nextPage = page + 1;
 
 const posts = await getCollection('blog', ({ data }) => {
-	if (tag === 'all') {
+	if (!tag) {
+		return false;
+	}
+
+	if (tag === TagEnum.all) {
 		return true;
 	}
+
 	return data.tags.includes(tag);
 });
 
