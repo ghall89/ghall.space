@@ -1,10 +1,7 @@
 ---
-const { pathname } = Astro.url;
+import type { NavLink } from 'src/types';
 
-type NavLink = {
-	label: string;
-	path: string;
-};
+const { pathname } = Astro.url;
 
 const navLinks: NavLink[] = [
 	{ label: '📝 Blog', path: '/' },
