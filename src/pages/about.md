@@ -1,6 +1,6 @@
 ---
 layout: ../layouts/About.astro
-title: Page Not Found
+title: About Me
 ---
 
 My name is **Graham**, a web developer from Rhode Island.
