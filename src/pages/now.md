@@ -5,12 +5,12 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: February 24, 2024_
+_Last updated: February 25, 2024_
 
 ## 🔨 Making
 
 - This blog!
-- KeyStash (Coming Soon!) - A [Mac-assed Mac app](https://daringfireball.net/linked/2020/03/20/mac-assed-mac-apps) for managing registration codes for your apps, modelled on the feature from 1Password.
+- [KeyStash](https://github.com/ghall89/KeyStash) - A [Mac-assed Mac app](https://daringfireball.net/linked/2020/03/20/mac-assed-mac-apps) for managing registration codes for your apps, modelled on the feature from 1Password.
 
 ## 🎧 Listening
 
