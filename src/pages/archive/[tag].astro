@@ -1,9 +1,9 @@
 ---
+import { format, add } from 'date-fns';
 import { getCollection } from 'astro:content';
 import { Tag as TagEnum } from '../../types';
 
 import Layout from '@layouts/Layout.astro';
-import FormattedDate from '@components/FormattedDate.astro';
 
 const { tag }: { tag?: TagEnum } = Astro.params;
 
@@ -45,7 +45,9 @@ const displayPosts = posts.slice(start, end);
 		displayPosts.map(({ slug, data }) => (
 			<div class="archive-post">
 				<a href={`/posts/${slug}`}>{data.title}</a>
-				<FormattedDate date={data.pubDate} />
+				<span>
+					{format(add(new Date(data.pubDate), { hours: 6 }), 'MMM do, y')}
+				</span>
 			</div>
 		))
 	}
