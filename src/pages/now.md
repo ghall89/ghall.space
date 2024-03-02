@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: February 25, 2024_
+_Last updated: February 28, 2024_
 
 ## 🔨 Making
 
@@ -28,3 +28,13 @@ _Last updated: February 25, 2024_
 ## 📺 Watching
 
 - Nothing at the moment...
+
+## 💻 Using
+
+- MacBook Air M2 - Midnight
+  - 24GB RAM
+  - 512GB SSD
+- LG UltraFine 27"
+- Nuphy Air75 v2
+  - With retro Mac-style keycaps
+- Apple Magic Trackpad/Logitech A72 (depending on my mood)

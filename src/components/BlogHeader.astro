@@ -1,5 +1,6 @@
 ---
-import FormattedDate from '@components/FormattedDate.astro';
+import { format, add } from 'date-fns';
+import { Icon } from 'astro-icon/components';
 
 interface Props {
 	title: String;
@@ -15,18 +16,12 @@ const { title, date, slug } = Astro.props;
 		{slug ? <a href={`/posts/${slug}`}>{title}</a> : title}
 	</h2>
 	<h3>
-		🗓️ <FormattedDate date={date} />
+		<Icon size={24} class="calendar-icon" name="calendar" />
+		<span>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</span>
 	</h3>
 </div>
 
 <style>
-	a {
-		text-decoration: none;
-	}
-	a:hover {
-		text-decoration: none;
-	}
-
 	h2,
 	h2 a {
 		font-size: 1.4rem;
@@ -36,6 +31,7 @@ const { title, date, slug } = Astro.props;
 		display: flex;
 		align-items: center;
 		gap: 6px;
-		font-size: 0.9rem;
+		font-weight: lighter;
+		font-size: 0.3em;
 	}
 </style>

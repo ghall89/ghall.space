@@ -3,7 +3,6 @@
 	"compilerOptions": {
 		"baseUrl": ".",
 		"strictNullChecks": true,
-		"strict": true,
 		"paths": {
 			"@components/*": ["src/components/*"],
 			"@layouts/*": ["src/layouts/*"],

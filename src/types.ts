@@ -1,6 +1,7 @@
 // navigation links
 export type NavLink = {
 	label: string;
+	icon: string;
 	path: string;
 };
 

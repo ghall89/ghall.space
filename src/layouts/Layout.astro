@@ -6,11 +6,12 @@ import Footer from '@components/Footer.astro';
 
 export interface Props {
 	title: string;
+	frontmatter?: {
+		title: string;
+	};
 }
 
-const title = Astro.props.title || Astro.props.frontmatter.title;
-
-console.log(Astro.props);
+const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
 ---
 
 <!DOCTYPE html>

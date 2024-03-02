@@ -1,8 +1,7 @@
 @font-face {
 	font-family: CrimsonText;
-	src: url(./fonts/CrimsonText-Regular.ttf) format('truetype');
+	src: url(./fonts/Poppins-Regular.ttf) format('truetype');
 	font-style: normal;
-	font-display: block;
 }
 
 @font-face {
@@ -37,9 +36,13 @@
 * {
 	/* font-family: 'CrimsonText', serif; */
 	font-family: 'CrimsonText', serif;
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color: var(--text);
 	letter-spacing: 0.03rem;
+}
+
+html {
+	color-scheme: dark light;
 }
 
 body {
@@ -79,7 +82,7 @@ blockquote {
 }
 
 hr {
-	border-top: 1px solid var(--text);
+	border-top: 1px solid var(--border);
 	margin: 2rem 0;
 }
 
@@ -102,8 +105,7 @@ sup > a {
 
 a {
 	color: var(--blue);
-	text-decoration: underline;
-	text-decoration-style: dotted;
+	text-decoration: none;
 }
 
 a:hover {
@@ -263,11 +265,6 @@ dialog {
 	margin: 0 0 1.5rem 0;
 }
 
-.post-preview:not(:last-of-type) {
-	border-bottom: var(--border);
-	margin: 0;
-}
-
 svg {
 	color: var(--text);
 }
@@ -278,7 +275,7 @@ svg {
 	display: block;
 	width: 134px;
 	height: 45px;
-	background-image: url(Written-By-Human-Not-By-AI-Badge-white.svg);
+	background-image: url(svg/Written-By-Human-Not-By-AI-Badge-white.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	/* border: 1px solid red; */
@@ -286,6 +283,6 @@ svg {
 
 @media (prefers-color-scheme: dark) {
 	.not-by-ai {
-		background-image: url(Written-By-Human-Not-By-AI-Badge-black.svg);
+		background-image: url(svg/Written-By-Human-Not-By-AI-Badge-black.svg);
 	}
 }

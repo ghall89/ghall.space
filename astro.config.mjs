@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
 import netlify from '@astrojs/netlify';
+import icon from 'astro-icon';
 
 // https://astro.build/config
 import mdx from '@astrojs/mdx';
@@ -8,5 +9,10 @@ import mdx from '@astrojs/mdx';
 export default defineConfig({
 	output: 'server',
 	adapter: netlify(),
-	integrations: [mdx()],
+	integrations: [
+		mdx(),
+		icon({
+			iconDir: 'src/styles/svg/icons',
+		}),
+	],
 });

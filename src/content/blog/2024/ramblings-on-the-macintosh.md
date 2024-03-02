@@ -1,7 +1,7 @@
 ---
 title: 'Ramblings On The Macintosh'
 pubDate: '2/18/24'
-tags: ['Life', 'MacOS', 'Tech']
+tags: [Life, MacOS, Tech]
 ---
 
 2024 marks the 40th anniversary of the Macintosh. You've probably heard this a million times already this year, I'm pretty late to the party for writing a Macintosh retrospective, but I wanted to write this post anyway because of how important the Mac is to me. I might not be where I am today, especially not career-wise, if it weren't for the Macintosh.

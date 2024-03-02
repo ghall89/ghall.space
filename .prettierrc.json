@@ -1,5 +1,5 @@
 {
-	"plugins": ["./node_modules/prettier-plugin-astro"],
+	"plugins": ["prettier-plugin-astro"],
 	"trailingComma": "es5",
 	"tabWidth": 2,
 	"useTabs": true,
