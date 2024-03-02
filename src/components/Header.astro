@@ -72,15 +72,19 @@ const navLinks: NavLink[] = [
 
 	nav ul li a {
 		position: relative;
-		font-size: 1.2rem;
 		display: flex;
 		gap: 0.5rem;
 		align-items: center;
 		text-decoration: none;
 	}
 
+	nav ul li a span {
+		font-size: 1.2rem;
+	}
+
 	nav ul li a::before {
 		content: '•';
+		font-size: 1.6rem;
 		position: absolute;
 		left: -12px;
 		color: var(--blue);

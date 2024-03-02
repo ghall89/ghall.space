@@ -5,6 +5,12 @@
 }
 
 @font-face {
+	font-family: Oswald;
+	src: url(./fonts/Oswald-VariableFont_wght.ttf) format('truetype');
+	font-style: normal;
+}
+
+@font-face {
 	font-family: JetBrainsMono;
 	src: url(./fonts/JetBrainsMono-VariableFont_wght.ttf) format('truetype');
 	font-style: normal;
@@ -34,9 +40,8 @@
 }
 
 * {
-	/* font-family: 'CrimsonText', serif; */
-	font-family: 'CrimsonText', serif;
-	font-size: 1.1rem;
+	font-family: 'CrimsonText', sans-serif;
+	font-size: 1rem;
 	color: var(--text);
 	letter-spacing: 0.03rem;
 }
@@ -67,7 +72,8 @@ h1,
 h2,
 h3,
 h4 {
-	font-weight: bold;
+	font-family: Oswald, sans-serif;
+	font-weight: 400;
 }
 
 p {
@@ -261,8 +267,7 @@ dialog {
 }
 
 .post-preview {
-	padding: 0.1rem 0rem 2rem;
-	margin: 0 0 1.5rem 0;
+	padding: 0.1rem 0rem 1rem;
 }
 
 svg {
