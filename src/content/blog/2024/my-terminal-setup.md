@@ -20,7 +20,7 @@ Finally, I use [Homebrew](https://brew.sh) for my package manager. That seems to
 
 Using ohmyzsh opens the door for a lot of easy customization. One of the other tools I use is [Powerlevel10k](https://github.com/romkatv/powerlevel10k), which can be used with or without ohmyzsh. This allows you to create a theme by mixing and matching several preset options. I went with a pretty barebones, minimal look, but you don't have to go that route.
 
-For plugins, I use [zsh-autocomplete](), which is basically a search function and autocompletion for terminal commands. I also use [zsh-syntax-highlighting](), which not only adds a bit of color, but can be useful as well because it will color code valid commands in green and invalid ones in red.
+For plugins, I use [zsh-autocomplete](https://github.com/marlonrichert/zsh-autocomplete), which is basically a search function and autocompletion for terminal commands. I also use [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting), which not only adds a bit of color, but can be useful as well because it will color code valid commands in green and invalid ones in red.
 
 ### Useful Tools
 
@@ -42,7 +42,7 @@ Even with all my autocomplete and syntax highlighting shenanigans, I still somet
 
 **yt-dlp**
 
-I don't always have to download YouTube videos, but when I do, I use yt-dlp. It makes it pretty simple to download videos, and it's feels a lot less sketchy than using one of those YouTube downloader websites. Shameless plug, I also [built a GUI front end for it]().
+I don't always have to download YouTube videos, but when I do, I use yt-dlp. It makes it pretty simple to download videos, and it's feels a lot less sketchy than using one of those YouTube downloader websites. Shameless plug, I also [built a GUI front end for it](https://github.com/ghall89/Siphon).
 
 **zoxide**
 
