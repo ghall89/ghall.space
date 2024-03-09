@@ -5,6 +5,7 @@ module.exports = {
 		'prettier',
 		'plugin:prettier/recommended',
 		'plugin:astro/recommended',
+		'plugin:@typescript-eslint/recommended',
 	],
 	plugins: ['prettier'],
 	overrides: [],
