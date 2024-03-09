@@ -10,7 +10,7 @@ One of the things I enjoy about the terminal is how customizable it is. If you'r
 
 ### The Basics
 
-To start off, let's look at the basic setup. Though macOS comes with the built-in Terminal.app I mentioned earlier, I prefer to use an app called iTerm 2(https://iterm2.com). There are a lot of alternative terminal emulators out there, and I've tried most of them, but I keep coming back to iTerm because it just feels at home on the Mac in the way Warp, Alacritty, and the like, just don't.
+To start off, let's look at the basic setup. Though macOS comes with the built-in Terminal.app I mentioned earlier, I prefer to use an app called [iTerm 2](https://iterm2.com). There are a lot of alternative terminal emulators out there, and I've tried most of them, but I keep coming back to iTerm because it just feels at home on the Mac in the way Warp, Alacritty, and the like, just don't.
 
 For the shell itself, I use ZSH, which is what ships by default on Mac. I'll admit I'm not sure what the pros and cons are versus something like Bash, but it works for me. I also use [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) for an extra level of customization.
 
