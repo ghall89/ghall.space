@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: February 28, 2024_
+_Last updated: March 25, 2024_
 
 ## 🔨 Making
 
@@ -21,13 +21,13 @@ _Last updated: February 28, 2024_
 
 ## 🎮 Playing
 
-- [Persona 3 Reload](https://thegamesdb.net/game.php?id=118048)
+- [Final Fantasy VII Rebirth](https://thegamesdb.net/game.php?id=103619)
+- [Balatro](https://thegamesdb.net/game.php?id=124558)
 - [Fortnite](https://thegamesdb.net/game.php?id=84367)
-- [Super Mario Wonder](https://thegamesdb.net/game.php?id=115948)
 
 ## 📺 Watching
 
-- Nothing at the moment...
+- Too many [Action Retro](https://www.youtube.com/@ActionRetro) videos
 
 ## 💻 Using
 
