@@ -10,7 +10,8 @@ export async function get(context) {
 		title: 'ghall.blog',
 		description:
 			'My personal blog about life, gaming, tech, and whatever else I feel like writing about.',
-		site: 'https://ghall.blog',
+		site: context.site,
+		trailingSlash: false,
 		items: blog
 			.sort((a, b) => Date.parse(b.data.pubDate) - Date.parse(a.data.pubDate))
 			.map((post) => ({

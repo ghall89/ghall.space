@@ -7,7 +7,8 @@ import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-	output: 'server',
+	site: 'https://ghall.blog',
+	output: 'hybrid',
 	adapter: netlify(),
 	integrations: [
 		mdx(),
