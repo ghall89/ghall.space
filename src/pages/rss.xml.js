@@ -18,6 +18,7 @@ export async function get(context) {
 				title: post.data.title,
 				pubDate: post.data.pubDate,
 				link: `/posts/${post.slug}`,
+				categories: post.data.tags,
 				content: sanitizeHtml(parser.render(post.body)),
 			})),
 	});
