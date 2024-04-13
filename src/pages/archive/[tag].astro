@@ -5,6 +5,8 @@ import { Tag as TagEnum } from '../../types';
 
 import Layout from '@layouts/Layout.astro';
 
+export const prerender = false;
+
 const { tag }: { tag?: TagEnum } = Astro.params;
 
 const page = Number.parseInt(Astro.url.searchParams.get('page') || '1');
