@@ -5,12 +5,12 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: March 25, 2024_
+_Last updated: April 28, 2024_
 
 ## 🔨 Making
 
 - This blog!
-- [KeyStash](https://github.com/ghall89/KeyStash) - A [Mac-assed Mac app](https://daringfireball.net/linked/2020/03/20/mac-assed-mac-apps) for managing registration codes for your apps, modelled on the feature from 1Password.
+- [KeyStash](https://github.com/ghall89/KeyStash) - A native Mac app for managing registration codes for your apps, modelled on the feature from 1Password.
 
 ## 🎧 Listening
 
@@ -21,13 +21,13 @@ _Last updated: March 25, 2024_
 
 ## 🎮 Playing
 
-- [Final Fantasy VII Rebirth](https://thegamesdb.net/game.php?id=103619)
-- [Balatro](https://thegamesdb.net/game.php?id=124558)
+- [Persona 3 Reload](https://thegamesdb.net/game.php?id=118048)
+- [Harvestella](https://thegamesdb.net/game.php?id=103965)
 - [Fortnite](https://thegamesdb.net/game.php?id=84367)
 
 ## 📺 Watching
 
-- Too many [Action Retro](https://www.youtube.com/@ActionRetro) videos
+- [Fallout](https://www.themoviedb.org/tv/106379-fallout?language=en-US)
 
 ## 💻 Using
 
