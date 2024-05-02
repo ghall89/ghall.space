@@ -416,6 +416,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"2024/rip-homepod-mini.md": {
+	id: "2024/rip-homepod-mini.md";
+  slug: "2024/rip-homepod-mini";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
