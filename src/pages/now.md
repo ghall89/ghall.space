@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: April 28, 2024_
+_Last updated: May 26, 2024_
 
 ## 🔨 Making
 
@@ -15,7 +15,7 @@ _Last updated: April 28, 2024_
 ## 🎧 Listening
 
 - [Paramore](https://music.apple.com/us/artist/paramore/75950796)
-- [Taylor Swift](https://music.apple.com/us/artist/taylor-swift/159260351)
+- [Celestial Aeon Project](https://music.apple.com/us/artist/celestial-aeon-project/421358076)
 - [Eric W Brown](https://music.apple.com/us/artist/eric-w-brown/1503483546)
 - [They Might Be Giants](https://music.apple.com/us/artist/they-might-be-giants/149020)
 
@@ -27,7 +27,8 @@ _Last updated: April 28, 2024_
 
 ## 📺 Watching
 
-- [Fallout](https://www.themoviedb.org/tv/106379-fallout?language=en-US)
+- [The Big Door Prize](https://www.themoviedb.org/tv/194704-the-big-door-prize)
+- [Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who)
 
 ## 💻 Using
 
