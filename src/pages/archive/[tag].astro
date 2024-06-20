@@ -9,10 +9,6 @@ export const prerender = false;
 
 const { tag }: { tag?: TagEnum } = Astro.params;
 
-const page = Number.parseInt(Astro.url.searchParams.get('page') || '1');
-const prevPage = page - 1;
-const nextPage = page + 1;
-
 const posts = await getCollection('blog', ({ data }) => {
 	if (!tag) {
 		return false;
@@ -33,18 +29,11 @@ posts.sort(
 	(a, b) =>
 		Date.parse(String(b.data.pubDate)) - Date.parse(String(a.data.pubDate))
 );
-
-const totalPosts = posts.length;
-
-const start = (page - 1) * 10;
-const end = page * 10;
-
-const displayPosts = posts.slice(start, end);
 ---
 
 <Layout title="Blog Archive">
 	{
-		displayPosts.map(({ slug, data }) => (
+		posts.map(({ slug, data }) => (
 			<div class="archive-post">
 				<a href={`/posts/${slug}`}>{data.title}</a>
 				<span>
@@ -53,14 +42,6 @@ const displayPosts = posts.slice(start, end);
 			</div>
 		))
 	}
-	<div class="navigation">
-		<div>
-			{page === 1 ? null : <a href={`?page=${prevPage}`}>← Previous</a>}
-		</div>
-		<div>
-			{end >= totalPosts ? null : <a href={`?page=${nextPage}`}>Next →</a>}
-		</div>
-	</div>
 </Layout>
 
 <style>
