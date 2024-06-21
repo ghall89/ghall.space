@@ -1,20 +1,19 @@
 ---
 import { format, add } from 'date-fns';
 import { getCollection } from 'astro:content';
-import { Tag as TagEnum } from '../../types';
 
 import Layout from '@layouts/Layout.astro';
 
 export const prerender = false;
 
-const { tag }: { tag?: TagEnum } = Astro.params;
+const { tag }: { tag?: string } = Astro.params;
 
 const posts = await getCollection('blog', ({ data }) => {
 	if (!tag) {
 		return false;
 	}
 
-	if (tag === TagEnum.all) {
+	if (tag === 'all') {
 		return true;
 	}
 
