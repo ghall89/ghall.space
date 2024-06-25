@@ -1,5 +1,4 @@
 ---
-export const prerender = true;
 import { getCollection } from 'astro:content';
 
 import Layout from '@layouts/Layout.astro';
@@ -22,7 +21,7 @@ const posts = await getCollection('blog');
 	{
 		posts.length < 6 ? null : (
 			<div class="more-posts">
-				<a href="/archive/all?page=1">All Posts</a>
+				<a href="/archive/all">All Posts</a>
 			</div>
 		)
 	}
