@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: May 26, 2024_
+_Last updated: October 1, 2024_
 
 ## 🔨 Making
 
@@ -15,20 +15,18 @@ _Last updated: May 26, 2024_
 ## 🎧 Listening
 
 - [Paramore](https://music.apple.com/us/artist/paramore/75950796)
-- [Celestial Aeon Project](https://music.apple.com/us/artist/celestial-aeon-project/421358076)
-- [Eric W Brown](https://music.apple.com/us/artist/eric-w-brown/1503483546)
+- [Metric](https://music.apple.com/us/artist/metric/4125821)
 - [They Might Be Giants](https://music.apple.com/us/artist/they-might-be-giants/149020)
 
 ## 🎮 Playing
 
+- [The Legend of Zelda: Echoes of Wisdom](https://thegamesdb.net/game.php?id=127336)
 - [Persona 3 Reload](https://thegamesdb.net/game.php?id=118048)
-- [Harvestella](https://thegamesdb.net/game.php?id=103965)
 - [Fortnite](https://thegamesdb.net/game.php?id=84367)
 
 ## 📺 Watching
 
-- [The Big Door Prize](https://www.themoviedb.org/tv/194704-the-big-door-prize)
-- [Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who)
+- [Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster)
 
 ## 💻 Using
 
