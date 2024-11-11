@@ -20,7 +20,7 @@ _Last updated: October 1, 2024_
 
 ## 🎮 Playing
 
-- [The Legend of Zelda: Echoes of Wisdom](https://thegamesdb.net/game.php?id=127336)
+- [Assassin's Creed: The Rebel Collection](https://thegamesdb.net/game.php?id=67486)
 - [Persona 3 Reload](https://thegamesdb.net/game.php?id=118048)
 - [Fortnite](https://thegamesdb.net/game.php?id=84367)
 
