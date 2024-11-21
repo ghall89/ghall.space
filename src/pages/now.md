@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: October 1, 2024_
+_Last updated: November 21, 2024_
 
 ## 🔨 Making
 
@@ -20,8 +20,8 @@ _Last updated: October 1, 2024_
 
 ## 🎮 Playing
 
-- [Assassin's Creed: The Rebel Collection](https://thegamesdb.net/game.php?id=67486)
-- [Persona 3 Reload](https://thegamesdb.net/game.php?id=118048)
+- [Horizon: Zero Dawn Remastered](https://thegamesdb.net/game.php?id=114602)
+- [Paper Mario: The Thousand Year Door](https://thegamesdb.net/game.php?id=118815)
 - [Fortnite](https://thegamesdb.net/game.php?id=84367)
 
 ## 📺 Watching
