@@ -20,9 +20,9 @@ _Last updated: November 21, 2024_
 
 ## 🎮 Playing
 
-- [Horizon: Zero Dawn Remastered](https://thegamesdb.net/game.php?id=114602)
-- [Paper Mario: The Thousand Year Door](https://thegamesdb.net/game.php?id=118815)
-- [Fortnite](https://thegamesdb.net/game.php?id=84367)
+- [Dragon Age: The Veilguard](https://www.igdb.com/games/dragon-age-the-veilguard)
+- [Paper Mario: The Thousand Year Door](https://www.igdb.com/games/paper-mario-the-thousand-year-door--1)
+- [Fortnite](https://www.igdb.com/games/fortnite)
 
 ## 📺 Watching
 
