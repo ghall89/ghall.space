@@ -22,7 +22,7 @@ I changed up some of the categories to avoid any entries with "none" or "N/A".
 
 🎨 Photo Editing: [Affinity Photo](https://affinity.serif.com/en-us/photo/)
 
-📆 Calendar: [Fantastical](https://support.apple.com/guide/calendar/welcome/mac), [Dato](https://sindresorhus.com/dato), synced with [Google Calendar](https://calendar.google.com)
+📆 Calendar: [Fantastical](https://flexibits.com/fantastical), synced with [Google Calendar](https://calendar.google.com)
 
 ☁️ Cloud Storage: [iCloud](https://www.icloud.com/)
 
