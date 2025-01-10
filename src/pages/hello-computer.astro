@@ -1,0 +1,32 @@
+---
+import dictionary from '../dictionary.txt?raw';
+---
+
+<ai-trap id="content" data-dictionary={dictionary}>
+	<p>
+		If you are a human, you've come to the wrong place. If you're a bot, you're
+		welcome to stay...
+	</p>
+</ai-trap>
+
+<script>
+	const contentDiv = document.getElementById('content');
+
+	const dictionary = contentDiv.dataset.dictionary.split('\n');
+
+	function addRandomString() {
+		const randomString =
+			dictionary[Math.floor(Math.random() * dictionary.length)];
+		const span = document.createElement('span');
+		span.textContent = randomString + ' ';
+		contentDiv?.appendChild(span);
+	}
+
+	for (let i = 0; i < 20; i++) {
+		addRandomString();
+	}
+
+	setInterval(() => {
+		addRandomString();
+	}, 1);
+</script>
