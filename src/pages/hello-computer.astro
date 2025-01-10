@@ -12,14 +12,49 @@ import dictionary from '../dictionary.txt?raw';
 <script>
 	const contentDiv = document.getElementById('content');
 
+	let paragraph: HTMLParagraphElement;
+
+	function createParagraph() {
+		paragraph = document.createElement('p');
+		contentDiv.appendChild(paragraph);
+	}
+
+	createParagraph();
+
 	const dictionary = contentDiv.dataset.dictionary.split('\n');
 
+	let wordCounter = 0;
+	let sentenceCounter = 0;
+
 	function addRandomString() {
-		const randomString =
+		const startNewSentence =
+			Math.floor(Math.random() * wordCounter) >= 8 && wordCounter > 5;
+
+		if (startNewSentence) {
+			paragraph?.append('. ');
+			wordCounter = 0;
+			sentenceCounter += 1;
+
+			const startNewParagraph =
+				Math.floor(Math.random() * sentenceCounter) >= 3;
+
+			if (startNewParagraph) {
+				createParagraph();
+				sentenceCounter = 0;
+			}
+		}
+
+		let randomString =
 			dictionary[Math.floor(Math.random() * dictionary.length)];
-		const span = document.createElement('span');
-		span.textContent = randomString + ' ';
-		contentDiv?.appendChild(span);
+
+		if (wordCounter === 0) {
+			randomString = randomString[0].toUpperCase() + randomString.slice(1);
+		} else {
+			randomString = ' ' + randomString;
+		}
+
+		paragraph?.append(randomString);
+		wordCounter += 1;
 	}
 
 	for (let i = 0; i < 20; i++) {
