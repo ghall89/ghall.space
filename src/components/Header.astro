@@ -1,7 +1,4 @@
 ---
-import { Icon } from 'astro-icon/components';
-import type { NavLink } from 'src/types';
-
 const { pathname } = Astro.url;
 
 interface Props {}
@@ -22,94 +19,14 @@ const navLinks: NavLink[] = [
 <header>
 	<h1>ghall.blog</h1>
 	<nav>
-		<ul>
-			{
-				navLinks.map((link) => (
-					<li>
-						<a
-							class={pathname === link.path ? 'active-nav' : null}
-							href={link.path}
-						>
-							<Icon size={26} name={link.icon} />
-							<span>{link.label}</span>
-						</a>
-					</li>
-				))
-			}
-		</ul>
+		{
+			navLinks.map((link) => (
+				<li class={pathname === link.path ? 'selected' : null}>
+					<a href={link.path}>
+						<span>{link.label}</span>
+					</a>
+				</li>
+			))
+		}
 	</nav>
 </header>
-
-<style>
-	header {
-		margin: 0;
-		padding: 1.5rem 1rem;
-		max-width: 800px;
-		display: flex;
-		flex-direction: column;
-		margin: auto;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	h1 {
-		text-align: center;
-		font-size: 1.8rem;
-	}
-
-	.title {
-		text-decoration: none;
-	}
-
-	nav ul {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		gap: 1.5rem;
-		padding: 0;
-		margin: 0;
-	}
-
-	nav ul li {
-		height: 40px;
-		align-items: center;
-		margin: 0;
-	}
-
-	nav ul li a {
-		position: relative;
-		display: flex;
-		gap: 0.5rem;
-		align-items: center;
-		text-decoration: none;
-	}
-
-	nav ul li a span {
-		font-size: 1.2rem;
-	}
-
-	nav ul li a::before {
-		content: '•';
-		font-size: 1.6rem;
-		position: absolute;
-		left: -12px;
-		color: var(--blue);
-		opacity: 0;
-	}
-
-	nav ul li a:hover {
-		text-decoration: none;
-	}
-
-	nav ul li a:hover::before {
-		opacity: 0.6;
-	}
-
-	.active-nav::before {
-		opacity: 1;
-	}
-
-	nav ul li::before {
-		content: '';
-	}
-</style>

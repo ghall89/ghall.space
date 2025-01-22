@@ -1,34 +1,17 @@
 ---
-import { Tag } from 'src/types';
-
 interface Props {
-	tags: Tag[];
+	tags: string[];
 }
 
 const { tags } = Astro.props;
 ---
 
-<div class="tag-container">
+<span>
 	{
-		tags.sort().map((tag: Tag) => (
+		tags.sort().map((tag: string, index: number) => (
 			<a class="tag" href={`/archive/${tag}`}>
-				#{tag}
+				{`${tag}${index < tags.length - 1 ? ', ' : ''}`}
 			</a>
 		))
 	}
-</div>
-
-<style>
-	.tag-container {
-		margin: 10px 0;
-	}
-
-	.tag {
-		font-size: 1rem;
-		line-height: 2rem;
-	}
-
-	.tag:not(:last-child) {
-		margin-right: 6px;
-	}
-</style>
+</span>

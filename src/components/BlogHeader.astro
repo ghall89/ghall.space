@@ -1,6 +1,5 @@
 ---
 import { format, add } from 'date-fns';
-import { Icon } from 'astro-icon/components';
 
 interface Props {
 	title: String;
@@ -15,28 +14,7 @@ const { title, date, slug } = Astro.props;
 	<h2>
 		{slug ? <a href={`/posts/${slug}`}>{title}</a> : title}
 	</h2>
-	<div class="date">
-		<Icon size={24} class="calendar-icon" name="calendar" />
-		<span>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</span>
+	<div>
+		🗓️ <i>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</i>
 	</div>
 </div>
-
-<style>
-	h2,
-	h2 a {
-		font-size: 1.6rem;
-		font-family: Oswald, sans-serif;
-		margin-bottom: 0.5rem;
-	}
-
-	.date {
-		display: flex;
-		align-items: center;
-		gap: 6px;
-	}
-
-	.date span {
-		font-family: Oswald, sans-serif;
-		font-size: 1.1rem;
-	}
-</style>

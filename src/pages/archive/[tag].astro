@@ -47,42 +47,16 @@ posts.sort(
 ---
 
 <Layout title="Blog Archive">
-	{
-		posts.map(({ slug, data }) => (
-			<div class="archive-post">
-				<a href={`/posts/${slug}`}>{data.title}</a>
-				<span>
-					{format(add(new Date(data.pubDate), { hours: 6 }), 'MMM do, y')}
-				</span>
-			</div>
-		))
-	}
-</Layout>
-
-<style>
-	.archive-post {
-		display: flex;
-		justify-content: space-between;
-	}
-	.archive-post:not(:last-of-type) {
-		margin-bottom: 26px;
-	}
-	.archive-post a {
-		max-width: 400px;
-		font-weight: bold;
-	}
-
-	.navigation {
-		max-width: 400px;
-		margin: auto;
-		display: flex;
-		padding: 30px;
-		justify-content: space-between;
-	}
-
-	@media screen and (max-width: 800px) {
-		.archive-post {
-			flex-direction: column;
+	<ul>
+		{
+			posts.map(({ slug, data }) => (
+				<li>
+					<a href={`/posts/${slug}`}>{data.title}</a> -
+					<span>
+						{format(add(new Date(data.pubDate), { hours: 6 }), 'MMM do, y')}
+					</span>
+				</li>
+			))
 		}
-	}
-</style>
+	</ul>
+</Layout>

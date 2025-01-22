@@ -30,21 +30,3 @@ const { Content } = await post.render();
 	</a>
 	<Tags tags={data.tags} />
 </Layout>
-
-<style is:global>
-	article img {
-		border-radius: var(--radius);
-		box-shadow: var(--shadow);
-		display: block;
-		margin: auto;
-	}
-	.no-shadow {
-		box-shadow: none;
-	}
-	.footnotes {
-		font-size: 0.8rem;
-	}
-	.footnotes p {
-		display: inline;
-	}
-</style>

@@ -16,7 +16,7 @@ import dictionary from '../dictionary.txt?raw';
 
 	function createParagraph() {
 		paragraph = document.createElement('p');
-		contentDiv.appendChild(paragraph);
+		contentDiv?.appendChild(paragraph);
 	}
 
 	createParagraph();
@@ -65,9 +65,3 @@ import dictionary from '../dictionary.txt?raw';
 		addRandomString();
 	}, 1);
 </script>
-
-<style>
-	ai-trap {
-		font-family: sans-serif;
-	}
-</style>

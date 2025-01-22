@@ -3,7 +3,7 @@ layout: ../layouts/About.astro
 title: About Me
 ---
 
-My name is **Graham**, a web developer from Rhode Island.
+My name is **Graham**, a full-stack web developer.
 
 When I'm not writing code, I'm usually enjoying one of my other hobbies; video games, board games, music, hiking, photography, art, the list goes on...
 

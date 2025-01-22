@@ -1,6 +1,6 @@
 ---
 import '@styles/global.css';
-import { ViewTransitions } from 'astro:transitions';
+import { ClientRouter } from 'astro:transitions';
 
 import Header from '@components/Header.astro';
 import Footer from '@components/Footer.astro';
@@ -15,33 +15,30 @@ export interface Props {
 const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" transition:animate="none">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="robots" content="noindex" />
-		<meta
+		<meta name="robots" content="noindex" /><meta
 			name="description"
 			content="My personal blog about life, gaming, tech, and whatever else I feel like writing about."
-		/>
-
-		<link
+		/><link
 			rel="alternate"
 			type="application/rss+xml"
 			title="ghall.blog - RSS"
 			href={`${Astro.site}rss.xml`}
-		/>
-		<title>{`ghall.blog - ${title}`}</title>
-		<ViewTransitions />
-	</head>
-	<body class="container">
+		/><title>{`ghall.blog - ${title}`}</title></head
+	>
+	<ClientRouter />
+	<body class="layout-simple">
 		<Header />
 		<main>
 			<slot />
 		</main>
 		<Footer />
 	</body>
+
+
 </html>

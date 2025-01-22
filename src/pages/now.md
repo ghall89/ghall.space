@@ -5,28 +5,30 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: November 21, 2024_
+_Last updated: January 21, 2025_
 
 ## 🔨 Making
 
 - This blog!
+- [AutoDock](https://github.com/ghall89/AutoDock) - A Mac menubar utility that automatically hides and shows your dock based on the size of your connected display.
 - [KeyStash](https://github.com/ghall89/KeyStash) - A native Mac app for managing registration codes for your apps, modelled on the feature from 1Password.
 
 ## 🎧 Listening
 
-- [Paramore](https://music.apple.com/us/artist/paramore/75950796)
-- [Metric](https://music.apple.com/us/artist/metric/4125821)
-- [They Might Be Giants](https://music.apple.com/us/artist/they-might-be-giants/149020)
+- [Dragon Age: The Veilguard - Original Soundtrack](https://music.apple.com/us/album/dragon-age-the-veilguard-original-soundtrack/1772114262)
+- [Middle-Earth & Chill](https://music.apple.com/us/album/middle-earth-chill/1774281510)
+- [This Is Why - Paramore](https://music.apple.com/us/album/this-is-why/1646945378)
 
 ## 🎮 Playing
 
-- [Dragon Age: The Veilguard](https://www.igdb.com/games/dragon-age-the-veilguard)
-- [Paper Mario: The Thousand Year Door](https://www.igdb.com/games/paper-mario-the-thousand-year-door--1)
+- [Unicorn Overlord](https://www.igdb.com/games/unicorn-overlord--1)
+- [Horizon Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered)
 - [Fortnite](https://www.igdb.com/games/fortnite)
 
 ## 📺 Watching
 
-- [Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster)
+- [Foundation](https://www.themoviedb.org/tv/93740-foundation?language=en-US)
+- [Make Some Noise](https://www.themoviedb.org/tv/204031-make-some-noise?language=en-US)
 
 ## 💻 Using
 
