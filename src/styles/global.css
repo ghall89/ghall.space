@@ -51,6 +51,7 @@ html {
 body {
 	max-width: 800px;
 	margin: auto;
+	padding: 0 1rem;
 }
 
 a {
@@ -165,5 +166,11 @@ kbd {
 @media (prefers-color-scheme: dark) {
 	.not-by-ai {
 		background-image: url(svg/Written-By-Human-Not-By-AI-Badge-black.svg);
+	}
+}
+
+@media (max-width: 590px) {
+	header {
+		flex-direction: column;
 	}
 }
