@@ -21,6 +21,7 @@
 
 :root {
 	--blue: #1e66f5;
+	--sky: #04a5e5;
 	--red: #d20f39;
 	--orange: #fe640b;
 	--text: #4c4f69;
@@ -33,6 +34,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--blue: #89b4fa;
+		--sky: #89dceb;
 		--red: #f38ba8;
 		--orange: #fab387;
 		--text: #cdd6f4;
@@ -83,7 +85,7 @@ header > nav > li > a:hover {
 }
 
 header > nav > li > .selected {
-	border-bottom: 1px solid #e56045;
+	font-weight: bold;
 }
 
 footer {

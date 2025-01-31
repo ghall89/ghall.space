@@ -21,8 +21,11 @@ const navLinks: NavLink[] = [
 	<nav>
 		{
 			navLinks.map((link) => (
-				<li class={pathname === link.path ? 'selected' : null}>
-					<a href={link.path}>
+				<li>
+					<a
+						href={link.path}
+						class={pathname === link.path ? 'selected' : null}
+					>
 						<span>{link.label}</span>
 					</a>
 				</li>
