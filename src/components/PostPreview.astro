@@ -19,9 +19,9 @@ const { post } = Astro.props;
 const { data, slug } = post;
 ---
 
-<section>
+<article>
 	<div>
 		<BlogHeader title={post.data.title} date={data.pubDate} slug={slug} />
 		<Tags tags={data.tags} />
 	</div>
-</section>
+</article>

@@ -8,4 +8,7 @@ export default defineConfig({
 	site: 'https://ghall.blog',
 	output: 'static',
 	integrations: [mdx()],
+	experimental: {
+		svg: true,
+	},
 });

@@ -1,4 +1,5 @@
 ---
+import RssIcon from '../styles/svg/rss.svg';
 const year = new Date().getFullYear();
 ---
 
@@ -11,6 +12,14 @@ const year = new Date().getFullYear();
 	</p>
 
 	<p>
-		<a href="/rss.xml"> Subscribe with RSS</a>
+		<a href="/rss.xml"
+			><RssIcon class="rss-icon" size={20} /> Subscribe with RSS</a
+		>
 	</p>
 </footer>
+
+<style>
+	.rss-icon {
+		transform: translateY(0.18rem);
+	}
+</style>

@@ -1,6 +1,8 @@
 ---
 import { format, add } from 'date-fns';
 
+import CalendarIcon from '../styles/svg/calendar.svg';
+
 interface Props {
 	title: String;
 	date: Date;
@@ -15,6 +17,13 @@ const { title, date, slug } = Astro.props;
 		{slug ? <a href={`/posts/${slug}`}>{title}</a> : title}
 	</h2>
 	<div>
-		🗓️ <i>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</i>
+		<CalendarIcon class="calendar-icon" size={24} />
+		{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
 	</div>
 </div>
+
+<style>
+	.calendar-icon {
+		transform: translateY(0.3rem);
+	}
+</style>
