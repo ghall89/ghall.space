@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: January 21, 2025_
+_Last updated: February 4, 2025_
 
 ## 🔨 Making
 
@@ -15,7 +15,7 @@ _Last updated: January 21, 2025_
 
 ## 🎧 Listening
 
-- [Dragon Age: The Veilguard - Original Soundtrack](https://music.apple.com/us/album/dragon-age-the-veilguard-original-soundtrack/1772114262)
+- [Tonight - Franz Ferdinand](https://music.apple.com/us/album/tonight/300683347)
 - [Middle-Earth & Chill](https://music.apple.com/us/album/middle-earth-chill/1774281510)
 - [This Is Why - Paramore](https://music.apple.com/us/album/this-is-why/1646945378)
 
