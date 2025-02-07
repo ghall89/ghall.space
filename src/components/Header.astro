@@ -10,10 +10,12 @@ interface NavLink {
 }
 
 const navLinks: NavLink[] = [
-	{ label: 'Blog', icon: 'pen', path: '/' },
-	{ label: 'About', icon: 'person', path: '/about/' },
-	{ label: 'Now', icon: 'clock', path: '/now/' },
+	{ label: 'Home', icon: 'person', path: '' },
+	{ label: 'Blog', icon: 'pen', path: 'blog' },
+	{ label: 'Now', icon: 'clock', path: 'now' },
 ];
+
+const pathComponents = pathname.split('/').slice(1);
 ---
 
 <header>
@@ -23,8 +25,8 @@ const navLinks: NavLink[] = [
 			navLinks.map((link) => (
 				<li>
 					<a
-						href={link.path}
-						class={pathname === link.path ? 'selected' : null}
+						href={`/${link.path}`}
+						class={pathComponents[0] === link.path ? 'selected' : null}
 					>
 						<span>{link.label}</span>
 					</a>

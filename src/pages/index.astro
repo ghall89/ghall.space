@@ -1,28 +1,84 @@
 ---
+export const prerender = true;
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
 import Layout from '@layouts/Layout.astro';
-import PostPreview from '@components/PostPreview.astro';
+import LatestPost from '@components/LatestPost.astro';
 
+import portrait from '../img/portrait.jpg';
+import MastodonIcon from '../img/svg/mastodon.svg';
+import BlueskyIcon from '../img/svg/bluesky.svg';
+
+const iconSize = 16;
 const posts = await getCollection('blog');
+
+const latestPost = posts.sort(
+	(a, b) =>
+		new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+)[0];
 ---
 
-<Layout title="Home">
-	{
-		posts
-			.sort(
-				(a, b) =>
-					new Date(b.data.pubDate).valueOf() -
-					new Date(a.data.pubDate).valueOf()
-			)
-			.slice(0, 10)
-			.map((post) => <PostPreview post={post} />)
-	}
-	{
-		posts.length < 6 ? null : (
-			<div class="more-posts">
-				<a href="/archive/all">All Posts</a>
-			</div>
-		)
-	}
+<Layout title="About">
+	<Image
+		src={portrait}
+		alt="Illustrated portrait of a person with glasses and a beard, wearing a red and black plaid shirt. The background is a solid green color."
+		class="portrait"
+		width="250"
+		height="250"
+	/>
+	<p>
+		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
+		tech enthusiast.
+	</p>
+	<p>
+		When I'm not writing code, I'm usually enjoying one of my other hobbies;
+		video games, board games, music, hiking, photography, art, the list goes
+		on...
+	</p>
+	<p>
+		I also like writing about stuff, so I put together this site to share
+		whatever's on my mind about the world of tech, gaming, life, web
+		development, and whatever else strikes my fancy.
+	</p>
+	<p>
+		Read my latest blog post, <a href={`blog/${latestPost.slug}`}
+			>{latestPost.data.title}</a
+		>, from {new Date(latestPost.data.pubDate).toLocaleDateString()}.
+	</p>
+	<p>
+		If your interested in checking out my web dev projects, check out <a
+			href="https://ghall.dev/"
+			target="_blank">my portfolio</a
+		>.
+	</p>
+	<p>
+		If you want to get in touch, I'm on <a
+			rel="me"
+			href="https://mastodon.social/@ghalldev"
+			target="_blank"><MastodonIcon size={iconSize} />Mastodon</a
+		> and <a
+			href="https://bsky.app/profile/ghalldev.bsky.social"
+			target="_blank"><BlueskyIcon size={iconSize} />Bluesky</a
+		>.
+	</p>
+	<p>
+		My portrait was drawn by <a
+			href="https://www.nataliavazquezgarcia.com"
+			target="_blank">Natalia Vazquez</a
+		>.
+	</p>
+	<LatestPost />
 </Layout>
+
+<style>
+	.portrait {
+		display: block;
+		margin: auto;
+		margin-bottom: 26px;
+		border-radius: 200px;
+	}
+	a > svg {
+		transform: translateY(0.18rem);
+	}
+</style>
