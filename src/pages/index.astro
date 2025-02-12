@@ -4,7 +4,7 @@ import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
 
 import Layout from '@layouts/Layout.astro';
-import LatestPost from '@components/LatestPost.astro';
+import Avatar from '@components/Avatar.astro';
 
 import portrait from '../img/portrait.jpg';
 import MastodonIcon from '../img/svg/mastodon.svg';
@@ -20,13 +20,9 @@ const latestPost = posts.sort(
 ---
 
 <Layout title="About">
-	<Image
-		src={portrait}
-		alt="Illustrated portrait of a person with glasses and a beard, wearing a red and black plaid shirt. The background is a solid green color."
-		class="portrait"
-		width="250"
-		height="250"
-	/>
+	<div transition:name="my-avatar">
+		<Avatar size={250} />
+	</div>
 	<p>
 		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
 		tech enthusiast.
@@ -42,8 +38,9 @@ const latestPost = posts.sort(
 		development, and whatever else strikes my fancy.
 	</p>
 	<p>
-		Read my latest blog post, <a href={`blog/${latestPost.slug}`}
-			>{latestPost.data.title}</a
+		Read my latest blog post, <a
+			transition:name={latestPost.slug}
+			href={`blog/${latestPost.slug}`}>{latestPost.data.title}</a
 		>, from {new Date(latestPost.data.pubDate).toLocaleDateString()}.
 	</p>
 	<p>
@@ -68,17 +65,4 @@ const latestPost = posts.sort(
 			target="_blank">Natalia Vazquez</a
 		>.
 	</p>
-	<LatestPost />
 </Layout>
-
-<style>
-	.portrait {
-		display: block;
-		margin: auto;
-		margin-bottom: 26px;
-		border-radius: 200px;
-	}
-	a > svg {
-		transform: translateY(0.18rem);
-	}
-</style>

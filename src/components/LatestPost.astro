@@ -9,10 +9,11 @@
       )
       .then((data) => {
         const item = data.querySelector('item');
+				console.log(item)
         this.latestPost = {
           link: item.querySelector('link').textContent,
           body: item.querySelector('description').textContent,
-          pubDate: item.querySelector('pubDate').textContent,
+          
         };
       })
       .catch((error) => {
@@ -27,7 +28,6 @@
 			<h2>Latest Mastodon Post</h2>
 			<p x-html="latestPost.body"></p>
 			<a x-bind:href="latestPost.link" target="_blank">View Post</a>
-			<small x-text="latestPost.pubDate"></small>
 		</div>
 	</template>
 	<template x-if="!latestPost">

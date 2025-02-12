@@ -15,18 +15,18 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 
-const { data } = post;
+const { data, slug } = post;
 
 const { Content } = await post.render();
 ---
 
 <Layout title={data.title}>
-	<BlogHeader title={data.title} date={data.pubDate} />
-	<article>
+	<article transition:name={slug}>
+		<BlogHeader title={data.title} date={data.pubDate} />
 		<Content />
+		<a href="https://notbyai.fyi/">
+			<i class="not-by-ai"></i>
+		</a>
+		<Tags tags={data.tags} />
 	</article>
-	<a href="https://notbyai.fyi/">
-		<i class="not-by-ai"></i>
-	</a>
-	<Tags tags={data.tags} />
 </Layout>

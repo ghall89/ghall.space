@@ -1,37 +1,54 @@
 ---
+import Avatar from './Avatar.astro';
 const { pathname } = Astro.url;
 
 interface Props {}
 
 interface NavLink {
 	label: string;
-	icon: string;
+
 	path: string;
 }
 
 const navLinks: NavLink[] = [
-	{ label: 'Home', icon: 'person', path: '' },
-	{ label: 'Blog', icon: 'pen', path: 'blog' },
-	{ label: 'Now', icon: 'clock', path: 'now' },
+	{ label: 'Blog', path: 'blog' },
+	{ label: 'Now', path: 'now' },
+	{ label: 'Projects', path: 'projects' },
 ];
 
 const pathComponents = pathname.split('/').slice(1);
 ---
 
 <header>
-	<h1>ghall.blog</h1>
+	<div>
+		{
+			pathComponents[0] !== '' ? (
+				<a href="/" transition:name="my-avatar">
+					<Avatar size={60} />
+				</a>
+			) : null
+		}
+	</div>
 	<nav>
 		{
 			navLinks.map((link) => (
 				<li>
-					<a
-						href={`/${link.path}`}
-						class={pathComponents[0] === link.path ? 'selected' : null}
-					>
+					<a href={`/${link.path}`}>
 						<span>{link.label}</span>
 					</a>
+					{pathComponents[0] === link.path ? (
+						<div class="underline" transition:name="menu-selection-indicator" />
+					) : null}
 				</li>
 			))
 		}
 	</nav>
 </header>
+
+<style>
+	.underline {
+		height: 2px;
+		width: 100%;
+		background-color: var(--orange);
+	}
+</style>

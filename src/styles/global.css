@@ -71,6 +71,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	margin-bottom: 20px;
+	height: 120px;
 }
 
 header > h1 > a {
