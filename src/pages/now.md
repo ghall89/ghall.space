@@ -7,12 +7,6 @@ Hey there, this is my [/now page](https://nownownow.com/about)!
 
 _Last updated: February 4, 2025_
 
-## 🔨 Making
-
-- This blog!
-- [AutoDock](https://github.com/ghall89/AutoDock) - A Mac menubar utility that automatically hides and shows your dock based on the size of your connected display.
-- [KeyStash](https://github.com/ghall89/KeyStash) - A native Mac app for managing registration codes for your apps, modelled on the feature from 1Password.
-
 ## 🎧 Listening
 
 - [Tonight - Franz Ferdinand](https://music.apple.com/us/album/tonight/300683347)

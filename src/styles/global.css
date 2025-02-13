@@ -70,6 +70,12 @@ header {
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 20px;
+	height: 120px;
+}
+
+header > h1 > a {
+	color: var(--text);
 }
 
 header > nav {
@@ -89,8 +95,8 @@ header > nav > li > .selected {
 }
 
 footer {
-	border-top: var(--border);
-	margin-top: 2rem;
+	margin: 4rem 0;
+	text-align: center;
 }
 
 article img {

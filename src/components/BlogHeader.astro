@@ -1,12 +1,12 @@
 ---
 import { format, add } from 'date-fns';
 
-import CalendarIcon from '../styles/svg/calendar.svg';
+import CalendarIcon from '../img/svg/calendar.svg';
 
 interface Props {
-	title: String;
+	title: string;
 	date: Date;
-	slug?: String;
+	slug?: string;
 }
 
 const { title, date, slug } = Astro.props;
@@ -14,7 +14,7 @@ const { title, date, slug } = Astro.props;
 
 <div class="blog-header">
 	<h2>
-		{slug ? <a href={`/posts/${slug}`}>{title}</a> : title}
+		{slug ? <a href={`/blog/${slug}`}>{title}</a> : title}
 	</h2>
 	<div>
 		<CalendarIcon class="calendar-icon" size={24} />
