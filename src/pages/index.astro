@@ -19,9 +19,9 @@ const latestPost = posts.sort(
 )[0];
 ---
 
-<Layout title="About">
+<Layout title="Welcome">
 	<div transition:name="my-avatar">
-		<Avatar size={250} />
+		<Avatar size={200} />
 	</div>
 	<p>
 		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
@@ -38,9 +38,8 @@ const latestPost = posts.sort(
 		development, and whatever else strikes my fancy.
 	</p>
 	<p>
-		Read my latest blog post, <a
-			transition:name={latestPost.slug}
-			href={`blog/${latestPost.slug}`}>{latestPost.data.title}</a
+		Read my latest blog post, <a href={`blog/${latestPost.slug}`}
+			>{latestPost.data.title}</a
 		>, from {new Date(latestPost.data.pubDate).toLocaleDateString()}.
 	</p>
 	<p>
@@ -66,3 +65,9 @@ const latestPost = posts.sort(
 		>.
 	</p>
 </Layout>
+
+<style>
+	a > svg {
+		transform: translateY(0.18rem);
+	}
+</style>
