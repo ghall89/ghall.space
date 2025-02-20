@@ -5,13 +5,13 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: February 4, 2025_
+_Last updated: February 19, 2025_
 
 ## 🎧 Listening
 
-- [Tonight - Franz Ferdinand](https://music.apple.com/us/album/tonight/300683347)
-- [Middle-Earth & Chill](https://music.apple.com/us/album/middle-earth-chill/1774281510)
-- [This Is Why - Paramore](https://music.apple.com/us/album/this-is-why/1646945378)
+- [Always Ascending - Franz Ferdinand](https://album.link/us/i/1294718686)
+- [The Else - They Might Be Giants](https://album.link/us/i/635922095)
+- [Late Show - The Beaches](https://album.link/us/i/1440897088)
 
 ## 🎮 Playing
 
@@ -21,7 +21,7 @@ _Last updated: February 4, 2025_
 
 ## 📺 Watching
 
-- [Foundation](https://www.themoviedb.org/tv/93740-foundation?language=en-US)
+- [What We Do in the Shadows](https://www.themoviedb.org/tv/83631-what-we-do-in-the-shadows?language=en-US)
 - [Make Some Noise](https://www.themoviedb.org/tv/204031-make-some-noise?language=en-US)
 
 ## 💻 Using
