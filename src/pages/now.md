@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: February 19, 2025_
+_Last updated: March 2, 2025_
 
 ## 🎧 Listening
 
@@ -15,7 +15,7 @@ _Last updated: February 19, 2025_
 
 ## 🎮 Playing
 
-- [Unicorn Overlord](https://www.igdb.com/games/unicorn-overlord--1)
+- [Lost Records: Bloom & Rage](https://www.igdb.com/games/lost-records-bloom-and-rage)
 - [Horizon Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered)
 - [Fortnite](https://www.igdb.com/games/fortnite)
 
@@ -31,5 +31,4 @@ _Last updated: February 19, 2025_
   - 512GB SSD
 - LG UltraFine 27"
 - Nuphy Air75 v2
-  - With retro Mac-style keycaps
 - Apple Magic Trackpad/Logitech A72 (depending on my mood)
