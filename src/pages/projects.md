@@ -11,6 +11,6 @@ A MacOS menubar utility for automatically hiding and showing the Dock based on t
 
 A MacOS application for managing software license keys for software purchased outside the Mac App Store.
 
-### BGG Search (Raycast Extension) - Coming Soon!
+### [BGG Search (Raycast Extension)](https://www.raycast.com/graham_hall/board-game-geek)
 
 A Raycast extension for searching [BoardGameGeek.com](https://boardgamegeek.com).

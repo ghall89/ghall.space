@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: March 2, 2025_
+_Last updated: March 7, 2025_
 
 ## 🎧 Listening
 
@@ -15,13 +15,12 @@ _Last updated: March 2, 2025_
 
 ## 🎮 Playing
 
-- [Lost Records: Bloom & Rage](https://www.igdb.com/games/lost-records-bloom-and-rage)
 - [Horizon Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered)
 - [Fortnite](https://www.igdb.com/games/fortnite)
 
 ## 📺 Watching
 
-- [What We Do in the Shadows](https://www.themoviedb.org/tv/83631-what-we-do-in-the-shadows?language=en-US)
+- [Daredevil: Born Again](https://www.themoviedb.org/tv/202555-daredevil-born-again)
 - [Make Some Noise](https://www.themoviedb.org/tv/204031-make-some-noise?language=en-US)
 
 ## 💻 Using
