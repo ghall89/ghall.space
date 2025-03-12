@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: March 7, 2025_
+_Last updated: March 11, 2025_
 
 ## 🎧 Listening
 
@@ -15,6 +15,7 @@ _Last updated: March 7, 2025_
 
 ## 🎮 Playing
 
+- [Star Ocean The Second Story R](https://www.igdb.com/games/star-ocean-the-second-story-r)
 - [Horizon Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered)
 - [Fortnite](https://www.igdb.com/games/fortnite)
 
