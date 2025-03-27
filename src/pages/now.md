@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: March 11, 2025_
+_Last updated: March 26, 2025_
 
 ## 🎧 Listening
 
@@ -15,14 +15,14 @@ _Last updated: March 11, 2025_
 
 ## 🎮 Playing
 
-- [Star Ocean The Second Story R](https://www.igdb.com/games/star-ocean-the-second-story-r)
+- [Xenoblade Chronicles X: Definitive Edition](https://www.igdb.com/games/xenoblade-chronicles-x-definitive-edition)
 - [Horizon Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered)
 - [Fortnite](https://www.igdb.com/games/fortnite)
 
 ## 📺 Watching
 
 - [Daredevil: Born Again](https://www.themoviedb.org/tv/202555-daredevil-born-again)
-- [Make Some Noise](https://www.themoviedb.org/tv/204031-make-some-noise?language=en-US)
+- [Daredevil](https://www.themoviedb.org/tv/61889-marvel-s-daredevil)
 
 ## 💻 Using
 
