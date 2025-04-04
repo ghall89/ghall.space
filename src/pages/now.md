@@ -5,11 +5,11 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: March 26, 2025_
+_Last updated: April 3, 2025_
 
 ## 🎧 Listening
 
-- [Always Ascending - Franz Ferdinand](https://album.link/us/i/1294718686)
+- [A Complete Unknown - Motion Picture Soundtrack](https://album.link/i/1784811806)
 - [The Else - They Might Be Giants](https://album.link/us/i/635922095)
 - [Late Show - The Beaches](https://album.link/us/i/1440897088)
 
@@ -22,7 +22,7 @@ _Last updated: March 26, 2025_
 ## 📺 Watching
 
 - [Daredevil: Born Again](https://www.themoviedb.org/tv/202555-daredevil-born-again)
-- [Daredevil](https://www.themoviedb.org/tv/61889-marvel-s-daredevil)
+- [Jessica Jones](https://www.themoviedb.org/tv/38472-marvel-s-jessica-jones?language=en-US)
 
 ## 💻 Using
 
