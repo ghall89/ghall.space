@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: April 20, 2025_
+_Last updated: April 28, 2025_
 
 ## 🎧 Listening
 
