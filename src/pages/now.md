@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: April 3, 2025_
+_Last updated: April 20, 2025_
 
 ## 🎧 Listening
 
@@ -15,14 +15,17 @@ _Last updated: April 3, 2025_
 
 ## 🎮 Playing
 
-- [Xenoblade Chronicles X: Definitive Edition](https://www.igdb.com/games/xenoblade-chronicles-x-definitive-edition)
-- [Horizon Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered)
-- [Fortnite](https://www.igdb.com/games/fortnite)
+- [Assassin's Creed Shadows](https://thegamesdb.net/game.php?id=126449)
+- [Baldur's Gate 3](https://thegamesdb.net/game.php?id=69037)
 
 ## 📺 Watching
 
-- [Daredevil: Born Again](https://www.themoviedb.org/tv/202555-daredevil-born-again)
-- [Jessica Jones](https://www.themoviedb.org/tv/38472-marvel-s-jessica-jones?language=en-US)
+- [Andor](https://www.themoviedb.org/tv/83867-star-wars-andor)
+- [Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who)
+
+## 📖 Reading
+
+- [Alias](https://en.wikipedia.org/wiki/Alias_(comics))
 
 ## 💻 Using
 
