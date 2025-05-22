@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: April 28, 2025_
+_Last updated: May 21, 2025_
 
 ## 🎧 Listening
 
@@ -17,15 +17,12 @@ _Last updated: April 28, 2025_
 
 - [Assassin's Creed Shadows](https://thegamesdb.net/game.php?id=126449)
 - [Baldur's Gate 3](https://thegamesdb.net/game.php?id=69037)
+- [Sea of Stars](https://thegamesdb.net/game.php?id=109535)
 
 ## 📺 Watching
 
-- [Andor](https://www.themoviedb.org/tv/83867-star-wars-andor)
+- [Taskmasker](https://www.themoviedb.org/tv/63404-taskmaster)
 - [Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who)
-
-## 📖 Reading
-
-- [Alias](https://en.wikipedia.org/wiki/Alias_(comics))
 
 ## 💻 Using
 
