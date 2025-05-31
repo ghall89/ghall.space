@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: May 21, 2025_
+_Last updated: May 27, 2025_
 
 ## 🎧 Listening
 
@@ -15,9 +15,9 @@ _Last updated: May 21, 2025_
 
 ## 🎮 Playing
 
-- [Assassin's Creed Shadows](https://thegamesdb.net/game.php?id=126449)
-- [Baldur's Gate 3](https://thegamesdb.net/game.php?id=69037)
-- [Sea of Stars](https://thegamesdb.net/game.php?id=109535)
+- [Assassin's Creed Shadows](https://www.igdb.com/games/assassins-creed-shadows)
+- [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-3)
+- [Lost Records: Bloom & Rage](https://www.igdb.com/games/lost-records-bloom-and-rage)
 
 ## 📺 Watching
 
