@@ -5,24 +5,24 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: May 27, 2025_
+_Last updated: July 3, 2025_
 
 ## 🎧 Listening
 
-- [A Complete Unknown - Motion Picture Soundtrack](https://album.link/i/1784811806)
-- [The Else - They Might Be Giants](https://album.link/us/i/635922095)
-- [Late Show - The Beaches](https://album.link/us/i/1440897088)
+- [Tunnel Vision - Beach Bunny](https://album.link/i/1794412465)
+- [Flood - They Might Be Giants](https://album.link/us/i/298111036)
+- [Video Game Legends - Celestial Aeon Project, Deck Hard & Stellar Conflux](https://album.link/i/1814286119)
 
 ## 🎮 Playing
 
 - [Assassin's Creed Shadows](https://www.igdb.com/games/assassins-creed-shadows)
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-3)
-- [Lost Records: Bloom & Rage](https://www.igdb.com/games/lost-records-bloom-and-rage)
+- [Rune Factory: Guardians of Azuma](https://www.igdb.com/games/rune-factory-guardians-of-azuma--1)
 
 ## 📺 Watching
 
 - [Taskmasker](https://www.themoviedb.org/tv/63404-taskmaster)
-- [Doctor Who](https://www.themoviedb.org/tv/239770-doctor-who)
+- [Murderbot](https://www.themoviedb.org/tv/241554-murderbot?language=en-US)
 
 ## 💻 Using
 
