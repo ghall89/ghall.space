@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: July 3, 2025_
+_Last updated: July 11, 2025_
 
 ## 🎧 Listening
 
@@ -21,8 +21,7 @@ _Last updated: July 3, 2025_
 
 ## 📺 Watching
 
-- [Taskmasker](https://www.themoviedb.org/tv/63404-taskmaster)
-- [Murderbot](https://www.themoviedb.org/tv/241554-murderbot?language=en-US)
+- [Foundation](https://www.themoviedb.org/tv/93740-foundation)
 
 ## 💻 Using
 
