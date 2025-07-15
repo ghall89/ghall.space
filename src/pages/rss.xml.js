@@ -6,7 +6,7 @@ const parser = new MarkdownIt({ html: true });
 export async function GET(context) {
 	const blog = await getCollection('blog');
 	return rss({
-		title: 'ghall.blog',
+		title: 'ghall.space',
 		description:
 			'My personal blog about life, gaming, tech, and whatever else I feel like writing about.',
 		site: context.site,
