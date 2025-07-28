@@ -5,7 +5,7 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: July 11, 2025_
+_Last updated: July 28, 2025_
 
 ## 🎧 Listening
 
@@ -22,6 +22,7 @@ _Last updated: July 11, 2025_
 ## 📺 Watching
 
 - [Foundation](https://www.themoviedb.org/tv/93740-foundation)
+- [Star Trek: Strange New Worlds](https://www.themoviedb.org/search/tv?query=Star%20Trek%3A%20Strange%20New%20Worlds)
 
 ## 💻 Using
 
