@@ -10,9 +10,6 @@ export default defineConfig({
 	site: 'https://ghall.space',
 	output: 'static',
 	integrations: [mdx(), alpinejs()],
-	experimental: {
-		svg: true,
-	},
 	redirects: {
 		'/posts/[...slug]': '/blog/[...slug]',
 	},

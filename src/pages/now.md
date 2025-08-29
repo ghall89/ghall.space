@@ -5,19 +5,17 @@ title: Now
 
 Hey there, this is my [/now page](https://nownownow.com/about)!
 
-_Last updated: July 28, 2025_
+_Last updated: August 29, 2025_
 
 ## 🎧 Listening
 
-- [Tunnel Vision - Beach Bunny](https://album.link/i/1794412465)
-- [Flood - They Might Be Giants](https://album.link/us/i/298111036)
-- [Video Game Legends - Celestial Aeon Project, Deck Hard & Stellar Conflux](https://album.link/i/1814286119)
+- [Ego Death at a Bachelorette Party - Hayley Williams](https://album.link/i/1833006180)
 
 ## 🎮 Playing
 
+- [Batman Arkham Asylum](https://www.igdb.com/games/batman-arkham-asylum)
 - [Assassin's Creed Shadows](https://www.igdb.com/games/assassins-creed-shadows)
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-3)
-- [Rune Factory: Guardians of Azuma](https://www.igdb.com/games/rune-factory-guardians-of-azuma--1)
 
 ## 📺 Watching
 

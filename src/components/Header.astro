@@ -20,15 +20,10 @@ const pathComponents = pathname.split('/').slice(1);
 ---
 
 <header>
-	<div>
-		{
-			pathComponents[0] !== '' ? (
-				<a href="/" transition:name="my-avatar">
-					<Avatar size={60} />
-				</a>
-			) : null
-		}
-	</div>
+	<a href="/">
+		<Avatar size={60} />
+	</a>
+
 	<nav>
 		{
 			navLinks.map((link) => (
@@ -36,9 +31,7 @@ const pathComponents = pathname.split('/').slice(1);
 					<a href={`/${link.path}`}>
 						<span>{link.label}</span>
 					</a>
-					{pathComponents[0] === link.path ? (
-						<div class="underline" transition:name="menu-selection-indicator" />
-					) : null}
+					{pathComponents[0] === link.path ? <div class="underline" /> : null}
 				</li>
 			))
 		}
@@ -46,6 +39,35 @@ const pathComponents = pathname.split('/').slice(1);
 </header>
 
 <style>
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 20px;
+		height: 120px;
+	}
+
+	header > h1 > a {
+		color: var(--text);
+	}
+
+	header > nav {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		gap: 20px;
+		font-size: 1.15rem;
+	}
+
+	header > nav > li > a:hover {
+		text-decoration: none;
+	}
+
+	header > nav > li > .selected {
+		font-weight: bold;
+	}
+
 	.underline {
 		height: 2px;
 		width: 100%;

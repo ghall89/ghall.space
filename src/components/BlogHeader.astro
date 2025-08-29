@@ -1,7 +1,7 @@
 ---
 import { format, add } from 'date-fns';
 
-import CalendarIcon from '../img/svg/calendar.svg';
+import CalendarIcon from '../assets/svg/calendar.svg';
 
 interface Props {
 	title: string;
@@ -17,7 +17,7 @@ const { title, date, slug } = Astro.props;
 		{slug ? <a href={`/blog/${slug}`}>{title}</a> : title}
 	</h2>
 	<div>
-		<CalendarIcon class="calendar-icon" size={24} />
+		<CalendarIcon class="calendar-icon" width={24} height={24} />
 		{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
 	</div>
 </div>

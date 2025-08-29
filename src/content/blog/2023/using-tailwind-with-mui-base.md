@@ -32,11 +32,11 @@ Once both MUI Base and Tailwind are installed, we next need to run `yarn tailwin
 
 First thing's first, open up the project folder in your code editor of choice and at the root of the project you should see the 'tailwind.config.js' we created in step 2. Open that, and under `module.exports` you should see an empty array named 'content'. Add the following to the array: `'./src/**/*.{js,jsx,ts,tsx}'` Your config file should look like this:
 
-<img src="/media/mui-plus-tailwind/tailwind-config.png" width="80%" alt="module.exports = { content: ['./src/**/*.{js,jsx,ts,tsx}'], theme: { extend: {}, }, plugins: [],};">
+<img src="src/assets/blog/mui-plus-tailwind/tailwind-config.png" width="80%" alt="module.exports = { content: ['./src/**/*.{js,jsx,ts,tsx}'], theme: { extend: {}, }, plugins: [],};">
 
 Next, we need to import Tailwind into our 'globals.css' file, which is located in 'src/styles/'. We can delete everything in the file as we won't be needing any of it. Then, add the following:
 
-<img src="/media/mui-plus-tailwind/global-css.png" width="80%" alt="@tailwind base; @tailwind components; @tailwind utilities;">
+<img src="src/assets/blog/mui-plus-tailwind/global-css.png" width="80%" alt="@tailwind base; @tailwind components; @tailwind utilities;">
 
 And that's it! We're ready to start creating something!
 
@@ -46,7 +46,7 @@ Ideally, we'd want to create smaller, reusable component files, but that's beyon
 
 First, we should delete everything we don't need so that our 'index.js' file looks like this:
 
-<img src="/media/mui-plus-tailwind/index-js.png" width="80%" alt="export default function Home() { return() }">
+<img src="src/assets/blog/mui-plus-tailwind/index-js.png" width="80%" alt="export default function Home() { return() }">
 
 We're going to create a simple button, nothing too fancy. So first we need to import the MUI Unstyled Button component by adding `import { ButtonUnstyled as Button } from '@mui/base'` on the first line of our file.
 
@@ -54,21 +54,21 @@ _Note: The official MUI docs say to import as `import ButtonUnstyled from '@mui/
 
 Now we can create our button. Inside the return statement, add the following:
 
-<img src="/media/mui-plus-tailwind/unstyled-button-code.png" width="80%" alt="<Button>Click Me!</Button>" />
+<img src="src/assets/blog/mui-plus-tailwind/unstyled-button-code.png" width="80%" alt="<Button>Click Me!</Button>" />
 
 Next, go back to your terminal and run `yarn dev` to start up the dev server, and click the 'localhost' link that appears (most likely 'localhost:3000'). We'll be greeted by what looks like just a bit of text (it's a button, I promise), which isn't what we want, but that's because we haven't added any styles yet!
 
-<img src="/media/mui-plus-tailwind/unstyled-button.png" width="40%" alt="A plain old 'button' that reads 'Click Me!'" />
+<img src="src/assets/blog/mui-plus-tailwind/unstyled-button.png" width="40%" alt="A plain old 'button' that reads 'Click Me!'" />
 
 All we need to do is add the `className` prop with some nice Tailwind utility classes:
 
-<img src="/media/mui-plus-tailwind/styled-button-code.png" width="80%" alt="<Button className='rounded-lg border-2 border-sky-500 bg-sky-600 py-2 px-10 font-medium text-slate-300 shadow hover:bg-sky-700 active:translate-y-0.5'>
+<img src="src/assets/blog/mui-plus-tailwind/styled-button-code.png" width="80%" alt="<Button className='rounded-lg border-2 border-sky-500 bg-sky-600 py-2 px-10 font-medium text-slate-300 shadow hover:bg-sky-700 active:translate-y-0.5'>
   Click Me!
 </Button>" />
 
 Now, when we go back to the browser, we should see the following:
 
-<img src="/media/mui-plus-tailwind/styled-button.png" width="40%" alt="A styled blue button that reads 'Click Me!'" />
+<img src="src/assets/blog/mui-plus-tailwind/styled-button.png" width="40%" alt="A styled blue button that reads 'Click Me!'" />
 
 Nice! That looks a lot more like a button.
 
