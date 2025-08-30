@@ -9,6 +9,7 @@ import alpinejs from '@astrojs/alpinejs';
 export default defineConfig({
 	site: 'https://ghall.space',
 	output: 'static',
+
 	integrations: [mdx(), alpinejs()],
 	redirects: {
 		'/posts/[...slug]': '/blog/[...slug]',

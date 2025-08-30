@@ -5,6 +5,7 @@ import { getCollection } from 'astro:content';
 
 import Layout from '@layouts/Layout.astro';
 import Avatar from '@components/Avatar.astro';
+import LatestPost from '@components/LatestPost.astro';
 
 import MastodonIcon from '../assets/svg/mastodon.svg';
 import BlueskyIcon from '../assets/svg/bluesky.svg';
@@ -19,6 +20,7 @@ const latestPost = posts.sort(
 ---
 
 <Layout title="Welcome">
+	<Avatar size={200} />
 	<p>
 		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
 		tech enthusiast.
@@ -61,10 +63,11 @@ const latestPost = posts.sort(
 			target="_blank">Natalia Vazquez</a
 		>.
 	</p>
+	<LatestPost />
 </Layout>
 
 <style>
 	a > svg {
-		transform: translateY(0.18rem);
+		transform: translateY(0.1rem);
 	}
 </style>

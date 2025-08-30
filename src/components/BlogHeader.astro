@@ -13,9 +13,7 @@ const { title, date, slug } = Astro.props;
 ---
 
 <div class="blog-header">
-	<h2>
-		{slug ? <a href={`/blog/${slug}`}>{title}</a> : title}
-	</h2>
+	{slug ? <a href={`/blog/${slug}`}>{title}</a> : <h1>{title}</h1>}
 	<div>
 		<CalendarIcon class="calendar-icon" width={24} height={24} />
 		<strong>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</strong>
@@ -23,11 +21,15 @@ const { title, date, slug } = Astro.props;
 </div>
 
 <style>
+	a {
+		font-size: 1.3rem;
+	}
+
 	.calendar-icon {
 		transform: translateY(0.3rem);
 	}
 
 	strong {
-		font-weight: bold;
+		font-weight: bolder;
 	}
 </style>

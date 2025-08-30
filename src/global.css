@@ -19,7 +19,7 @@
 	--background: #fcfcfc;
 	--radius: 5px;
 	--shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	--border: 1px solid #8c8fa1;
+	--border: 1px solid #ced3f1;
 	--max-page-width: 800px;
 }
 
@@ -31,7 +31,7 @@
 		--orange: #fab387;
 		--text: #cdd6f4;
 		--background: #1e1e2e;
-		--border: 1px solid rgb(131, 139, 167);
+		--border: 1px solid #505160;
 	}
 }
 
