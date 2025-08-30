@@ -1,0 +1,114 @@
+---
+import BarsIcon from '../../assets/svg/bars.svg';
+import CloseIcon from '../../assets/svg/xmark.svg';
+
+import { navLinks } from '../../data/nav-links';
+---
+
+<div
+	x-data="{ open: false }"
+	class="drawer-container"
+	@keydown.escape="open = false"
+>
+	<button @click="open = !open">
+		<BarsIcon class="bars-icon" width={24} height={24} />
+	</button>
+	<div
+		class="overlay"
+		@click="open = !open"
+		x-show="open"
+		x-transition:enter-start="hidden-overlay"
+		x-transition:enter-end="visible-overlay"
+		x-transition:leave-start="visible-overlay"
+		x-transition:leave-end="hidden-overlay"
+	>
+	</div>
+	<div
+		class="drawer"
+		x-show="open"
+		x-transition:enter-start="hidden-drawer"
+		x-transition:enter-end="visible-drawer"
+		x-transition:leave-start="visible-drawer"
+		x-transition:leave-end="hidden-drawer"
+	>
+		<button @click="open = !open">
+			<CloseIcon class="bars-icon" width={24} height={24} /></button
+		>
+		<hr />
+		<ul>
+			{
+				navLinks.map((link) => (
+					<li>
+						<a href={`/${link.path}`}>
+							<span>{link.label}</span>
+						</a>
+					</li>
+				))
+			}
+		</ul>
+	</div>
+</div>
+
+<style>
+	:root {
+		--transition: all 0.1s ease-in-out;
+	}
+
+	button {
+		background: none;
+		color: inherit;
+		padding: 2px 2px -2px;
+		border: none;
+		line-height: 1;
+		aspect-ratio: square;
+	}
+
+	button:active {
+		opacity: 0.3;
+	}
+
+	@media screen and (min-width: 600px) {
+		.drawer-container {
+			display: none;
+		}
+	}
+
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: 2;
+		transition: var(--transition);
+	}
+
+	.hidden-overlay {
+		opacity: 0;
+	}
+
+	.drawer {
+		right: 0;
+		top: 0;
+		background-color: var(--background);
+		position: absolute;
+		width: 200px;
+		height: 100vh;
+		padding: 12px;
+		z-index: 3;
+		transition: var(--transition);
+	}
+
+	ul {
+		list-style: none;
+	}
+
+	li {
+		margin-bottom: 12px;
+	}
+
+	.hidden-drawer {
+		transform: translateX(220px);
+	}
+</style>
