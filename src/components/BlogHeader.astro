@@ -18,12 +18,16 @@ const { title, date, slug } = Astro.props;
 	</h2>
 	<div>
 		<CalendarIcon class="calendar-icon" width={24} height={24} />
-		{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
+		<strong>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</strong>
 	</div>
 </div>
 
 <style>
 	.calendar-icon {
 		transform: translateY(0.3rem);
+	}
+
+	strong {
+		font-weight: bold;
 	}
 </style>

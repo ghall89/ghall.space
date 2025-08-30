@@ -1,23 +1,13 @@
 @font-face {
-	font-family: Maple Mono;
-	src: url(./assets/fonts/MapleMono-Regular.ttf) format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: Maple Mono;
-	src: url(./assets/fonts/MapleMono-Bold.ttf) format('truetype');
-	font-weight: bold;
-	font-style: normal;
+	font-family: Noto Sans;
+	src: url(./assets/fonts/NotoSans-VariableFont_wdth,wght.ttf)
+		format('truetype');
 }
 
 @font-face {
 	font-family: JetBrainsMono;
 	src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf)
 		format('truetype');
-	font-style: normal;
-	font-display: block;
 }
 
 :root {
@@ -48,8 +38,8 @@
 html {
 	color: var(--text);
 	background-color: var(--background);
-	font-family: 'Maple Mono', monospace;
-	font-size: 1.05rem;
+	font-family: 'Noto Sans', sansserif;
+	font-size: 1.1rem;
 }
 
 body {
@@ -74,8 +64,8 @@ a:hover {
 }
 
 main p {
-	text-align: justify;
-	line-height: 1.4;
+	/* text-align: justify; */
+	line-height: 1.5;
 }
 
 article img {
