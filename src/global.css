@@ -18,7 +18,6 @@
 	--text: #4c4f69;
 	--background: #fcfcfc;
 	--radius: 5px;
-	--shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	--border: 1px solid #ced3f1;
 	--max-page-width: 800px;
 }
@@ -70,16 +69,12 @@ main p {
 
 article img {
 	border-radius: var(--radius);
-	box-shadow: var(--shadow);
 	display: block;
 	margin: auto;
 	max-width: var(--max-page-width);
 	height: auto;
 }
 
-.no-shadow {
-	box-shadow: none;
-}
 .footnotes {
 	font-size: 1rem;
 }
