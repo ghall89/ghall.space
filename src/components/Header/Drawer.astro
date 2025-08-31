@@ -5,18 +5,15 @@ import CloseIcon from '../../assets/svg/xmark.svg';
 import { navLinks } from '../../data/nav-links';
 ---
 
-<div
-	x-data="{ open: false }"
-	class="drawer-container"
-	@keydown.escape="open = false"
->
-	<button @click="open = !open">
+<!-- drawerOpened is defined in /src/layouts/Layout.astro -->
+<div class="drawer-container" @keydown.escape="drawerOpen = false">
+	<button @click="drawerOpen = !drawerOpen">
 		<BarsIcon class="bars-icon" width={24} height={24} />
 	</button>
 	<div
 		class="overlay"
-		@click="open = !open"
-		x-show="open"
+		@click="drawerOpen = !drawerOpen"
+		x-show="drawerOpen"
 		x-transition:enter-start="hidden-overlay"
 		x-transition:enter-end="visible-overlay"
 		x-transition:leave-start="visible-overlay"
@@ -25,14 +22,14 @@ import { navLinks } from '../../data/nav-links';
 	</div>
 	<div
 		class="drawer"
-		x-show="open"
+		x-show="drawerOpen"
 		x-transition:enter-start="hidden-drawer"
 		x-transition:enter-end="visible-drawer"
 		x-transition:leave-start="visible-drawer"
 		x-transition:leave-end="hidden-drawer"
 	>
 		<div>
-			<button @click="open = !open">
+			<button @click="drawerOpen = !drawerOpen">
 				<CloseIcon class="bars-icon" width={24} height={24} /></button
 			>
 		</div>

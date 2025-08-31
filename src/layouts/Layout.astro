@@ -30,7 +30,11 @@ const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
 			href={`${Astro.site}rss.xml`}
 		/><title>{`ghall.space - ${title}`}</title>
 	</head>
-	<body class="layout-simple">
+	<body
+		class="layout-simple"
+		x-data="{ drawerOpen: false }"
+		:class="drawerOpen ? 'lock-scroll' : ''"
+	>
 		<Header />
 		<main>
 			<slot />
@@ -38,3 +42,9 @@ const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.lock-scroll {
+		overflow: hidden;
+	}
+</style>
