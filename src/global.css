@@ -82,14 +82,6 @@ article img {
 	display: inline;
 }
 
-.blog-header {
-	margin: 1rem 0;
-}
-
-.blog-header > h2 {
-	margin: 0;
-}
-
 blockquote {
 	border-left: 4px solid;
 	border-color: var(--text);
@@ -117,10 +109,4 @@ code,
 kbd {
 	font-size: 0.85rem;
 	white-space: nowrap;
-}
-
-@media (max-width: 590px) {
-	header {
-		flex-direction: column;
-	}
 }

@@ -23,3 +23,14 @@ const { data, slug } = post;
 	<BlogHeader title={post.data.title} date={data.pubDate} slug={slug} />
 	<Tags tags={data.tags} />
 </article>
+
+<style>
+	article {
+		padding-bottom: 20px;
+	}
+
+	article:not(:first-child) {
+		border-top: var(--border);
+		padding-top: 20px;
+	}
+</style>

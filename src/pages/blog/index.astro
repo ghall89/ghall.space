@@ -20,7 +20,7 @@ const posts = await getCollection('blog');
 	}
 	{
 		posts.length < 6 ? null : (
-			<div class="more-posts">
+			<div class="all-posts">
 				<a href="/blog/archive/all">All Posts</a>
 			</div>
 		)
@@ -28,7 +28,7 @@ const posts = await getCollection('blog');
 </Layout>
 
 <style>
-	.more-posts {
+	.all-posts {
 		text-align: center;
 		padding: 1rem;
 		font-size: 1.2rem;
