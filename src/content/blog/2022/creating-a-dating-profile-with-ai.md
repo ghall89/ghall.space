@@ -12,7 +12,7 @@ I decided to use [OpenAI](https://openai.com/) for the written portion, and [Eve
 
 I decided against using AI generated images because, even though I’m letting an AI create a dating profile for me, I want it to be somewhat genuine. Also I’m not looking to catfish anybody with this image I generated just to see how good AI could make me look:
 
-<img src="/media/my-ai-portrait.jpg" width="260" alt="an AI-generated portrait of me" />
+![An AI-generated portrait of me](src/assets/blog/my-ai-portrait.jpg)
 
 Originally this was going to be one post I’d write over the course of a week, but as I was writing I decided I should split it into 2 parts: Part 1, this part, about setting up the dating profile, and part 2, coming at the end of the experiment, about the experience and how it went.
 

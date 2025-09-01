@@ -1,0 +1,49 @@
+---
+import Nav from './Nav.astro';
+import Drawer from './Drawer.astro';
+---
+
+<header>
+	<div class="container">
+		<a href="/">ghall.space</a>
+		<Nav />
+		<Drawer />
+	</div>
+</header>
+
+<style>
+	header {
+		margin-bottom: 20px;
+		height: 70px;
+		background-color: rgba(252, 252, 252, 90%);
+		backdrop-filter: blur(10px);
+		width: 100%;
+		top: 0;
+		position: fixed;
+		z-index: 1;
+		border-bottom: var(--border);
+	}
+
+	.container {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		max-width: var(--max-page-width);
+		margin: auto;
+		padding: 0 16px;
+		height: 100%;
+	}
+
+	a {
+		font-size: 1.6rem;
+		color: var(--text);
+		font-weight: bold;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		header {
+			background-color: rgba(30, 30, 46, 90%);
+		}
+	}
+</style>

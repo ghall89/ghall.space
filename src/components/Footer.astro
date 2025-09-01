@@ -1,25 +1,57 @@
 ---
-import RssIcon from '../img/svg/rss.svg';
+import RssIcon from '../assets/svg/rss.svg';
+import MastodonIcon from '../assets/svg/mastodon.svg';
+
 const year = new Date().getFullYear();
 ---
 
 <footer>
+	<div class="socials">
+		<a href="https://mastodon.social/@ghalldev" target="_blank"
+			><MastodonIcon class="mastodon-icon" width={20} height={20} /> Follow me on
+			Mastodon</a
+		>
+
+		<a href="/rss.xml"
+			><RssIcon class="rss-icon" width={20} height={20} /> Subscribe with RSS</a
+		>
+	</div>
 	<p>
 		Copyright 2022 - {year}, Graham Hall
 
 		<br />
 		Built with <a href="https://astro.build">Astro</a>
 	</p>
-
-	<p>
-		<a href="/rss.xml"
-			><RssIcon class="rss-icon" size={20} /> Subscribe with RSS</a
-		>
-	</p>
 </footer>
 
 <style>
+	footer {
+		margin: 2rem 0;
+		text-align: center;
+		border-top: var(--border);
+		padding-top: 24px;
+	}
+
 	.rss-icon {
 		transform: translateY(0.18rem);
+	}
+
+	.socials {
+		display: flex;
+		gap: 24px;
+		justify-content: center;
+	}
+
+	.socials a {
+		color: var(--text);
+	}
+
+	.rss-icon {
+		color: var(--orange);
+	}
+
+	.mastodon-icon {
+		color: var(--blue);
+		transform: translateY(4px);
 	}
 </style>

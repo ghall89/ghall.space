@@ -1,0 +1,134 @@
+@font-face {
+	font-family: Noto Sans;
+	src: url(./assets/fonts/NotoSans-VariableFont_wdth,wght.ttf)
+		format('truetype');
+}
+
+@font-face {
+	font-family: JetBrainsMono;
+	src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf)
+		format('truetype');
+}
+
+:root {
+	--blue: #1e66f5;
+	--sky: #04a5e5;
+	--red: #d20f39;
+	--orange: #fe640b;
+	--text: #4c4f69;
+	--background: #fcfcfc;
+	--radius: 5px;
+	--border: 1px solid #ced3f1;
+	--max-page-width: 800px;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--blue: #89b4fa;
+		--sky: #89dceb;
+		--red: #f38ba8;
+		--orange: #fab387;
+		--text: #cdd6f4;
+		--background: #1e1e2e;
+		--border: 1px solid #505160;
+	}
+}
+
+html {
+	color: var(--text);
+	background-color: var(--background);
+	font-family: 'Noto Sans', sansserif;
+	font-size: 1.1rem;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	max-width: 800px;
+	margin: auto;
+	padding: 0 1rem;
+	margin-top: 100px;
+}
+
+a {
+	color: var(--blue);
+	text-decoration: none;
+}
+
+a:hover {
+	opacity: 0.75;
+}
+
+main p {
+	/* text-align: justify; */
+	line-height: 1.5;
+}
+
+/* Article image style */
+
+article img {
+	border-radius: var(--radius);
+	display: block;
+	margin: auto;
+	max-width: var(--max-page-width);
+	height: auto;
+}
+
+/* Typography */
+
+.footnotes {
+	font-size: 1rem;
+}
+.footnotes p {
+	display: inline;
+}
+
+blockquote {
+	border-left: 4px solid;
+	border-color: var(--text);
+	margin-left: 1rem;
+	padding-left: 2rem;
+	font-style: italic;
+}
+
+code {
+	color: var(--orange);
+	border: var(--border);
+	border-radius: var(--radius);
+	padding: 1px 4px;
+	margin: 0 2px;
+	user-select: all;
+}
+
+kbd {
+	border: var(--border);
+	border-radius: var(--radius);
+	padding: 1px 4px;
+}
+
+code,
+kbd {
+	font-size: 0.85rem;
+	white-space: nowrap;
+}
+
+/* Icon button */
+
+.icon-button {
+	background: none;
+	padding: 2px 2px -2px;
+	border: none;
+	line-height: 1;
+	aspect-ratio: square;
+}
+
+.icon-button:active {
+	opacity: 0.3;
+}
+
+.icon-button > svg {
+	color: var(--text);
+}

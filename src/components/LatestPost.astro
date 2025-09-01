@@ -9,11 +9,9 @@
       )
       .then((data) => {
         const item = data.querySelector('item');
-				console.log(item)
         this.latestPost = {
           link: item.querySelector('link').textContent,
           body: item.querySelector('description').textContent,
-          
         };
       })
       .catch((error) => {

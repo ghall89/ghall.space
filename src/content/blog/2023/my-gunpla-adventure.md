@@ -12,17 +12,17 @@ I've never been a Gundam fan, the genre just never really appealed to me. But I 
 
 So, there was a little anime I watched back in high school called [Full Metal Panic](https://en.wikipedia.org/wiki/Full_Metal_Panic!) which, like Gundam, features people piloting giant mecha. As luck would have it, Bandai, the makers of Gunpla kits, have/had the license to make kits for the series. Not-so-luckily, the kit I wanted based on the main character's mech is impossible to find at a reasonable price at the moment, so I settled for my second pick:
 
-<img src="/media/gunpla/box.jpg" width="90%" alt="a box sitting on a table with an image of a mech and text that reads 'M9 Gernsback ver IV (Agressor Squadron)'" />
+![a box sitting on a table with an image of a mech and text that reads 'M9 Gernsback ver IV \(Agressor Squadron)'](src/assets/blog/gunpla/box.jpg)
 
 So, with the kit in hand, I opened the box and was greeted by a handful of plastic pouches containing what seemed like a thousand parts connected on plastic sprues in a variety of blues and grays. I took out the contents and perused through the included instructions, which read very much like it was designed by Ikea, if Ikea sold miniature giant robots. The writing was all in Japanese, but the illustrations were enough to guide one through the process no matter what language they can read.
 
-<img src="/media/gunpla/all-the-parts.jpg" width="90%" alt="neatly piled plastic sprues sorted by color, an instruction booklet, and a model of R2-D2 lurking in the corner" />
+![neatly piled plastic sprues sorted by color, an instruction booklet, and a model of R2-D2 lurking in the corner](src/assets/blog/gunpla/all-the-parts.jpg)
 
 Separating the individual pieces from each sprue was pretty painless. They came off very cleanly and I barely had to use my handy hobby knife to clean up bits of excess plastic, and when I did it cut through like butter. Not a drop of glue was needed, everything snapped together perfectly. I struggled a bit with the smaller parts (of which there were plenty), and there were a couple seemingly microscopic stickers I had to apply, so my iFixIt tweezers came in handy quite a few times.
 
 After a couple hours, I had a pretty sweet looking miniature mecha.
 
-<img src="/media/gunpla/final.jpg" width="90%" alt="the finished model, standing tall, and holding a scary looking gun" />
+![the finished model, standing tall, and holding a scary looking gun](src/assets/blog/gunpla/final.jpg)
 
 Putting it together, I was just so amazed by the level of engineering that went into this kit. Putting it all together, I could tell someone put a lot of care and attention into designing this thing, rivaling some of the Lego kits I've built, from the near-seamless fit of all the pieces, to the various types of joints enabling a quite frankly insane level of pose-ability for something this size.
 

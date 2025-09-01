@@ -8,6 +8,7 @@ export async function getStaticPaths() {
 	const posts = await getCollection('blog');
 
 	const tags = ['all'];
+
 	posts.forEach((post) =>
 		post.data.tags.forEach((tag) => {
 			if (!tags.includes(tag)) {
@@ -46,14 +47,18 @@ posts.sort(
 );
 ---
 
-<Layout title="Blog Archive">
+<Layout title={`Blog - ${tag}`}>
+	<h1>All posts tagged: {tag}</h1>
 	<ul>
 		{
-			posts.map(({ slug, data }) => (
-				<li transition:name={slug}>
-					<a href={`/posts/${slug}`}>{data.title}</a> -
+			posts.map((post) => (
+				<li>
+					<a href={`/posts/${post.id}`}>{post.data.title}</a> -
 					<span>
-						{format(add(new Date(data.pubDate), { hours: 6 }), 'MMM do, y')}
+						{format(
+							add(new Date(post.data.pubDate), { hours: 6 }),
+							'MMM do, y'
+						)}
 					</span>
 				</li>
 			))

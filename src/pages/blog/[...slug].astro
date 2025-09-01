@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 import Layout from '@layouts/Layout.astro';
 import BlogHeader from '@components/BlogHeader.astro';
@@ -8,20 +8,21 @@ import Tags from '@components/Tags.astro';
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
 	return posts.map((post) => ({
-		params: { slug: post.slug },
+		params: { slug: post.id },
 		props: { post },
 	}));
 }
 
 const { post } = Astro.props;
 
-const { data, slug } = post;
+const { data } = post;
 
-const { Content } = await post.render();
+const { Content } = await render(post);
 ---
 
 <Layout title={data.title}>
-	<article transition:name={slug}>
+	<h1></h1>
+	<article>
 		<BlogHeader title={data.title} date={data.pubDate} />
 		<Content />
 		<a href="https://notbyai.fyi/">
@@ -30,3 +31,21 @@ const { Content } = await post.render();
 		<Tags tags={data.tags} />
 	</article>
 </Layout>
+
+<style>
+	.not-by-ai {
+		display: block;
+		width: 134px;
+		height: 45px;
+		background-image: url(../../assets/svg/Written-By-Human-Not-By-AI-Badge-white.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 1rem 0;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		.not-by-ai {
+			background-image: url(../../assets/svg/Written-By-Human-Not-By-AI-Badge-black.svg);
+		}
+	}
+</style>

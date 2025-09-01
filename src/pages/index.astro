@@ -5,9 +5,10 @@ import { getCollection } from 'astro:content';
 
 import Layout from '@layouts/Layout.astro';
 import Avatar from '@components/Avatar.astro';
+import LatestPost from '@components/LatestPost.astro';
 
-import MastodonIcon from '../img/svg/mastodon.svg';
-import BlueskyIcon from '../img/svg/bluesky.svg';
+import MastodonIcon from '../assets/svg/mastodon.svg';
+import BlueskyIcon from '../assets/svg/bluesky.svg';
 
 const iconSize = 16;
 const posts = await getCollection('blog');
@@ -19,9 +20,7 @@ const latestPost = posts.sort(
 ---
 
 <Layout title="Welcome">
-	<div transition:name="my-avatar">
-		<Avatar size={200} />
-	</div>
+	<Avatar size={200} />
 	<p>
 		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
 		tech enthusiast.
@@ -50,10 +49,12 @@ const latestPost = posts.sort(
 		If you want to get in touch, I'm on <a
 			rel="me"
 			href="https://mastodon.social/@ghalldev"
-			target="_blank"><MastodonIcon size={iconSize} />Mastodon</a
+			target="_blank"
+			><MastodonIcon width={iconSize} height={iconSize} />Mastodon</a
 		> and <a
 			href="https://bsky.app/profile/ghalldev.bsky.social"
-			target="_blank"><BlueskyIcon size={iconSize} />Bluesky</a
+			target="_blank"
+			><BlueskyIcon width={iconSize} height={iconSize} />Bluesky</a
 		>.
 	</p>
 	<p>
@@ -62,10 +63,11 @@ const latestPost = posts.sort(
 			target="_blank">Natalia Vazquez</a
 		>.
 	</p>
+	<LatestPost />
 </Layout>
 
 <style>
 	a > svg {
-		transform: translateY(0.18rem);
+		transform: translateY(0.1rem);
 	}
 </style>

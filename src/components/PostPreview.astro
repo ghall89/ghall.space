@@ -1,25 +1,26 @@
 ---
 import BlogHeader from '@components/BlogHeader.astro';
 import Tags from '@components/Tags.astro';
-
-interface Post {
-	data: {
-		title: string;
-		pubDate: Date;
-		tags: string[];
-	};
-	slug: string;
-}
+import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-	post: Post;
+	post: CollectionEntry<'blog'>;
 }
 
 const { post } = Astro.props;
-const { data, slug } = post;
 ---
 
-<article transition:name={slug}>
-	<BlogHeader title={post.data.title} date={data.pubDate} slug={slug} />
-	<Tags tags={data.tags} />
+<article>
+	<BlogHeader title={post.data.title} date={post.data.pubDate} slug={post.id} />
+	<Tags tags={post.data.tags} />
 </article>
+
+<style>
+	article {
+		padding-bottom: 20px;
+	}
+
+	article:not(:first-child) {
+		border-top: var(--border);
+	}
+</style>
