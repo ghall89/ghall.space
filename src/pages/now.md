@@ -2,8 +2,9 @@
 layout: ../layouts/Layout.astro
 title: Now
 ---
+# Now
 
-Hey there, this is my [/now page](https://nownownow.com/about)!
+What's a [Now page](https://nownownow.com/about)?
 
 _Last updated: August 29, 2025_
 

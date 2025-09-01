@@ -3,6 +3,8 @@ layout: ../layouts/Layout.astro
 title: Projects
 ---
 
+# Projects
+
 ## Mac Apps
 
 ### [AutoDock](https://github.com/ghall89/AutoDock)

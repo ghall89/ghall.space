@@ -67,6 +67,8 @@ main p {
 	line-height: 1.5;
 }
 
+/* Article image style */
+
 article img {
 	border-radius: var(--radius);
 	display: block;
@@ -74,6 +76,8 @@ article img {
 	max-width: var(--max-page-width);
 	height: auto;
 }
+
+/* Typography */
 
 .footnotes {
 	font-size: 1rem;
@@ -109,4 +113,22 @@ code,
 kbd {
 	font-size: 0.85rem;
 	white-space: nowrap;
+}
+
+/* Icon button */
+
+.icon-button {
+	background: none;
+	padding: 2px 2px -2px;
+	border: none;
+	line-height: 1;
+	aspect-ratio: square;
+}
+
+.icon-button:active {
+	opacity: 0.3;
+}
+
+.icon-button > svg {
+	color: var(--text);
 }
