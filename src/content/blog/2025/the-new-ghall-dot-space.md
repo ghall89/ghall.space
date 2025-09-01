@@ -1,7 +1,7 @@
 ---
 title: 'The New ghall.space'
 pubDate: '9/1/25'
-tags: ['Meta', 'Programming', 'Webdev']
+tags: ['Meta', 'Programming', 'Web Dev']
 ---
 It's been a while since I originally built this website, which started life as a little project to learn the, at the time, brand new web framework Astro. My skills in web development have improved greatly in that time, as has the functionality of the Astro framework. Therefore, I thought it would be a fun project to make some improvements to the site, both visually and in how the codebase is structured.
 
