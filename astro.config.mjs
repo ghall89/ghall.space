@@ -13,5 +13,6 @@ export default defineConfig({
 	integrations: [mdx(), alpinejs()],
 	redirects: {
 		'/posts/[...slug]': '/blog/[...slug]',
+		'/blog': '/blog/page/1',
 	},
 });
