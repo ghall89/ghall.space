@@ -2,11 +2,12 @@
 layout: ../layouts/Layout.astro
 title: Now
 ---
+
 # Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: August 29, 2025_
+_Last updated: September 3, 2025_
 
 ## 🎧 Listening
 
@@ -14,7 +15,7 @@ _Last updated: August 29, 2025_
 
 ## 🎮 Playing
 
-- [Batman Arkham Asylum](https://www.igdb.com/games/batman-arkham-asylum)
+- [Batman Arkham City](https://www.igdb.com/games/batman-arkham-city)
 - [Assassin's Creed Shadows](https://www.igdb.com/games/assassins-creed-shadows)
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-3)
 
