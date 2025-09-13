@@ -7,22 +7,21 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: September 3, 2025_
+_Last updated: September 13, 2025_
 
 ## 🎧 Listening
 
 - [Ego Death at a Bachelorette Party - Hayley Williams](https://album.link/i/1833006180)
+- [The Else - They Might Be Giants](https://album.link/i/635922095)
 
 ## 🎮 Playing
 
-- [Batman Arkham City](https://www.igdb.com/games/batman-arkham-city)
 - [Assassin's Creed Shadows](https://www.igdb.com/games/assassins-creed-shadows)
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-3)
 
 ## 📺 Watching
 
-- [Foundation](https://www.themoviedb.org/tv/93740-foundation)
-- [Star Trek: Strange New Worlds](https://www.themoviedb.org/search/tv?query=Star%20Trek%3A%20Strange%20New%20Worlds)
+- Nothing at the moment
 
 ## 💻 Using
 
