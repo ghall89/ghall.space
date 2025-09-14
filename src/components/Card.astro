@@ -1,0 +1,54 @@
+---
+interface Props {
+	title?: string;
+	image?: ImageMetadata;
+	links?: {
+		label: string;
+		href: string;
+		newWindow?: boolean;
+	}[];
+}
+
+const { title, image, links } = Astro.props;
+---
+
+<div class="card">
+	{image && <img src={image.src} alt="" />}
+	<div>
+		{title && <h2>{title}</h2>}
+		<slot />
+		{
+			links &&
+				links.map((link) => (
+					<a
+						href={link.href}
+						target={link.newWindow ? '_blank' : '_self'}
+						rel="noopener noreferrer"
+					>
+						{link.label}
+					</a>
+				))
+		}
+	</div>
+</div>
+
+<style>
+	.card {
+		border: var(--border);
+		border-radius: var(--radius);
+		overflow: hidden;
+	}
+
+	.card > div {
+		padding: 1rem;
+	}
+
+	h2 {
+		margin: 0;
+	}
+
+	img {
+		object-fit: cover;
+		max-width: 100%;
+	}
+</style>
