@@ -96,8 +96,6 @@ blockquote {
 
 code {
 	color: var(--orange);
-	border: var(--border);
-	border-radius: var(--radius);
 	padding: 1px 4px;
 	margin: 0 2px;
 	user-select: all;
@@ -107,12 +105,12 @@ kbd {
 	border: var(--border);
 	border-radius: var(--radius);
 	padding: 1px 4px;
+	white-space: nowrap;
 }
 
 code,
 kbd {
 	font-size: 0.85rem;
-	white-space: nowrap;
 }
 
 /* Icon button */

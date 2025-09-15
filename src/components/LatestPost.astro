@@ -9,6 +9,8 @@
       )
       .then((data) => {
         const item = data.querySelector('item');
+        const pubDate = new Date(item.querySelector('pubDate').textContent).toLocaleString()
+        console.log(pubDate)
         this.latestPost = {
           link: item.querySelector('link').textContent,
           body: item.querySelector('description').textContent,
@@ -24,8 +26,10 @@
 	<template x-if="latestPost">
 		<div class="mastodon-post">
 			<h2>Latest Mastodon Post</h2>
-			<p x-html="latestPost.body"></p>
-			<a x-bind:href="latestPost.link" target="_blank">View Post</a>
+			<div x-html="latestPost.body"></div>
+			<a x-bind:href="latestPost.link" target="_blank" rel="noopener noreferrer"
+				>View Post</a
+			>
 		</div>
 	</template>
 	<template x-if="!latestPost">
@@ -41,6 +45,7 @@
 		border-radius: var(--radius);
 		border: var(--border);
 	}
+
 	.mastodon-post > h2 {
 		margin-top: 0;
 	}
