@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: September 13, 2025_
+_Last updated: September 26, 2025_
 
 ## 🎧 Listening
 
@@ -17,11 +17,12 @@ _Last updated: September 13, 2025_
 ## 🎮 Playing
 
 - [Assassin's Creed Shadows](https://www.igdb.com/games/assassins-creed-shadows)
-- [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-3)
+- [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii)
+- [Hades II](https://www.igdb.com/games/hades-ii)
 
 ## 📺 Watching
 
-- Nothing at the moment
+- [Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster)
 
 ## 💻 Using
 
