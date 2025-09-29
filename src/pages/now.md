@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: September 26, 2025_
+_Last updated: September 29, 2025_
 
 ## 🎧 Listening
 
@@ -16,7 +16,7 @@ _Last updated: September 26, 2025_
 
 ## 🎮 Playing
 
-- [Assassin's Creed Shadows](https://www.igdb.com/games/assassins-creed-shadows)
+- [Persona 3 Reload](https://www.igdb.com/games/persona-3-reload)
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii)
 - [Hades II](https://www.igdb.com/games/hades-ii)
 
