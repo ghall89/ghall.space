@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: October 1, 2025_
+_Last updated: October 17, 2025_
 
 ## 🎧 Listening
 
@@ -16,7 +16,7 @@ _Last updated: October 1, 2025_
 
 ## 🎮 Playing
 
-- [Shadow of the Tomb Raider](https://thegamesdb.net/game.php?id=53992)
+- [Clair Obscur: Expedition 33](https://thegamesdb.net/game.php?id=127187)
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii)
 - [Hades II](https://www.igdb.com/games/hades-ii)
 
