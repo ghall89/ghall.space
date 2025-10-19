@@ -1,4 +1,6 @@
 ---
+import { ClientRouter } from 'astro:transitions';
+
 import '../global.css';
 
 import Header from '@components/Header/Header.astro';
@@ -29,6 +31,7 @@ const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
 			title="ghall.space - RSS"
 			href={`${Astro.site}rss.xml`}
 		/><title>{`ghall.space - ${title}`}</title>
+		<ClientRouter />
 	</head>
 	<body
 		class="layout-simple"
@@ -36,7 +39,7 @@ const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
 		:class="drawerOpen ? 'lock-scroll' : ''"
 	>
 		<Header />
-		<main>
+		<main transition:animate="initial">
 			<slot />
 		</main>
 		<Footer />
