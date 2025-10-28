@@ -1,21 +1,20 @@
 ---
+
 export const prerender = true;
 
-import { getCollection } from 'astro:content';
-
-import Layout from '@layouts/Layout.astro';
-import Avatar from '@components/Avatar.astro';
-import LatestPost from '@components/LatestPost.astro';
-
-import MastodonIcon from '../assets/svg/mastodon.svg';
-import BlueskyIcon from '../assets/svg/bluesky.svg';
+import { getCollection } from "astro:content";
+import Avatar from "@components/Avatar.astro";
+import LatestPost from "@components/LatestPost.astro";
+import Layout from "@layouts/Layout.astro";
+import BlueskyIcon from "../assets/svg/bluesky.svg";
+import MastodonIcon from "../assets/svg/mastodon.svg";
 
 const iconSize = 16;
-const posts = await getCollection('blog');
+const posts = await getCollection("blog");
 
 const latestPost = posts.sort(
 	(a, b) =>
-		new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf()
+		new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 )[0];
 ---
 

@@ -1,13 +1,13 @@
 @font-face {
 	font-family: Noto Sans;
 	src: url(./assets/fonts/NotoSans-VariableFont_wdth,wght.ttf)
-		format('truetype');
+		format("truetype");
 }
 
 @font-face {
 	font-family: JetBrainsMono;
 	src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf)
-		format('truetype');
+		format("truetype");
 }
 
 :root {
@@ -37,7 +37,7 @@
 html {
 	color: var(--text);
 	background-color: var(--background);
-	font-family: 'Noto Sans', sansserif;
+	font-family: "Noto Sans", sans-serif;
 	font-size: 1.1rem;
 }
 

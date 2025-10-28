@@ -1,10 +1,37 @@
-
-import __ASTRO_IMAGE_IMPORT_3KcDr from "src/assets/blog/my-ai-portrait.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fcreating-a-dating-profile-with-ai.md";
-import __ASTRO_IMAGE_IMPORT_1G57ng from "src/assets/blog/ileopard/mac-os-10-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md";
-import __ASTRO_IMAGE_IMPORT_Z1ESWoO from "src/assets/blog/ileopard/itunes-7.gif?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md";
-import __ASTRO_IMAGE_IMPORT_rrnp from "src/assets/blog/ileopard/ileopard-2-0-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md";
-import __ASTRO_IMAGE_IMPORT_Zi2DqH from "src/assets/blog/gunpla/box.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md";
 import __ASTRO_IMAGE_IMPORT_1OkzEl from "src/assets/blog/gunpla/all-the-parts.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md";
+import __ASTRO_IMAGE_IMPORT_Zi2DqH from "src/assets/blog/gunpla/box.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md";
 import __ASTRO_IMAGE_IMPORT_FYQiW from "src/assets/blog/gunpla/final.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md";
-export default new Map([["src/assets/blog/my-ai-portrait.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fcreating-a-dating-profile-with-ai.md", __ASTRO_IMAGE_IMPORT_3KcDr], ["src/assets/blog/ileopard/mac-os-10-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md", __ASTRO_IMAGE_IMPORT_1G57ng], ["src/assets/blog/ileopard/itunes-7.gif?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md", __ASTRO_IMAGE_IMPORT_Z1ESWoO], ["src/assets/blog/ileopard/ileopard-2-0-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md", __ASTRO_IMAGE_IMPORT_rrnp], ["src/assets/blog/gunpla/box.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md", __ASTRO_IMAGE_IMPORT_Zi2DqH], ["src/assets/blog/gunpla/all-the-parts.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md", __ASTRO_IMAGE_IMPORT_1OkzEl], ["src/assets/blog/gunpla/final.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md", __ASTRO_IMAGE_IMPORT_FYQiW]]);
-		
+import __ASTRO_IMAGE_IMPORT_rrnp from "src/assets/blog/ileopard/ileopard-2-0-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md";
+import __ASTRO_IMAGE_IMPORT_Z1ESWoO from "src/assets/blog/ileopard/itunes-7.gif?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md";
+import __ASTRO_IMAGE_IMPORT_1G57ng from "src/assets/blog/ileopard/mac-os-10-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md";
+import __ASTRO_IMAGE_IMPORT_3KcDr from "src/assets/blog/my-ai-portrait.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fcreating-a-dating-profile-with-ai.md";
+export default new Map([
+	[
+		"src/assets/blog/my-ai-portrait.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fcreating-a-dating-profile-with-ai.md",
+		__ASTRO_IMAGE_IMPORT_3KcDr,
+	],
+	[
+		"src/assets/blog/ileopard/mac-os-10-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md",
+		__ASTRO_IMAGE_IMPORT_1G57ng,
+	],
+	[
+		"src/assets/blog/ileopard/itunes-7.gif?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md",
+		__ASTRO_IMAGE_IMPORT_Z1ESWoO,
+	],
+	[
+		"src/assets/blog/ileopard/ileopard-2-0-1.png?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2022%2Fileopard-a-retrospective.md",
+		__ASTRO_IMAGE_IMPORT_rrnp,
+	],
+	[
+		"src/assets/blog/gunpla/box.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md",
+		__ASTRO_IMAGE_IMPORT_Zi2DqH,
+	],
+	[
+		"src/assets/blog/gunpla/all-the-parts.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md",
+		__ASTRO_IMAGE_IMPORT_1OkzEl,
+	],
+	[
+		"src/assets/blog/gunpla/final.jpg?astroContentImageFlag=&importer=src%2Fcontent%2Fblog%2F2023%2Fmy-gunpla-adventure.md",
+		__ASTRO_IMAGE_IMPORT_FYQiW,
+	],
+]);

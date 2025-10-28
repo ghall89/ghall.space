@@ -1,9 +1,10 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
-import type { Page } from 'astro';
+
+import { type CollectionEntry, getCollection } from 'astro:content';
+import PostPreview from '@components/PostPreview.astro';
 
 import Layout from '@layouts/Layout.astro';
-import PostPreview from '@components/PostPreview.astro';
+import type { Page } from 'astro';
 
 export async function getStaticPaths({ paginate }) {
 	const allPosts = await getCollection('blog');
@@ -52,8 +53,8 @@ const { page } = Astro.props;
 	.pagination {
 		display: flex;
 		justify-content: center;
-		margin-top: 2rem;
 		margin: auto;
+		margin-top: 2rem;
 		gap: 1rem;
 	}
 

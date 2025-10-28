@@ -1,21 +1,21 @@
 ---
-import { format, add } from 'date-fns';
-import { getCollection } from 'astro:content';
 
+import { getCollection } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
+import { add, format } from 'date-fns';
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
 
 	const tags = ['all'];
 
-	posts.forEach((post) =>
+	posts.forEach((post) => {
 		post.data.tags.forEach((tag) => {
 			if (!tags.includes(tag)) {
 				tags.push(tag);
 			}
-		})
-	);
+		});
+	});
 
 	return tags.map((tag) => ({
 		params: { tag },
