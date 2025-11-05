@@ -1,0 +1,90 @@
+---
+import BrushIcon from "../../assets/svg/paintbrush.svg";
+---
+
+<div
+  class="container"
+  x-data="{ menuOpen: false }"
+  @keydown.escape="menuOpen = false"
+>
+  <button id="theme-button" type="button" @click="menuOpen = ! menuOpen"
+    ><BrushIcon width={24} height={24} /></button
+  >
+  <div class="overlay" @click="menuOpen = !menuOpen" x-show="menuOpen"></div>
+  <div
+    class="theme-menu"
+    x-show="menuOpen"
+    x-transition:enter-start="hidden-menu"
+    x-transition:enter-end="visible-menu"
+    x-transition:leave-start="visible-menu"
+    x-transition:leave-end="hidden-menu"
+  >
+    <legend>Select a theme:</legend>
+    <div>
+      <input
+        type="radio"
+        id="system"
+        name="theme"
+        value="system"
+        x-model="theme"
+      />
+      <label for="system">System</label>
+
+      <input
+        type="radio"
+        id="light"
+        name="theme"
+        value="light"
+        x-model="theme"
+      />
+      <label for="light">Light</label>
+
+      <input type="radio" id="dark" name="theme" value="dark" x-model="theme" />
+      <label for="dark">Dark</label>
+    </div>
+  </div>
+</div>
+
+<style>
+  .container {
+    display: inline;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+  }
+
+  .theme-menu {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: var(--background);
+    padding: 20px;
+    width: 300px;
+    z-index: 4;
+    border: var(--border);
+    transition: var(--transition);
+  }
+
+  .hidden-menu {
+    opacity: 0;
+    scale: 0.9;
+  }
+
+  #theme-button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: var(--text);
+  }
+
+  #theme-button:hover {
+    opacity: 0.75;
+  }
+</style>

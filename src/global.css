@@ -20,28 +20,24 @@
 	--radius: 5px;
 	--border: 1px solid #ced3f1;
 	--max-page-width: 800px;
+	--transition: all 0.3s ease-in-out;
 }
 
-@media (prefers-color-scheme: dark) {
-	:root {
-		--blue: #89b4fa;
-		--sky: #89dceb;
-		--red: #f38ba8;
-		--orange: #fab387;
-		--text: #cdd6f4;
-		--background: #1e1e2e;
-		--border: 1px solid #505160;
-	}
+.theme-dark {
+	--blue: #89b4fa;
+	--sky: #89dceb;
+	--red: #f38ba8;
+	--orange: #fab387;
+	--text: #cdd6f4;
+	--background: #1e1e2e;
+	--border: 1px solid #505160;
 }
 
-html {
+body {
 	color: var(--text);
 	background-color: var(--background);
 	font-family: "Noto Sans", sans-serif;
 	font-size: 1.1rem;
-}
-
-body {
 	margin: 0;
 	padding: 0;
 }

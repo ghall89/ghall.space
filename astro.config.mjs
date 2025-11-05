@@ -9,7 +9,7 @@ export default defineConfig({
 	site: "https://ghall.space",
 	output: "static",
 
-	integrations: [mdx(), alpinejs()],
+	integrations: [mdx(), alpinejs({ entrypoint: "/src/entrypoint" })],
 	redirects: {
 		"/posts/[...slug]": "/blog/[...slug]",
 		"/blog": "/blog/page/1",
