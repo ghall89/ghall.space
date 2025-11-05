@@ -1,5 +1,5 @@
 <div
-	x-data="{
+  x-data="{
   latestPost: null,
   fetchPost() {
     fetch('https://mastodon.social/@ghalldev.rss')
@@ -21,32 +21,32 @@
       });
   },
 }"
-	x-init="fetchPost()"
+  x-init="fetchPost()"
 >
-	<template x-if="latestPost">
-		<div class="mastodon-post">
-			<h2>Latest Mastodon Post</h2>
-			<div x-html="latestPost.body"></div>
-			<a x-bind:href="latestPost.link" target="_blank" rel="noopener noreferrer"
-				>View Post</a
-			>
-		</div>
-	</template>
-	<template x-if="!latestPost">
-		<p>Loading...</p>
-	</template>
+  <template x-if="latestPost">
+    <div class="mastodon-post">
+      <h2>Latest Mastodon Post</h2>
+      <div x-html="latestPost.body"></div>
+      <a x-bind:href="latestPost.link" target="_blank" rel="noopener noreferrer"
+        >View Post</a
+      >
+    </div>
+  </template>
+  <template x-if="!latestPost">
+    <p>Loading...</p>
+  </template>
 </div>
 
 <style>
-	.mastodon-post {
-		margin: 2rem auto;
-		padding: 1rem;
-		max-width: 600px;
-		border-radius: var(--radius);
-		border: var(--border);
-	}
+  .mastodon-post {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 600px;
+    border-radius: var(--radius);
+    border: var(--border);
+  }
 
-	.mastodon-post > h2 {
-		margin-top: 0;
-	}
+  .mastodon-post > h2 {
+    margin-top: 0;
+  }
 </style>

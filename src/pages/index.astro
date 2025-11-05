@@ -1,5 +1,4 @@
 ---
-
 export const prerender = true;
 
 import { getCollection } from "astro:content";
@@ -13,64 +12,64 @@ const iconSize = 16;
 const posts = await getCollection("blog");
 
 const latestPost = posts.sort(
-	(a, b) =>
-		new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
+  (a, b) =>
+    new Date(b.data.pubDate).valueOf() - new Date(a.data.pubDate).valueOf(),
 )[0];
 ---
 
 <Layout title="Welcome">
-	<Avatar size={200} />
-	<p>
-		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
-		tech enthusiast.
-	</p>
-	<p>
-		When I'm not writing code, I'm usually enjoying one of my other hobbies;
-		video games, board games, music, photography, art, the list goes on...
-	</p>
-	<p>
-		I also like writing about stuff, so I put together this site to share
-		whatever's on my mind about the world of tech, gaming, life, web
-		development, and whatever else strikes my fancy.
-	</p>
-	<p>
-		Read my latest blog post, <a href={`blog/${latestPost.id}`}
-			>{latestPost.data.title}</a
-		>, posted on {new Date(latestPost.data.pubDate).toLocaleDateString()}.
-	</p>
-	<p>
-		If your interested in checking out my web dev projects, check out <a
-			href="https://ghall.dev/"
-			target="_blank"
-			rel="noopener noreferrer">my portfolio</a
-		>.
-	</p>
-	<p>
-		If you want to get in touch, I'm on <a
-			rel="me"
-			href="https://mastodon.social/@ghalldev"
-			target="_blank"
-			rel="noopener noreferrer"
-			><MastodonIcon width={iconSize} height={iconSize} />Mastodon</a
-		> and <a
-			href="https://bsky.app/profile/ghalldev.bsky.social"
-			target="_blank"
-			rel="noopener noreferrer"
-			><BlueskyIcon width={iconSize} height={iconSize} />Bluesky</a
-		>.
-	</p>
-	<p>
-		My portrait was drawn by <a
-			href="https://www.nataliavazquezgarcia.com"
-			target="_blank"
-			rel="noopener noreferrer">Natalia Vazquez</a
-		>.
-	</p>
-	<LatestPost />
+  <Avatar size={200} />
+  <p>
+    My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
+    tech enthusiast.
+  </p>
+  <p>
+    When I'm not writing code, I'm usually enjoying one of my other hobbies;
+    video games, board games, music, photography, art, the list goes on...
+  </p>
+  <p>
+    I also like writing about stuff, so I put together this site to share
+    whatever's on my mind about the world of tech, gaming, life, web
+    development, and whatever else strikes my fancy.
+  </p>
+  <p>
+    Read my latest blog post, <a href={`blog/${latestPost.id}`}
+      >{latestPost.data.title}</a
+    >, posted on {new Date(latestPost.data.pubDate).toLocaleDateString()}.
+  </p>
+  <p>
+    If your interested in checking out my web dev projects, check out <a
+      href="https://ghall.dev/"
+      target="_blank"
+      rel="noopener noreferrer">my portfolio</a
+    >.
+  </p>
+  <p>
+    If you want to get in touch, I'm on <a
+      rel="me"
+      href="https://mastodon.social/@ghalldev"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><MastodonIcon width={iconSize} height={iconSize} />Mastodon</a
+    > and <a
+      href="https://bsky.app/profile/ghalldev.bsky.social"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><BlueskyIcon width={iconSize} height={iconSize} />Bluesky</a
+    >.
+  </p>
+  <p>
+    My portrait was drawn by <a
+      href="https://www.nataliavazquezgarcia.com"
+      target="_blank"
+      rel="noopener noreferrer">Natalia Vazquez</a
+    >.
+  </p>
+  <LatestPost />
 </Layout>
 
 <style>
-	a > svg {
-		transform: translateY(0.1rem);
-	}
+  a > svg {
+    transform: translateY(0.1rem);
+  }
 </style>

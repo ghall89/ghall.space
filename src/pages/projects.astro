@@ -1,5 +1,4 @@
 ---
-
 import Card from "@components/Card.astro";
 import { projects } from "@data/projects";
 import Layout from "@layouts/Layout.astro";
@@ -8,41 +7,41 @@ const title = "Projects";
 ---
 
 <Layout title={title}>
-	<h1>{title}</h1>
-	<div class="projects-grid">
-		{
-			projects.map((project) => (
-				<Card
-					title={project.title}
-					image={project.image}
-					links={[
-						{
-							label: 'More...',
-							href: project.link,
-							newWindow: true,
-						},
-					]}
-				>
-					<div class="project-content">
-						<p>{project.description}</p>
-					</div>
-				</Card>
-			))
-		}
-	</div>
+  <h1>{title}</h1>
+  <div class="projects-grid">
+    {
+      projects.map((project) => (
+        <Card
+          title={project.title}
+          image={project.image}
+          links={[
+            {
+              label: "More...",
+              href: project.link,
+              newWindow: true,
+            },
+          ]}
+        >
+          <div class="project-content">
+            <p>{project.description}</p>
+          </div>
+        </Card>
+      ))
+    }
+  </div>
 </Layout>
 
 <style>
-	.projects-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-		gap: 1rem;
-	}
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+  }
 
-	.project-content {
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		height: 8rem;
-	}
+  .project-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 8rem;
+  }
 </style>
