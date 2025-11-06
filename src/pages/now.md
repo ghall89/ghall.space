@@ -7,18 +7,18 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: October 17, 2025_
+_Last updated: November 6, 2025_
 
 ## 🎧 Listening
 
 - [Ego Death at a Bachelorette Party - Hayley Williams](https://album.link/i/1833006180)
 - [The Else - They Might Be Giants](https://album.link/i/635922095)
+- [Kiki's Delivery Service (Original Soundtrack) - Joe Hisaishi](https://album.link/i/882658777)
 
 ## 🎮 Playing
 
-- [Clair Obscur: Expedition 33](https://thegamesdb.net/game.php?id=127187)
-- [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii)
-- [Hades II](https://www.igdb.com/games/hades-ii)
+- [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii) - PS5
+- [Persona 5 Royal](https://www.igdb.com/games/persona-5-royal) - Switch
 
 ## 📺 Watching
 
