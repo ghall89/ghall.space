@@ -1,13 +1,17 @@
 ---
 import Drawer from "./Drawer.astro";
 import Nav from "./Nav.astro";
+import ThemeToggle from "./ThemeToggle.astro";
 ---
 
 <header>
   <div class="container">
     <a href="/">ghall.space</a>
-    <Nav />
-    <Drawer />
+    <div>
+      <Nav />
+      <ThemeToggle />
+      <Drawer />
+    </div>
   </div>
 </header>
 
@@ -15,8 +19,7 @@ import Nav from "./Nav.astro";
   header {
     margin-bottom: 20px;
     height: 70px;
-    background-color: rgba(252, 252, 252, 90%);
-    backdrop-filter: blur(10px);
+    background-color: var(--background);
     width: 100%;
     top: 0;
     position: fixed;
@@ -35,15 +38,14 @@ import Nav from "./Nav.astro";
     height: 100%;
   }
 
+  .container > div {
+    display: flex;
+    gap: 20px;
+  }
+
   a {
     font-size: 1.6rem;
     color: var(--text);
     font-weight: bold;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    header {
-      background-color: rgba(30, 30, 46, 90%);
-    }
   }
 </style>
