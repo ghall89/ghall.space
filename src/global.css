@@ -5,6 +5,12 @@
 }
 
 @font-face {
+	font-family: Noto Serif;
+	src: url(./assets/fonts/NotoSerif-VariableFont_wdth,wght.ttf)
+		format("truetype");
+}
+
+@font-face {
 	font-family: JetBrainsMono;
 	src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf)
 		format("truetype");
@@ -16,7 +22,7 @@
 	--red: #d20f39;
 	--orange: #fe640b;
 	--text: #4c4f69;
-	--background: #fcfcfc;
+	--background: #fffdf5;
 	--radius: 5px;
 	--border: 1px solid #ced3f1;
 	--max-page-width: 800px;
@@ -40,6 +46,10 @@ body {
 	font-size: 1.1rem;
 	margin: 0;
 	padding: 0;
+}
+
+.serif-text {
+	font-family: "Noto Serif", serif;
 }
 
 main {

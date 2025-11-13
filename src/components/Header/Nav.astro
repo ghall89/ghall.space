@@ -7,22 +7,24 @@ const pathComponents = pathname.split("/").slice(1);
 ---
 
 <nav>
-  {
-    navLinks.map((link) => (
-      <li>
-        <a
-          href={`/${link.path}`}
-          class={pathComponents[0] === link.path ? "selected" : null}
-        >
-          {link.label}
-        </a>
-      </li>
-    ))
-  }
+  <ul>
+    {
+      navLinks.map((link) => (
+        <li>
+          <a
+            href={`/${link.path}`}
+            class={pathComponents[0] === link.path ? "selected" : null}
+          >
+            {link.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
 </nav>
 
 <style>
-  nav {
+  nav > ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -34,31 +36,11 @@ const pathComponents = pathname.split("/").slice(1);
   a {
     color: var(--text);
     padding: 5px 10px;
-    border-radius: var(--radius);
-    transition: background-color 0.2s ease-in-out;
-  }
-
-  a:hover {
-    background-color: rgba(0, 0, 0, 0.04);
-    opacity: 1;
-  }
-
-  .underline {
-    height: 2px;
-    width: 100%;
-    background-color: var(--orange);
   }
 
   @media screen and (max-width: 768px) {
     nav {
       display: none;
-    }
-  }
-
-  @media (prefers-color-scheme: dark) {
-    a:hover {
-      background-color: rgba(231, 237, 255, 0.1);
-      opacity: 1;
     }
   }
 </style>

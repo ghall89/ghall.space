@@ -22,11 +22,11 @@ const { Content } = await render(post);
 <Layout title={data.title}>
   <article>
     <BlogHeader title={data.title} date={data.pubDate} />
+    <Tags tags={data.tags} />
     <Content />
-    <a href="https://notbyai.fyi/">
+    <a href="https://notbyai.fyi/" target="_blank">
       <i class="not-by-ai"></i>
     </a>
-    <Tags tags={data.tags} />
   </article>
 </Layout>
 
@@ -39,11 +39,5 @@ const { Content } = await render(post);
     background-repeat: no-repeat;
     background-position: center;
     margin: 1rem 0;
-  }
-
-  @media (prefers-color-scheme: dark) {
-    .not-by-ai {
-      background-image: url(../../assets/svg/Written-By-Human-Not-By-AI-Badge-black.svg);
-    }
   }
 </style>

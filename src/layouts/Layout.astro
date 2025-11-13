@@ -37,9 +37,10 @@ const title = Astro.props.title || Astro.props.frontmatter?.title || "Unknown";
     class="layout-simple"
     x-data="{
       drawerOpen: false,
-      darkMode: $persist(false)
+      darkMode: $persist(false),
+      serifs: $persist(true)
     }"
-    :class="{ 'lock-scroll': drawerOpen, 'theme-dark': darkMode}"
+    :class="{ 'lock-scroll': drawerOpen, 'theme-dark': darkMode, 'serif-text': serifs}"
   >
     <Header />
     <main transition:animate="initial">
