@@ -30,12 +30,12 @@
 }
 
 .theme-dark {
-	--blue: #89b4fa;
-	--sky: #89dceb;
+	--blue: #5da7fb;
+	--sky: #00b0f5;
 	--red: #f38ba8;
 	--orange: #fab387;
-	--text: #cdd6f4;
-	--background: #1e1e2e;
+	--text: #c4caed;
+	--background: #2a2c32;
 	--border: 1px solid #505160;
 }
 
