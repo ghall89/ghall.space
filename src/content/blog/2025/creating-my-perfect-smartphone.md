@@ -1,6 +1,6 @@
 ---
-title: 'Skip the Algorithm: Be Your Own Online Curator'
-pubDate: '3/1/25'
+title: 'Creating My Perfect Smartphone'
+pubDate: '11/14/25'
 tags: ['Tech', 'Mindfulness']
 ---
 
@@ -10,7 +10,7 @@ Over the last several weeks, I've been slowly paring down what's on my phone. It
 
 I've also removed any free-to-play games, with the exception of Pokémon TCG Pocket (it's been my guilty pleasure since it released 😅), and unsubscribed from Apple Arcade. My phone is not my primary gaming device, nor do I ever want it to be, so limiting my phone to games that I can just pick up and play for a few minutes here and there just makes sense. 
 
-More recently I began the next phase of my plan for a better smartphone; removing the remaining "infinite feed" apps I mentioned earlier. Bluesky was easy, I spend very little time on there, there are just a few people in the web dev and gaming worlds I like to follow. Ivory and Ice Cubes (my Mastodon clients of choice) will probably be the most missed, but I have it open at pretty much all times when I'm at my computer, so I'm sure I will adapt.
+More recently, I began the next phase of my plan for a better smartphone; removing the remaining "infinite feed" apps I mentioned earlier. Bluesky was easy, I spend very little time on there, there are just a few people in the web dev and gaming worlds I like to follow. Ivory and Ice Cubes (my Mastodon clients of choice) will probably be the most missed, but I have it open at pretty much all times when I'm at my computer, so I'm sure I will adapt.
 
 Tapestry, I think, I will leave on because I have a little bit of a soft spot for it from being a Kickstarter backer, and because my feed is just web comics and cute animals. 
 
