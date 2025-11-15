@@ -8,7 +8,14 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
 	site: "https://ghall.space",
 	output: "static",
-
+	markdown: {
+		shikiConfig: {
+			themes: {
+				light: "github-light",
+				dark: "github-dark",
+			},
+		},
+	},
 	integrations: [mdx(), alpinejs({ entrypoint: "/src/entrypoint" })],
 	redirects: {
 		"/posts/[...slug]": "/blog/[...slug]",

@@ -136,3 +136,19 @@ kbd {
 .icon-button > svg {
 	color: var(--text);
 }
+
+/* shiki */
+
+.astro-code,
+.astro-code span {
+	background-color: var(--background) !important;
+	/* Optional, if you also want font styles */
+	font-style: var(--shiki-light-font-style);
+	font-weight: var(--shiki-light-font-weight);
+	text-decoration: var(--shiki-light-text-decoration);
+}
+
+.theme-dark .astro-code,
+.theme-dark .astro-code span {
+	color: var(--shiki-dark) !important;
+}

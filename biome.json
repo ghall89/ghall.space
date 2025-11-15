@@ -39,6 +39,9 @@
 			"includes": ["**/*.svelte", "**/*.astro", "**/*.vue"],
 			"linter": {
 				"rules": {
+					"complexity": {
+						"noImportantStyles": "off"
+					},
 					"style": {
 						"useConst": "off",
 						"useImportType": "off"
