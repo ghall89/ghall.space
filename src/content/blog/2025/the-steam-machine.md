@@ -14,4 +14,4 @@ Whatever happens, it's not going to replace my PlayStation 5. But gaming has bee
 
 [^1]: I'm primarily talking about software compatibility. For the Switch, any game on the eShop will 100% be compatibile, but not every game on Steam will work on the Steam Deck.
 
-[^2]: Incedentally, these are the same things that have made the Switch 2 less appealing to me
+[^2]: Incidentally, these are the same things that have made the Switch 2 less appealing to me
