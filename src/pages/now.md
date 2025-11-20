@@ -7,22 +7,29 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: November 6, 2025_
+_Last updated: November 20, 2025_
 
 ## 🎧 Listening
 
 - [Ego Death at a Bachelorette Party - Hayley Williams](https://album.link/i/1833006180)
 - [The Else - They Might Be Giants](https://album.link/i/635922095)
-- [Kiki's Delivery Service (Original Soundtrack) - Joe Hisaishi](https://album.link/i/882658777)
+- [Clair Obscur: Expedition 33 (Original Soundtrack) - Lorien Testard](https://album.link/i/1808472460)
 
 ## 🎮 Playing
 
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii) - PS5
-- [Persona 5 Royal](https://www.igdb.com/games/persona-5-royal) - Switch
+- [Cyberpunk 2077](https://www.igdb.com/games/cyberpunk-2077) - PS5
+- [Tomb Raider: Definitive Edition](https://www.igdb.com/games/tomb-raider-definitive-edition) - Switch
+
+## 🎲 Rolling
+
+- [Knarr](https://boardgamegeek.com/boardgame/379629/knarr)
+- [Fall of Rome](https://boardgamegeek.com/boardgame/260428/fall-of-rome)
+- [CuBirds](https://boardgamegeek.com/boardgame/245476/cubirds)
 
 ## 📺 Watching
 
-- [Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster)
+- Nothing at the moment... ☹️
 
 ## 💻 Using
 
