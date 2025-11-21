@@ -22,6 +22,7 @@
 	--red: #d20f39;
 	--orange: #fe640b;
 	--text: #4c4f69;
+	--highlight: #ffeebd;
 	--background: #fffdf5;
 	--radius: 5px;
 	--border: 1px solid #ced3f1;
@@ -127,6 +128,8 @@ kbd {
 	border: none;
 	line-height: 1;
 	aspect-ratio: square;
+	height: 24px;
+	width: 24px;
 }
 
 .icon-button:active {

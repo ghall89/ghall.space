@@ -1,9 +1,5 @@
 ---
 import { navLinks } from "../../data/nav-links";
-
-const { pathname } = Astro.url;
-
-const pathComponents = pathname.split("/").slice(1);
 ---
 
 <nav>
@@ -11,12 +7,7 @@ const pathComponents = pathname.split("/").slice(1);
     {
       navLinks.map((link) => (
         <li>
-          <a
-            href={`/${link.path}`}
-            class={pathComponents[0] === link.path ? "selected" : null}
-          >
-            {link.label}
-          </a>
+          <a href={`/${link.path}`}>{link.label}</a>
         </li>
       ))
     }
@@ -31,6 +22,7 @@ const pathComponents = pathname.split("/").slice(1);
     gap: 10px;
     font-size: 1.15rem;
     font-weight: 600;
+    align-items: center;
   }
 
   a {
