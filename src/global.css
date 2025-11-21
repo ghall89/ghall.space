@@ -28,6 +28,7 @@
 	--border: 1px solid #ced3f1;
 	--max-page-width: 800px;
 	--transition: all 0.3s ease-in-out;
+	--font: "Noto Sans", sansserif;
 }
 
 .theme-dark {
@@ -40,17 +41,17 @@
 	--border: 1px solid #505160;
 }
 
+.serif-text {
+	--font: "Noto Serif", serif;
+}
+
 body {
 	color: var(--text);
 	background-color: var(--background);
-	font-family: "Noto Sans", sans-serif;
+	font-family: var(--font);
 	font-size: 1.1rem;
 	margin: 0;
 	padding: 0;
-}
-
-.serif-text {
-	font-family: "Noto Serif", serif;
 }
 
 main {
