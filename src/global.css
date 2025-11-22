@@ -21,14 +21,14 @@
 	--sky: #04a5e5;
 	--red: #d20f39;
 	--orange: #fe640b;
-	--text: #4c4f69;
+	--text: #40360e;
 	--highlight: #ffeebd;
 	--background: #fffdf5;
 	--radius: 5px;
-	--border: 1px solid #ced3f1;
+	--border: 1px solid #8f7a20;
 	--max-page-width: 800px;
 	--transition: all 0.3s ease-in-out;
-	--font: "Noto Sans", sansserif;
+	--font: "Noto Sans", sans-serif;
 }
 
 .theme-dark {
