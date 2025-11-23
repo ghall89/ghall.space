@@ -38,7 +38,9 @@ import { navLinks } from "../../data/nav-links";
   </div>
 </div>
 
-<style>
+<style lang="scss">
+  @use "../../styles/variables.scss" as *;
+
   .drawer-container {
     display: none;
   }
@@ -51,7 +53,7 @@ import { navLinks } from "../../data/nav-links";
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2;
-    transition: var(--transition);
+    transition: $transition;
   }
 
   .hidden-overlay {
@@ -66,7 +68,7 @@ import { navLinks } from "../../data/nav-links";
     width: 75vw;
     height: 100vh;
     z-index: 3;
-    transition: var(--transition);
+    transition: $transition;
   }
 
   .drawer > div {
@@ -87,7 +89,7 @@ import { navLinks } from "../../data/nav-links";
     transform: translateX(75vw);
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $max-mobile-width) {
     .drawer-container {
       display: block;
     }

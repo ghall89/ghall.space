@@ -14,7 +14,9 @@ import Nav from "./Nav.astro";
   </div>
 </header>
 
-<style>
+<style lang="scss">
+  @use "../../styles/variables.scss" as *;
+
   header {
     margin-bottom: 20px;
     height: 70px;
@@ -31,7 +33,7 @@ import Nav from "./Nav.astro";
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    max-width: var(--max-page-width);
+    max-width: $max-page-width;
     margin: auto;
     padding: 0 16px;
     height: 100%;

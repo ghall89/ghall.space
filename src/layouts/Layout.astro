@@ -1,7 +1,7 @@
 ---
 import { ClientRouter } from "astro:transitions";
 
-import "../global.css";
+import "../styles/global.scss";
 
 import Footer from "@components/Footer.astro";
 import Header from "@components/Header/Header.astro";
@@ -50,7 +50,7 @@ const title = Astro.props.title || Astro.props.frontmatter?.title || "Unknown";
   </body>
 </html>
 
-<style>
+<style lang="scss">
   /* Prevent scrolling when drawer (located in Header) is open */
   .lock-scroll {
     overflow: hidden;

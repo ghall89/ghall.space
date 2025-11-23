@@ -14,7 +14,9 @@ import { navLinks } from "../../data/nav-links";
   </ul>
 </nav>
 
-<style>
+<style lang="scss">
+  @use "../../styles/variables.scss" as *;
+
   nav > ul {
     display: flex;
     flex-direction: row;
@@ -30,7 +32,7 @@ import { navLinks } from "../../data/nav-links";
     padding: 5px 10px;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: $max-mobile-width) {
     nav {
       display: none;
     }

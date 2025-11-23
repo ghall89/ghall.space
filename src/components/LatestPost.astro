@@ -37,12 +37,14 @@
   </template>
 </div>
 
-<style>
+<style lang="scss">
+  @use "../styles/variables.scss" as *;
+
   .mastodon-post {
     margin: 2rem auto;
     padding: 1rem;
     max-width: 600px;
-    border-radius: var(--radius);
+    border-radius: $radius;
     border: var(--border);
   }
 

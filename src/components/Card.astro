@@ -32,10 +32,12 @@ const { title, image, links } = Astro.props;
   </div>
 </div>
 
-<style>
+<style lang="scss">
+  @use "../styles/variables.scss" as *;
+
   .card {
     border: var(--border);
-    border-radius: var(--radius);
+    border-radius: $radius;
     overflow: hidden;
   }
 

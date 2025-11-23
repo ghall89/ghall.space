@@ -14,7 +14,9 @@ import DataGif from "../assets/it-does-not-exist.gif";
   />
 </Layout>
 
-<style>
+<style lang="scss">
+  @use "../styles/variables.scss" as *;
+
   h2 {
     text-align: center;
   }
@@ -22,7 +24,7 @@ import DataGif from "../assets/it-does-not-exist.gif";
   .gif {
     display: block;
     margin: auto;
-    border-radius: var(--radius);
+    border-radius: $radius;
     box-shadow: var(--shadow);
   }
 </style>

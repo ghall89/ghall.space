@@ -1,6 +1,6 @@
 ---
 import { type CollectionEntry, getCollection } from "astro:content";
-import PostPreview from "@components/PostPreview.astro";
+import PostPreview from "@components/Blog/PostPreview.astro";
 
 import Layout from "@layouts/Layout.astro";
 import type { Page } from "astro";
@@ -44,7 +44,7 @@ const { page } = Astro.props;
   </div>
 </Layout>
 
-<style>
+<style lang="scss">
   ul {
     list-style: none;
   }

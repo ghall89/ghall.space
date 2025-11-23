@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from "astro:content";
-import BlogHeader from "@components/BlogHeader.astro";
-import Tags from "@components/Tags.astro";
+import BlogHeader from "@components/Blog/BlogHeader.astro";
+import Tags from "@components/Blog/Tags.astro";
 import Layout from "@layouts/Layout.astro";
 
 export async function getStaticPaths() {
@@ -30,7 +30,7 @@ const { Content } = await render(post);
   </article>
 </Layout>
 
-<style>
+<style lang="scss">
   .not-by-ai {
     display: block;
     width: 134px;

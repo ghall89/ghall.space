@@ -1,7 +1,7 @@
 ---
 import { add, format } from "date-fns";
 
-import CalendarIcon from "../assets/svg/calendar.svg";
+import CalendarIcon from "@assets/svg/calendar.svg";
 
 interface Props {
   title: string;
@@ -20,7 +20,7 @@ const { title, date, slug } = Astro.props;
   </div>
 </div>
 
-<style>
+<style lang="scss">
   a {
     font-size: 1.3rem;
   }
