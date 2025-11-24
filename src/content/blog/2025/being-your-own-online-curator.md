@@ -3,6 +3,7 @@ title: 'Skip the Algorithm: Be Your Own Online Curator'
 pubDate: '3/1/25'
 tags: ['Tech', 'Mindfulness', 'Apps']
 ---
+
 Ever since I started using Mastodon, I've become a lot more interested in reducing the presence of algorithmic content in my digital life. I've never been particularly thrilled with algorithmic feeds of content. I was among the people who was quite furious when Instagram ditched the chronological timeline, and then started inserting content from accounts I didn't even follow.
 
 Somewhere along the line, I think I just started accepting what I assumed was inevitable. I think I was probably naive, and didn't consider the ills – both social and psychological – that resulted algorithmically curated content. It was just an annoying thing that I just had to accept.

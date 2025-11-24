@@ -1,72 +1,72 @@
 ---
-import { getCollection } from "astro:content";
-import Layout from "@layouts/Layout.astro";
-import { add, format } from "date-fns";
+import { getCollection } from 'astro:content';
+import Layout from '@layouts/Layout.astro';
+import { add, format } from 'date-fns';
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
+	const posts = await getCollection('blog');
 
-  const tags = ["all"];
+	const tags = ['all'];
 
-  posts.forEach((post) => {
-    post.data.tags.forEach((tag) => {
-      if (!tags.includes(tag)) {
-        tags.push(tag);
-      }
-    });
-  });
+	posts.forEach((post) => {
+		post.data.tags.forEach((tag) => {
+			if (!tags.includes(tag)) {
+				tags.push(tag);
+			}
+		});
+	});
 
-  return tags.map((tag) => ({
-    params: { tag },
-    props: { tag },
-  }));
+	return tags.map((tag) => ({
+		params: { tag },
+		props: { tag },
+	}));
 }
 
 const { tag }: { tag?: string } = Astro.params;
 
-const posts = await getCollection("blog", ({ data }) => {
-  if (!tag) {
-    return false;
-  }
+const posts = await getCollection('blog', ({ data }) => {
+	if (!tag) {
+		return false;
+	}
 
-  if (tag === "all") {
-    return true;
-  }
+	if (tag === 'all') {
+		return true;
+	}
 
-  return data.tags.includes(tag);
+	return data.tags.includes(tag);
 });
 
 if (posts.length === 0) {
-  return Astro.redirect("/404");
+	return Astro.redirect('/404');
 }
 
 posts.sort(
-  (a, b) =>
-    Date.parse(String(b.data.pubDate)) - Date.parse(String(a.data.pubDate)),
+	(a, b) =>
+		Date.parse(String(b.data.pubDate)) - Date.parse(String(a.data.pubDate))
 );
 ---
 
 <Layout title={`Blog - ${tag}`}>
-  <h1>All posts tagged: {tag}</h1>
-  <ul>
-    {
-      posts.map((post) => (
-        <li>
-          <a href={`/posts/${post.id}`}>{post.data.title}</a> -
-          <span>
-            {format(
-              add(new Date(post.data.pubDate), { hours: 6 }),
-              "MMM do, y",
-            )}
-          </span>
-        </li>
-      ))
-    }
-  </ul>
+	<h1>All posts tagged: {tag}</h1>
+	<ul>
+		{
+			posts.map((post) => (
+				<li>
+					<a href={`/posts/${post.id}`}>{post.data.title}</a> -
+					<span>
+						{format(
+							add(new Date(post.data.pubDate), { hours: 6 }),
+							'MMM do, y'
+						)}
+					</span>
+				</li>
+			))
+		}
+	</ul>
 </Layout>
 
 <style lang="scss">
-  ul {
-    list-style: none;
-  }
+	ul {
+		list-style: none;
+	}
 </style>

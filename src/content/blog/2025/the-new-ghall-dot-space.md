@@ -3,6 +3,7 @@ title: 'The New ghall.space'
 pubDate: '9/1/25'
 tags: ['Meta', 'Programming', 'Web Dev']
 ---
+
 It's been a while since I originally built this website, which started life as a little project to learn the, at the time, brand new web framework Astro. My skills in web development have improved greatly in that time, as has the functionality of the Astro framework. Therefore, I thought it would be a fun project to make some improvements to the site, both visually and in how the codebase is structured.
 
 One of the biggest front-facing changes I've made, aside from new typography and some layout adjustments, is a mobile-responsive navigation bar. Mobile is always something I've been conscious of when building this site, but I opted for a simplified approach by ensuring the site was usable on mobile without introducing many responsive elements. But as the site morphed from a simple blog to a more generalized space on the internet (hence the ".space" TLD), I've discovered the limits of that design philosophy.

@@ -1,40 +1,40 @@
 ---
-import { navLinks } from "../../data/nav-links";
+import { navLinks } from '../../data/nav-links';
 ---
 
 <nav>
-  <ul>
-    {
-      navLinks.map((link) => (
-        <li>
-          <a href={`/${link.path}`}>{link.label}</a>
-        </li>
-      ))
-    }
-  </ul>
+	<ul>
+		{
+			navLinks.map((link) => (
+				<li>
+					<a href={`/${link.path}`}>{link.label}</a>
+				</li>
+			))
+		}
+	</ul>
 </nav>
 
 <style lang="scss">
-  @use "../../styles/variables.scss" as *;
+	@use '../../styles/variables.scss' as *;
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 10px;
-    font-size: 1.15rem;
-    font-weight: 600;
-    align-items: center;
+	ul {
+		display: flex;
+		flex-direction: row;
+		list-style: none;
+		gap: 10px;
+		font-size: 1.15rem;
+		font-weight: 600;
+		align-items: center;
 
-    & a {
-      color: var(--text);
-      padding: 5px 10px;
-    }
-  }
+		& a {
+			color: var(--text);
+			padding: 5px 10px;
+		}
+	}
 
-  @media screen and (max-width: $max-mobile-width) {
-    nav {
-      display: none;
-    }
-  }
+	@media screen and (max-width: $max-mobile-width) {
+		nav {
+			display: none;
+		}
+	}
 </style>

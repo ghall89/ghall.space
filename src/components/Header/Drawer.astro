@@ -1,97 +1,97 @@
 ---
-import BarsIcon from "../../assets/svg/bars.svg";
-import CloseIcon from "../../assets/svg/xmark.svg";
-import { navLinks } from "../../data/nav-links";
+import BarsIcon from '../../assets/svg/bars.svg';
+import CloseIcon from '../../assets/svg/xmark.svg';
+import { navLinks } from '../../data/nav-links';
 ---
 
 <!-- drawerOpened is defined in /src/layouts/Layout.astro -->
 <div class="drawer-container" @keydown.escape="drawerOpen = false">
-  <button class="icon-button" @click="drawerOpen = !drawerOpen">
-    <BarsIcon width={24} height={24} />
-  </button>
-  <div
-    class="overlay"
-    @click="drawerOpen = !drawerOpen"
-    x-show="drawerOpen"
-    x-transition:enter-start="hidden-overlay"
-    x-transition:enter-end="visible-overlay"
-    x-transition:leave-start="visible-overlay"
-    x-transition:leave-end="hidden-overlay"
-  >
-  </div>
-  <div
-    class="drawer"
-    x-show="drawerOpen"
-    x-transition:enter-start="hidden-drawer"
-    x-transition:enter-end="visible-drawer"
-    x-transition:leave-start="visible-drawer"
-    x-transition:leave-end="hidden-drawer"
-  >
-    <div>
-      <button class="icon-button" @click="drawerOpen = !drawerOpen">
-        <CloseIcon width={24} height={24} /></button
-      >
-    </div>
-    <nav>
-      {navLinks.map((link) => <a href={`/${link.path}`}>{link.label}</a>)}
-    </nav>
-  </div>
+	<button class="icon-button" @click="drawerOpen = !drawerOpen">
+		<BarsIcon width={24} height={24} />
+	</button>
+	<div
+		class="overlay"
+		@click="drawerOpen = !drawerOpen"
+		x-show="drawerOpen"
+		x-transition:enter-start="hidden-overlay"
+		x-transition:enter-end="visible-overlay"
+		x-transition:leave-start="visible-overlay"
+		x-transition:leave-end="hidden-overlay"
+	>
+	</div>
+	<div
+		class="drawer"
+		x-show="drawerOpen"
+		x-transition:enter-start="hidden-drawer"
+		x-transition:enter-end="visible-drawer"
+		x-transition:leave-start="visible-drawer"
+		x-transition:leave-end="hidden-drawer"
+	>
+		<div>
+			<button class="icon-button" @click="drawerOpen = !drawerOpen">
+				<CloseIcon width={24} height={24} /></button
+			>
+		</div>
+		<nav>
+			{navLinks.map((link) => <a href={`/${link.path}`}>{link.label}</a>)}
+		</nav>
+	</div>
 </div>
 
 <style lang="scss">
-  @use "../../styles/variables.scss" as *;
+	@use '../../styles/variables.scss' as *;
 
-  .drawer-container {
-    display: none;
-  }
+	.drawer-container {
+		display: none;
+	}
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 2;
-    transition: $transition;
-  }
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		height: 100vh;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: 2;
+		transition: $transition;
+	}
 
-  .hidden-overlay {
-    opacity: 0;
-  }
+	.hidden-overlay {
+		opacity: 0;
+	}
 
-  .drawer {
-    right: 0;
-    top: 0;
-    background-color: var(--background);
-    position: absolute;
-    width: 75vw;
-    height: 100vh;
-    z-index: 3;
-    transition: $transition;
+	.drawer {
+		right: 0;
+		top: 0;
+		background-color: var(--background);
+		position: absolute;
+		width: 75vw;
+		height: 100vh;
+		z-index: 3;
+		transition: $transition;
 
-    & div {
-      padding: 8px 6px 4px;
-      border-bottom: var(--border);
-    }
-  }
+		& div {
+			padding: 8px 6px 4px;
+			border-bottom: var(--border);
+		}
+	}
 
-  nav {
-    text-align: left;
-    padding: 12px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    font-size: 1.2rem;
-  }
+	nav {
+		text-align: left;
+		padding: 12px;
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
+		font-size: 1.2rem;
+	}
 
-  .hidden-drawer {
-    transform: translateX(75vw);
-  }
+	.hidden-drawer {
+		transform: translateX(75vw);
+	}
 
-  @media screen and (max-width: $max-mobile-width) {
-    .drawer-container {
-      display: block;
-    }
-  }
+	@media screen and (max-width: $max-mobile-width) {
+		.drawer-container {
+			display: block;
+		}
+	}
 </style>

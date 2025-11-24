@@ -1,26 +1,26 @@
 ---
-import type { CollectionEntry } from "astro:content";
-import BlogHeader from "./BlogHeader.astro";
-import Tags from "./Tags.astro";
+import type { CollectionEntry } from 'astro:content';
+import BlogHeader from './BlogHeader.astro';
+import Tags from './Tags.astro';
 
 interface Props {
-  post: CollectionEntry<"blog">;
+	post: CollectionEntry<'blog'>;
 }
 
 const { post } = Astro.props;
 ---
 
 <article>
-  <BlogHeader title={post.data.title} date={post.data.pubDate} slug={post.id} />
-  <Tags tags={post.data.tags} />
+	<BlogHeader title={post.data.title} date={post.data.pubDate} slug={post.id} />
+	<Tags tags={post.data.tags} />
 </article>
 
 <style lang="scss">
-  article {
-    padding-bottom: 20px;
+	article {
+		padding-bottom: 20px;
 
-    &:not(:first-child) {
-      border-top: var(--border);
-    }
-  }
+		&:not(:first-child) {
+			border-top: var(--border);
+		}
+	}
 </style>
