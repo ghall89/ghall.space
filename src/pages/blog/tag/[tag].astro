@@ -40,7 +40,7 @@ posts.sort(
 		{
 			posts.map((post) => (
 				<li>
-					<a href={`/posts/${post.id}`}>{post.data.title}</a> -
+					<a href={`/blog/${post.id}`}>{post.data.title}</a> -
 					<span>
 						{format(
 							add(new Date(post.data.pubDate), { hours: 6 }),
