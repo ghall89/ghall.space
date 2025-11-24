@@ -2,27 +2,19 @@
 import { getCollection } from 'astro:content';
 import Layout from '@layouts/Layout.astro';
 import { add, format } from 'date-fns';
+import { getTags } from 'src/utils/tags';
 
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-
-	const tags = ['all'];
-
-	posts.forEach((post) => {
-		post.data.tags.forEach((tag) => {
-			if (!tags.includes(tag)) {
-				tags.push(tag);
-			}
-		});
-	});
+	const tags = await getTags();
 
 	return tags.map((tag) => ({
-		params: { tag },
-		props: { tag },
+		params: { tag: tag.slug },
+		props: { tagName: tag.value },
 	}));
 }
 
 const { tag }: { tag?: string } = Astro.params;
+const { tagName } = Astro.props;
 
 const posts = await getCollection('blog', ({ data }) => {
 	if (!tag) {
@@ -33,12 +25,8 @@ const posts = await getCollection('blog', ({ data }) => {
 		return true;
 	}
 
-	return data.tags.includes(tag);
+	return data.tags.includes(tagName);
 });
-
-if (posts.length === 0) {
-	return Astro.redirect('/404');
-}
 
 posts.sort(
 	(a, b) =>
@@ -46,8 +34,8 @@ posts.sort(
 );
 ---
 
-<Layout title={`Blog - ${tag}`}>
-	<h1>All posts tagged: {tag}</h1>
+<Layout title={`Blog - ${tagName}`}>
+	<h1>All posts tagged: {tagName}</h1>
 	<ul>
 		{
 			posts.map((post) => (
