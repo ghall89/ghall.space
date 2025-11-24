@@ -11,6 +11,7 @@
 	--background: #fffdf5;
 	--border: #{$border-style} #8f7a20;
 	--font: 'Noto Sans', sans-serif;
+	--mono-font: 'Maple Mono', monospace;
 }
 
 .theme-dark {
@@ -99,6 +100,7 @@ kbd {
 
 code,
 kbd {
+	font-family: var(--mono-font);
 	font-size: 0.85rem;
 }
 
@@ -128,6 +130,7 @@ kbd {
 .astro-code span {
 	background-color: var(--background) !important;
 	/* Optional, if you also want font styles */
+	font-family: var(--mono-font);
 	font-style: var(--shiki-light-font-style);
 	font-weight: var(--shiki-light-font-weight);
 	text-decoration: var(--shiki-light-text-decoration);
