@@ -1,15 +1,15 @@
-import { getCollection } from "astro:content";
-import rss from "@astrojs/rss";
-import MarkdownIt from "markdown-it";
+import { getCollection } from 'astro:content';
+import rss from '@astrojs/rss';
+import MarkdownIt from 'markdown-it';
 
 const parser = new MarkdownIt({ html: true });
 
 export async function GET(context) {
-	const blog = await getCollection("blog");
+	const blog = await getCollection('blog');
 	return rss({
-		title: "ghall.space",
+		title: 'ghall.space',
 		description:
-			"My personal blog about life, gaming, tech, and whatever else I feel like writing about.",
+			'My personal blog about life, gaming, tech, and whatever else I feel like writing about.',
 		site: context.site,
 		trailingSlash: false,
 		items: blog

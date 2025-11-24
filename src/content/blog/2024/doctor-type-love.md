@@ -25,4 +25,5 @@ While any code getting shipped to the browser will still need to be compiled to 
 I started off being annoyed with using types in my code because, to be quite frank, they are annoying. They'll make your code throw errors whenever you try to multiply a string, or something silly like that. But that's part of the beauty I've come to appreciate. They're there to help you write better code, and to point you in the right direction when something inevitably goes wrong.
 
 [^1]: [Here](https://stackoverflow.com/questions/1517582/what-is-the-difference-between-statically-typed-and-dynamically-typed-languages) is a StackOverflow thread on the difference between dynamic and static typing put far better than I ever could explain it
+
 [^2]: As an example, I rewrote [my CLI clone of Wordle](https://github.com/ghall89/wordle-cli) in TypeScript

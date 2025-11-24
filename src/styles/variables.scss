@@ -1,0 +1,11 @@
+$max-mobile-width: 768px;
+$max-page-width: 800px;
+$radius: 5px;
+$border-style: 1px solid;
+
+/* transitions */
+$transition-duration: 0.3s;
+$quick-transition-duration: 0.1s;
+
+$transition: all $transition-duration ease-in-out;
+$quick-transition: all $quick-transition-duration ease-in-out;

@@ -1,28 +1,30 @@
 ---
-import { Image } from "astro:assets";
-import Layout from "@layouts/Layout.astro";
+import { Image } from 'astro:assets';
+import Layout from '@layouts/Layout.astro';
 
-import DataGif from "../assets/it-does-not-exist.gif";
+import DataGif from '../assets/it-does-not-exist.gif';
 ---
 
 <Layout title="Not Found">
-  <h2>404 - Page Not Found</h2>
-  <Image
-    class="gif"
-    src={DataGif}
-    alt="Data from Star Trek with the caption 'It does not exist'"
-  />
+	<h2>404 - Page Not Found</h2>
+	<Image
+		class="gif"
+		src={DataGif}
+		alt="Data from Star Trek with the caption 'It does not exist'"
+	/>
 </Layout>
 
-<style>
-  h2 {
-    text-align: center;
-  }
+<style lang="scss">
+	@use '../styles/variables.scss' as *;
 
-  .gif {
-    display: block;
-    margin: auto;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-  }
+	h2 {
+		text-align: center;
+	}
+
+	.gif {
+		display: block;
+		margin: auto;
+		border-radius: $radius;
+		box-shadow: var(--shadow);
+	}
 </style>

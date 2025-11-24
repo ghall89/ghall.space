@@ -1,7 +1,7 @@
 ---
 title: 'Tinkering With Linux'
 pubDate: '10/27/25'
-tags: ['Tech', 'Linux' ]
+tags: ['Tech', 'Linux']
 ---
 
 For the last 8 or 9 months, I've been experimenting on and off with Linux. Specifically Fedora (via Asahi Linux) for those who are curious. I installed it on an M1 MacBook Air, which I keep around as an emergency backup, and I've been mostly pleased with how well it's been running.
@@ -41,5 +41,7 @@ I do, however, have some questions for the Linux community if any of you haven't
 Feel free to reach out to me on [Mastodon](https://mastodon.social/@ghalldev).
 
 [^1]: However, to continue my series of gimicky posts, like when I [wrote about the Mac using Mac OS 7](/blog/2024/ramblings-on-the-macintosh), and [wrote about taking intentional analog time with pen and paper](/blog/2025/intentional-analog-time), I'm writing this blog post in Linux.
+
 [^2]: This annoyingly does not work for all apps, but I'm probably missing something obvious.
+
 [^3]: Of note, the Plasma shell itself seems to be the most memory intensive process, using about 500MB of RAM, which seems more than reasonable.

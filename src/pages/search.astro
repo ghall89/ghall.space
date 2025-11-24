@@ -1,64 +1,64 @@
 ---
-import Layout from "@layouts/Layout.astro";
-import SearchField from "astro-pagefind/components/Search";
+import Layout from '@layouts/Layout.astro';
+import SearchField from 'astro-pagefind/components/Search';
 ---
 
 <Layout title="Search">
-  <div class="search-container">
-    <h2>Looking for something?</h2>
-    <SearchField
-      id="search"
-      className="pagefind-ui"
-      uiOptions={{ showImages: false }}
-    />
-  </div>
+	<div class="search-container">
+		<h2>Looking for something?</h2>
+		<SearchField
+			id="search"
+			className="pagefind-ui"
+			uiOptions={{ showImages: false }}
+		/>
+	</div>
 </Layout>
 
 <style is:global>
-  .search-container {
-    min-height: 60vh;
-  }
+	.search-container {
+		min-height: 60vh;
+	}
 
-  .pagefind-ui {
-    font-family: var(--font) !important;
-    color: var(--text) !important;
-  }
+	.pagefind-ui {
+		font-family: var(--font) !important;
+		color: var(--text) !important;
+	}
 
-  .pagefind-ui__form::before {
-    background-color: var(--text) !important;
-  }
+	.pagefind-ui__form::before {
+		background-color: var(--text) !important;
+	}
 
-  .pagefind-ui__search-input,
-  .pagefind-ui__button {
-    color: var(--text) !important;
-    border: var(--border) !important;
-    background-color: var(--background) !important;
-  }
+	.pagefind-ui__search-input,
+	.pagefind-ui__button {
+		color: var(--text) !important;
+		border: var(--border) !important;
+		background-color: var(--background) !important;
+	}
 
-  .pagefind-ui__button:hover {
-    opacity: 0.75;
-  }
+	.pagefind-ui__button:hover {
+		opacity: 0.75;
+	}
 
-  .pagefind-ui__search-clear {
-    color: var(--red) !important;
-    background-color: var(--background) !important;
-  }
+	.pagefind-ui__search-clear {
+		color: var(--red) !important;
+		background-color: var(--background) !important;
+	}
 
-  .pagefind-ui__result-excerpt > mark {
-    background-color: var(--highlight);
-  }
+	.pagefind-ui__result-excerpt > mark {
+		background-color: var(--highlight);
+	}
 
-  .pagefind-ui__result-link {
-    color: var(--blue) !important;
-    text-decoration: none !important;
-  }
+	.pagefind-ui__result-link {
+		color: var(--blue) !important;
+		text-decoration: none !important;
+	}
 
-  .pagefind-ui__result-link:hover {
-    opacity: 0.75;
-  }
+	.pagefind-ui__result-link:hover {
+		opacity: 0.75;
+	}
 
-  .pagefind-ui__result {
-    border: none !important;
-    border-bottom: var(--border) !important;
-  }
+	.pagefind-ui__result {
+		border: none !important;
+		border-bottom: var(--border) !important;
+	}
 </style>

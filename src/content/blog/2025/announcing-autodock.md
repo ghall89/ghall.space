@@ -3,6 +3,7 @@ title: 'Announcing AutoDock'
 pubDate: '1/17/25'
 tags: ['MacOS', 'Apps', 'Programming']
 ---
+
 I'm a MacBook Air user who often uses a larger external display, and I have a, perhaps, idiosyncratic desire to have the dock always visible on the larger display at my desk, but prefer it hidden when using the smaller, built-in one.
 
 While it's not all that inconvenient to manually swap the dock with a quick <kbd>opt</kbd> + <kbd>cmd</kbd> + <kbd>D</kbd>, I thought it would be cool to automate the process based on display size. I looked around for an app that would do this, and couldn't find one that worked reliably.

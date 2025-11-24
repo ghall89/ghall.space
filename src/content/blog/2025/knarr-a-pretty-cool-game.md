@@ -4,7 +4,7 @@ pubDate: '5/11/25'
 tags: ['Gaming']
 ---
 
-My latest board gaming obsession is quite an unlikely one for me. I’m not particularly fond  of the viking aesthetic in general, and, while I don’t dislike engine-builder games, they’re not generally the type of game I’d go out of my way to play.
+My latest board gaming obsession is quite an unlikely one for me. I’m not particularly fond of the viking aesthetic in general, and, while I don’t dislike engine-builder games, they’re not generally the type of game I’d go out of my way to play.
 
 But a little game called [Knarr](https://boardgamegeek.com/boardgame/379629) struck a chord with me. Someone in my gaming group introduced me, and I enjoyed it so much I ended up picking up my own copy. Something that has only happened once before with [Akropolis](https://boardgamegeek.com/boardgame/357563), another favorite of mine.
 

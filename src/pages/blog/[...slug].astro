@@ -1,15 +1,15 @@
 ---
-import { getCollection, render } from "astro:content";
-import BlogHeader from "@components/BlogHeader.astro";
-import Tags from "@components/Tags.astro";
-import Layout from "@layouts/Layout.astro";
+import { getCollection, render } from 'astro:content';
+import BlogHeader from '@components/Blog/BlogHeader.astro';
+import Tags from '@components/Blog/Tags.astro';
+import Layout from '@layouts/Layout.astro';
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog");
-  return posts.map((post) => ({
-    params: { slug: post.id },
-    props: { post },
-  }));
+	const posts = await getCollection('blog');
+	return posts.map((post) => ({
+		params: { slug: post.id },
+		props: { post },
+	}));
 }
 
 const { post } = Astro.props;
@@ -20,24 +20,24 @@ const { Content } = await render(post);
 ---
 
 <Layout title={data.title}>
-  <article>
-    <BlogHeader title={data.title} date={data.pubDate} />
-    <Tags tags={data.tags} />
-    <Content />
-    <a href="https://notbyai.fyi/" target="_blank">
-      <i class="not-by-ai"></i>
-    </a>
-  </article>
+	<article>
+		<BlogHeader title={data.title} date={data.pubDate} />
+		<Tags tags={data.tags} />
+		<Content />
+		<a href="https://notbyai.fyi/" target="_blank">
+			<i class="not-by-ai"></i>
+		</a>
+	</article>
 </Layout>
 
-<style>
-  .not-by-ai {
-    display: block;
-    width: 134px;
-    height: 45px;
-    background-image: url(../../assets/svg/Written-By-Human-Not-By-AI-Badge-white.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 1rem 0;
-  }
+<style lang="scss">
+	.not-by-ai {
+		display: block;
+		width: 134px;
+		height: 45px;
+		background-image: url(../../assets/svg/Written-By-Human-Not-By-AI-Badge-white.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: 1rem 0;
+	}
 </style>

@@ -1,20 +1,5 @@
-@font-face {
-	font-family: Noto Sans;
-	src: url(./assets/fonts/NotoSans-VariableFont_wdth,wght.ttf)
-		format("truetype");
-}
-
-@font-face {
-	font-family: Noto Serif;
-	src: url(./assets/fonts/NotoSerif-VariableFont_wdth,wght.ttf)
-		format("truetype");
-}
-
-@font-face {
-	font-family: JetBrainsMono;
-	src: url(./assets/fonts/JetBrainsMono-VariableFont_wght.ttf)
-		format("truetype");
-}
+@use './variables.scss' as *;
+@use 'fonts.scss';
 
 :root {
 	--blue: #1e66f5;
@@ -24,11 +9,8 @@
 	--text: #40360e;
 	--highlight: #ffeebd;
 	--background: #fffdf5;
-	--radius: 5px;
-	--border: 1px solid #8f7a20;
-	--max-page-width: 800px;
-	--transition: all 0.3s ease-in-out;
-	--font: "Noto Sans", sans-serif;
+	--border: #{$border-style} #8f7a20;
+	--font: 'Noto Sans', sans-serif;
 }
 
 .theme-dark {
@@ -38,11 +20,11 @@
 	--orange: #fab387;
 	--text: #c4caed;
 	--background: #2a2c32;
-	--border: 1px solid #505160;
+	--border: #{$border-style} #505160;
 }
 
 .serif-text {
-	--font: "Noto Serif", serif;
+	--font: 'Noto Serif', serif;
 }
 
 body {
@@ -64,24 +46,23 @@ main {
 a {
 	color: var(--blue);
 	text-decoration: none;
-}
 
-a:hover {
-	opacity: 0.75;
+	&:hover {
+		opacity: 0.75;
+	}
 }
 
 main p {
-	/* text-align: justify; */
 	line-height: 1.5;
 }
 
 /* Article image style */
 
 article img {
-	border-radius: var(--radius);
+	border-radius: $radius;
 	display: block;
 	margin: auto;
-	max-width: var(--max-page-width);
+	max-width: $max-page-width;
 	height: auto;
 }
 
@@ -111,7 +92,7 @@ code {
 
 kbd {
 	border: var(--border);
-	border-radius: var(--radius);
+	border-radius: $radius;
 	padding: 1px 4px;
 	white-space: nowrap;
 }
@@ -131,14 +112,14 @@ kbd {
 	aspect-ratio: square;
 	height: 24px;
 	width: 24px;
-}
 
-.icon-button:active {
-	opacity: 0.3;
-}
+	&:active {
+		opacity: 0.3;
+	}
 
-.icon-button > svg {
-	color: var(--text);
+	& svg {
+		color: var(--text);
+	}
 }
 
 /* shiki */

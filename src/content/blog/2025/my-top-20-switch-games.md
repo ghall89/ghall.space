@@ -10,26 +10,26 @@ The Switch is also the console I’ve played the most games on, so I thought it 
 
 Also, I listed them in alphabetical order partly because I couldn’t decide on a ranking, but mostly because it makes my brain happy. 🧠
 
-* A Short Hike
-* Animal Crossing: New Horizons
-* Fire Emblem Engage
-* Hades
-* Kirby and the Forgotten Land
-* The Legend of Zelda: Tears of the Kingdom
-* Metroid Dread
-* Persona 5 Royal
-* Pokemon Legends: Arceus
-* Sea of Stars
-* Shantae and the Seven Sirens
-* Splatoon 3
-* Super Mario Odyssey
-* Super Mario Wonder
-* Super Smash Bros Ultimate
-* Tetris 99
-* Unicorn Overlord
-* The Witcher 3: Wild Hunt
-* Xenoblade Chronicles 3
-* Yooka-Laylee and the Impossible Lair
+- A Short Hike
+- Animal Crossing: New Horizons
+- Fire Emblem Engage
+- Hades
+- Kirby and the Forgotten Land
+- The Legend of Zelda: Tears of the Kingdom
+- Metroid Dread
+- Persona 5 Royal
+- Pokemon Legends: Arceus
+- Sea of Stars
+- Shantae and the Seven Sirens
+- Splatoon 3
+- Super Mario Odyssey
+- Super Mario Wonder
+- Super Smash Bros Ultimate
+- Tetris 99
+- Unicorn Overlord
+- The Witcher 3: Wild Hunt
+- Xenoblade Chronicles 3
+- Yooka-Laylee and the Impossible Lair
 
 I opted to stay away from remasters/remakes, but as a bonus here are the ones that stood out to me…
 

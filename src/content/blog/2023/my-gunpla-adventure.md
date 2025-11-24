@@ -12,7 +12,7 @@ I've never been a Gundam fan, the genre just never really appealed to me. But I 
 
 So, there was a little anime I watched back in high school called [Full Metal Panic](https://en.wikipedia.org/wiki/Full_Metal_Panic!) which, like Gundam, features people piloting giant mecha. As luck would have it, Bandai, the makers of Gunpla kits, have/had the license to make kits for the series. Not-so-luckily, the kit I wanted based on the main character's mech is impossible to find at a reasonable price at the moment, so I settled for my second pick:
 
-![a box sitting on a table with an image of a mech and text that reads 'M9 Gernsback ver IV \(Agressor Squadron)'](src/assets/blog/gunpla/box.jpg)
+![a box sitting on a table with an image of a mech and text that reads 'M9 Gernsback ver IV (Agressor Squadron)'](src/assets/blog/gunpla/box.jpg)
 
 So, with the kit in hand, I opened the box and was greeted by a handful of plastic pouches containing what seemed like a thousand parts connected on plastic sprues in a variety of blues and grays. I took out the contents and perused through the included instructions, which read very much like it was designed by Ikea, if Ikea sold miniature giant robots. The writing was all in Japanese, but the illustrations were enough to guide one through the process no matter what language they can read.
 

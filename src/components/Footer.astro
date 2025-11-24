@@ -1,68 +1,68 @@
 ---
-import MastodonIcon from "../assets/svg/mastodon.svg";
-import RssIcon from "../assets/svg/rss.svg";
-import ThemeToggle from "./ThemeToggle.astro";
+import MastodonIcon from '../assets/svg/mastodon.svg';
+import RssIcon from '../assets/svg/rss.svg';
+import ThemeToggle from './ThemeToggle.astro';
 
 const year = new Date().getFullYear();
 ---
 
 <footer>
-  <ThemeToggle />
-  <div class="socials">
-    <a
-      href="https://mastodon.social/@ghalldev"
-      target="_blank"
-      rel="noopener noreferrer"
-      ><MastodonIcon class="mastodon-icon" width={20} height={20} /> Follow me on
-      Mastodon</a
-    >
+	<ThemeToggle />
+	<div class="socials">
+		<a
+			href="https://mastodon.social/@ghalldev"
+			target="_blank"
+			rel="noopener noreferrer"
+			><MastodonIcon class="mastodon-icon" width={20} height={20} /> Follow me on
+			Mastodon</a
+		>
 
-    <a href="/rss.xml"
-      ><RssIcon class="rss-icon" width={20} height={20} /> Subscribe with RSS</a
-    >
-  </div>
-  <p>
-    Copyright 2022 - {year}, Graham Hall
+		<a href="/rss.xml"
+			><RssIcon class="rss-icon" width={20} height={20} /> Subscribe with RSS</a
+		>
+	</div>
+	<p>
+		Copyright 2022 - {year}, Graham Hall
 
-    <br />
-    Built with <a href="https://astro.build">Astro</a>
-  </p>
+		<br />
+		Built with <a href="https://astro.build">Astro</a>
+	</p>
 </footer>
 
-<style>
-  footer {
-    margin: 2rem 0;
-    text-align: center;
-    border-top: var(--border);
-    padding-top: 24px;
-  }
+<style lang="scss">
+	footer {
+		margin: 2rem 0;
+		text-align: center;
+		border-top: var(--border);
+		padding-top: 24px;
+	}
 
-  .rss-icon {
-    transform: translateY(0.18rem);
-  }
+	.rss-icon {
+		transform: translateY(0.18rem);
+	}
 
-  .socials {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-  }
+	.socials {
+		display: flex;
+		gap: 24px;
+		justify-content: center;
 
-  .socials a {
-    color: var(--text);
-  }
+		& a {
+			color: var(--text);
 
-  .rss-icon {
-    color: var(--orange);
-  }
+			& .rss-icon {
+				color: var(--orange);
+			}
 
-  .mastodon-icon {
-    color: var(--blue);
-    transform: translateY(4px);
-  }
+			& .mastodon-icon {
+				color: var(--blue);
+				transform: translateY(4px);
+			}
+		}
+	}
 
-  @media (max-width: 516px) {
-    .socials {
-      flex-direction: column;
-    }
-  }
+	@media (max-width: 516px) {
+		.socials {
+			flex-direction: column;
+		}
+	}
 </style>
