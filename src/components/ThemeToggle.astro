@@ -1,68 +1,68 @@
 ---
-import BrushIcon from "../../assets/svg/paintbrush.svg";
+
 ---
 
 <div class="toggles">
-  <div>
-    <input id="sans-serif-toggle" type="checkbox" x-model="serifs" />
-    <label for="sans-serif-toggle">Serifs</label>
-  </div>
-  <div>
-    <input id="dark-mode-toggle" type="checkbox" x-model="darkMode" />
-    <label for="dark-mode-toggle">Dark Mode</label>
-  </div>
+	<div>
+		<input id="sans-serif-toggle" type="checkbox" x-model="serifs" />
+		<label for="sans-serif-toggle">Serifs</label>
+	</div>
+	<div>
+		<input id="dark-mode-toggle" type="checkbox" x-model="darkMode" />
+		<label for="dark-mode-toggle">Dark Mode</label>
+	</div>
 </div>
 
 <style lang="scss">
-  @use "../styles/variables.scss" as *;
+	@use '../styles/variables.scss' as *;
 
-  .toggles {
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+	.toggles {
+		padding: 1rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 12px;
 
-    div {
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-  }
+		div {
+			display: flex;
+			align-items: center;
+			gap: 4px;
+		}
+	}
 
-  input {
-    position: relative;
-    appearance: none;
-    height: 24px;
-    width: 38px;
-    padding: 10px;
-    background-color: var(--orange);
-    border-radius: 120px;
+	input {
+		position: relative;
+		appearance: none;
+		height: 24px;
+		width: 38px;
+		padding: 10px;
+		background-color: var(--orange);
+		border-radius: 120px;
 
-    &:checked {
-      background-color: var(--sky);
-    }
+		&:checked {
+			background-color: var(--sky);
+		}
 
-    &:after {
-      content: "";
-      position: absolute;
-      height: 22px;
-      width: 22px;
-      border-radius: 100%;
-      background-color: var(--background);
-      left: 1px;
-      top: 1px;
-      transition: $quick-transition;
-    }
+		&:after {
+			content: '';
+			position: absolute;
+			height: 22px;
+			width: 22px;
+			border-radius: 100%;
+			background-color: var(--background);
+			left: 1px;
+			top: 1px;
+			transition: $quick-transition;
+		}
 
-    &:checked:after {
-      left: 15px;
-    }
-  }
+		&:checked:after {
+			left: 15px;
+		}
+	}
 
-  @media (max-width: 516px) {
-    .toggles {
-      flex-direction: column;
-    }
-  }
+	@media (max-width: 516px) {
+		.toggles {
+			flex-direction: column;
+		}
+	}
 </style>
