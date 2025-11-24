@@ -18,9 +18,9 @@ const { post } = Astro.props;
 <style lang="scss">
   article {
     padding-bottom: 20px;
-  }
 
-  article:not(:first-child) {
-    border-top: var(--border);
+    &:not(:first-child) {
+      border-top: var(--border);
+    }
   }
 </style>

@@ -26,23 +26,23 @@ import Nav from "./Nav.astro";
     position: fixed;
     z-index: 1;
     border-bottom: var(--border);
-  }
 
-  .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: $max-page-width;
-    margin: auto;
-    padding: 0 16px;
-    height: 100%;
-  }
+    & .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      max-width: $max-page-width;
+      margin: auto;
+      padding: 0 16px;
+      height: 100%;
 
-  .container > div {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+      & div {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+    }
   }
 
   a {

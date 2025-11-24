@@ -45,19 +45,19 @@ const year = new Date().getFullYear();
     display: flex;
     gap: 24px;
     justify-content: center;
-  }
 
-  .socials a {
-    color: var(--text);
-  }
+    & a {
+      color: var(--text);
 
-  .rss-icon {
-    color: var(--orange);
-  }
+      & .rss-icon {
+        color: var(--orange);
+      }
 
-  .mastodon-icon {
-    color: var(--blue);
-    transform: translateY(4px);
+      & .mastodon-icon {
+        color: var(--blue);
+        transform: translateY(4px);
+      }
+    }
   }
 
   @media (max-width: 516px) {

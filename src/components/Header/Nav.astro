@@ -17,7 +17,7 @@ import { navLinks } from "../../data/nav-links";
 <style lang="scss">
   @use "../../styles/variables.scss" as *;
 
-  nav > ul {
+  ul {
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -25,11 +25,11 @@ import { navLinks } from "../../data/nav-links";
     font-size: 1.15rem;
     font-weight: 600;
     align-items: center;
-  }
 
-  a {
-    color: var(--text);
-    padding: 5px 10px;
+    & a {
+      color: var(--text);
+      padding: 5px 10px;
+    }
   }
 
   @media screen and (max-width: $max-mobile-width) {

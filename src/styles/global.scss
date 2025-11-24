@@ -46,10 +46,10 @@ main {
 a {
   color: var(--blue);
   text-decoration: none;
-}
 
-a:hover {
-  opacity: 0.75;
+  &:hover {
+    opacity: 0.75;
+  }
 }
 
 main p {
@@ -112,14 +112,14 @@ kbd {
   aspect-ratio: square;
   height: 24px;
   width: 24px;
-}
 
-.icon-button:active {
-  opacity: 0.3;
-}
+  &:active {
+    opacity: 0.3;
+  }
 
-.icon-button > svg {
-  color: var(--text);
+  & svg {
+    color: var(--text);
+  }
 }
 
 /* shiki */
