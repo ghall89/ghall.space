@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: November 20, 2025_
+_Last updated: November 29, 2025_
 
 ## 🎧 Listening
 
@@ -18,8 +18,8 @@ _Last updated: November 20, 2025_
 ## 🎮 Playing
 
 - [Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii) - PS5
-- [Cyberpunk 2077](https://www.igdb.com/games/cyberpunk-2077) - PS5
-- [Tomb Raider: Definitive Edition](https://www.igdb.com/games/tomb-raider-definitive-edition) - Switch
+<!--- [Cyberpunk 2077](https://www.igdb.com/games/cyberpunk-2077) - PS5-->
+- [Rise of the Tomb Raider](https://www.igdb.com/games/rise-of-the-tomb-raider) - PS5
 
 ## 🎲 Rolling
 
