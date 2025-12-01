@@ -2,30 +2,30 @@
 @use 'fonts.scss';
 
 :root {
-	--blue: #1e66f5;
-	--sky: #04a5e5;
-	--red: #d20f39;
-	--orange: #fe640b;
-	--text: #40360e;
-	--highlight: #ffeebd;
-	--background: #fffdf5;
-	--border: #{$border-style} #8f7a20;
-	--font: 'Noto Sans', sans-serif;
-	--mono-font: 'Maple Mono', monospace;
+	--blue: #{$blue};
+	--sky: #{$sky};
+	--red: #{$red};
+	--orange: #{$orange};
+	--text: #{$text};
+	--highlight: #{$highlight};
+	--background: #{$background};
+	--border: #{$border};
+	--font: #{$serif-font};
+	--mono-font: #{$mono-font};
 }
 
-.theme-dark {
-	--blue: #5da7fb;
-	--sky: #00b0f5;
-	--red: #f38ba8;
-	--orange: #fab387;
-	--text: #c4caed;
-	--background: #2a2c32;
-	--border: #{$border-style} #505160;
+body.theme-dark {
+	--blue: #{$dark-blue};
+	--sky: #{$dark-sky};
+	--red: #{$dark-red};
+	--orange: #{$dark-orange};
+	--text: #{$dark-text};
+	--background: #{$dark-background};
+	--border: #{$dark-border};
 }
 
-.serif-text {
-	--font: 'Noto Serif', serif;
+body.monospace-text {
+	--font: #{$mono-font};
 }
 
 body {
@@ -49,7 +49,7 @@ a {
 	text-decoration: none;
 
 	&:hover {
-		opacity: 0.75;
+		text-decoration: underline;
 	}
 }
 

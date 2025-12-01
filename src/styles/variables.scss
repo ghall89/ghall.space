@@ -9,3 +9,26 @@ $quick-transition-duration: 0.1s;
 
 $transition: all $transition-duration ease-in-out;
 $quick-transition: all $quick-transition-duration ease-in-out;
+
+/* colors */
+
+$blue: #1e66f5;
+$sky: #04a5e5;
+$red: #d20f39;
+$orange: #fe640b;
+$text: #40360e;
+$highlight: #ffeebd;
+$background: #fffdf5;
+$border: $border-style #8f7a20;
+
+$dark-blue: #5da7fb;
+$dark-sky: #00b0f5;
+$dark-red: #f38ba8;
+$dark-orange: #fab387;
+$dark-text: #c4caed;
+$dark-background: #2a2c32;
+$dark-border: #{$border-style} #505160;
+
+/* fonts */
+$serif-font: 'Noto Serif', serif;
+$mono-font: 'Maple Mono', monospace;
