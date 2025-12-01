@@ -6,7 +6,7 @@ tags: ['Making Stuff', 'MacOS', 'Programming']
 
 While I enjoy developing Mac apps, I find Xcode to be exceptionally clunky, especially when compared to the tools I use for web development. I thought it would be nice to be able to write and compile a fully-functional Mac application using any text editor, and without having to open Xcode.
 
-I have a few requirements for this to be viable:
+So, I decided to try migrating my app, [AutoDock](https://github.com/ghall89/AutoDock), to this Xcode-free build process, and actually release it as the next update. I have a few requirements for this to be viable:
 
 1. Whichever editor I use, I need access to the Swift language server.
 2. The build process should produce a functional MacOS application bundle as a universal binary (for both Intel and ARM CPUs).
