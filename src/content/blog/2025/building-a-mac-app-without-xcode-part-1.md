@@ -10,7 +10,7 @@ So, I decided to try migrating my app, [AutoDock](https://github.com/ghall89/Aut
 
 1. Whichever editor I use, I need access to the Swift language server.
 2. The build process should produce a functional MacOS application bundle as a universal binary (for both Intel and ARM CPUs).
-3. I should be able to use regular security features available to apps build with Xcode, like sandboxing, hardened runtime, etc.
+3. I should be able to use regular security features available to apps built with Xcode, like sandboxing, hardened runtime, etc.
 4. The final binary should be signed with my developer certificate.
 
 To prevent this blog post from being far too long, I’ve decided to split it up into multiple parts. This first part will focus on LSP support, and building the application bundle.
