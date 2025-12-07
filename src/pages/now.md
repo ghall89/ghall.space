@@ -7,7 +7,9 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: December 1, 2025_
+_Last updated: December 7, 2025_
+
+Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on a website for a humanitarian aid organization, and working on side projects on both web and Mac. 
 
 ## 🎧 Listening
 
@@ -19,11 +21,11 @@ _Last updated: December 1, 2025_
 
 **[Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii) - PS5**
 
-Playing a co-op campaign with some friends. We've been playing for a few hours almost weekly.
+Playing a co-op campaign with some friends. We've been playing for a few hours almost weekly. We recently made it to Act 3.
 
-**[Rise of the Tomb Raider](https://www.igdb.com/games/rise-of-the-tomb-raider) - PS5**
+**[Cyberpunk 2077](https://www.igdb.com/games/cyberpunk-2077) - PS5**
 
-Recently finished [Tomb Raider](https://www.igdb.com/games/tomb-raider--2) on the Nintendo Switch. Left me wanting more, so decided to replay this. 
+Picked up the [Phantom Liberty](https://www.igdb.com/games/cyberpunk-2077-phantom-liberty) expansion back when it launched in 2023, and only just started playing it. I also plan on finishing the main game at long last. 
 
 ## 🎲 Rolling
 
@@ -44,12 +46,3 @@ I bring this with me to board gaming sessions alongside Knarr, but it doesn't ge
 ## 📺 Watching
 
 - Nothing at the moment... ☹️
-
-## 💻 Using
-
-- MacBook Air M2 - Midnight
-  - 24GB RAM
-  - 512GB SSD
-- LG UltraFine 27"
-- Nuphy Air75 v2
-- Apple Magic Trackpad/Logitech A72 (depending on my mood)
