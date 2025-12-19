@@ -51,6 +51,6 @@ The second issue, the new build of AutoDock not being able to see the user setti
 
 One huge benefit I noticed immediately was a significant reduction in bundle size. The Xcode build of AutoDock clocks in at 2 MB, which is by no means huge, but dwarfs the new build which clocks in at just 670 KB. It seems the only difference is an Assets.car file, which I assume holds images and such from the Assets.xcassets file, which in this case would just be redundant icon image files, and the app’s accent color, which I can define elsewhere.
 
-*In the [next part](/blog/2025/building-a-mac-app-without-xcode-part-2), I tackle code signing and notarization.*
+_In the [next part](/blog/2025/building-a-mac-app-without-xcode-part-2), I tackle code signing and notarization._
 
 [^1]: I have since discovered the slowness was user error, due to a setting in BBEdit that delayed completion suggestions for longer than I was used to.

@@ -19,7 +19,7 @@ To prevent this blog post from being far too long, I’ve decided to split it up
 
 If you’re going to be distributing your app, it’s important to have it signed and notarized for the security of your app and its users. This process adds a digital certificate to your app that becomes invalidated if your app is ever modified by, for example, a malicious actor. It also can be revoked by Apple if you’re found to be distributing malware, which you, if you’re not a scumbag, won’t have to worry about. 🙂
 
-This, I thought, was going to be the most annoying part of working outside of Xcode. Apple does provide `codesign` and 	`notarytool` as part of the Xcode CLI Tools, but I just assumed using them would be a headache.
+This, I thought, was going to be the most annoying part of working outside of Xcode. Apple does provide `codesign` and `notarytool` as part of the Xcode CLI Tools, but I just assumed using them would be a headache.
 
 In order to sign an application, you need a certificate and, due to me not really knowing what I was doing, this was where I ran into trouble. I tried using my Apple Distribution certificate, which made intuitive sense to me at the time, and I didn’t run into any issues at first. I didn’t run into any errors, and verifying the signature showed everything as a-okay. So I continued...
 

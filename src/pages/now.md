@@ -9,7 +9,7 @@ What's a [Now page](https://nownownow.com/about)?
 
 _Last updated: December 7, 2025_
 
-Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on a website for a humanitarian aid organization, and working on side projects on both web and Mac. 
+Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on a website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
 ## 🎧 Listening
 
@@ -25,7 +25,7 @@ Playing a co-op campaign with some friends. We've been playing for a few hours a
 
 **[Cyberpunk 2077](https://www.igdb.com/games/cyberpunk-2077) - PS5**
 
-Picked up the [Phantom Liberty](https://www.igdb.com/games/cyberpunk-2077-phantom-liberty) expansion back when it launched in 2023, and only just started playing it. I also plan on finishing the main game at long last. 
+Picked up the [Phantom Liberty](https://www.igdb.com/games/cyberpunk-2077-phantom-liberty) expansion back when it launched in 2023, and only just started playing it. I also plan on finishing the main game at long last.
 
 ## 🎲 Rolling
 
@@ -41,7 +41,7 @@ Maybe someday...
 
 **[CuBirds](https://boardgamegeek.com/boardgame/245476/cubirds)**
 
-I bring this with me to board gaming sessions alongside Knarr, but it doesn't get played quite as much. Would love to get more plays in. 
+I bring this with me to board gaming sessions alongside Knarr, but it doesn't get played quite as much. Would love to get more plays in.
 
 ## 📺 Watching
 

@@ -8,7 +8,8 @@ import Layout from '@layouts/Layout.astro';
 import BlueskyIcon from '../assets/svg/bluesky.svg';
 import MastodonIcon from '../assets/svg/mastodon.svg';
 
-const iconSize = 16;
+const ICON_SIZE = 16;
+
 const posts = await getCollection('blog');
 
 const latestPost = posts.sort(
@@ -20,8 +21,8 @@ const latestPost = posts.sort(
 <Layout title="Welcome">
 	<Avatar size={200} />
 	<p>
-		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
-		tech enthusiast.
+		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and tech
+		enthusiast.
 	</p>
 	<p>
 		When I'm not writing code, I'm usually enjoying one of my other hobbies;
@@ -50,12 +51,12 @@ const latestPost = posts.sort(
 			href="https://mastodon.social/@ghalldev"
 			target="_blank"
 			rel="noopener noreferrer"
-			><MastodonIcon width={iconSize} height={iconSize} />Mastodon</a
+			><MastodonIcon width={ICON_SIZE} height={ICON_SIZE} />Mastodon</a
 		> and <a
 			href="https://bsky.app/profile/ghalldev.bsky.social"
 			target="_blank"
 			rel="noopener noreferrer"
-			><BlueskyIcon width={iconSize} height={iconSize} />Bluesky</a
+			><BlueskyIcon width={ICON_SIZE} height={ICON_SIZE} />Bluesky</a
 		>.
 	</p>
 	<p>
