@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: December 7, 2025_
+_Last updated: December 20, 2025_
 
 Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on a website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
@@ -45,4 +45,6 @@ I bring this with me to board gaming sessions alongside Knarr, but it doesn't ge
 
 ## 📺 Watching
 
-- Nothing at the moment... ☹️
+**[Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster)**
+
+Been needing a bit of silly entertainment in my life, so I've been going back and rewatching my favorite series' of Taskmaster.
