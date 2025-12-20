@@ -47,4 +47,4 @@ I bring this with me to board gaming sessions alongside Knarr, but it doesn't ge
 
 **[Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster)**
 
-Been needing a bit of silly entertainment in my life, so I've been going back and rewatching my favorite series' of Taskmaster.
+Been needing a bit of silly entertainment in my life, so I've been going back and rewatching my favorite series'.
