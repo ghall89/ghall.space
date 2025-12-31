@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: December 20, 2025_
+_Last updated: December 30, 2025_
 
 Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on a website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
@@ -23,9 +23,13 @@ Currently unemployed, looking for a new job in web development. In between apply
 
 Playing a co-op campaign with some friends. We've been playing for a few hours almost weekly. We recently made it to Act 3.
 
-**[Cyberpunk 2077](https://www.igdb.com/games/cyberpunk-2077) - PS5**
+**[Ghost of Yōtei](https://www.igdb.com/games/ghost-of-yotei) - PS5**
 
-Picked up the [Phantom Liberty](https://www.igdb.com/games/cyberpunk-2077-phantom-liberty) expansion back when it launched in 2023, and only just started playing it. I also plan on finishing the main game at long last.
+I picked this up with a gift card I got for the holidays, and I've been very much enjoying it. I've been finding it challenging, but not in a frustrating way.
+
+**[Pokémon Legends: Z-A](https://www.igdb.com/games/pokemon-legends-z-a) - Switch**
+
+Another game I picked up with a gift card. Initially I didn't have much interest in this, but I decided to give it a chance since I am a life-long Pokémon fan. 
 
 ## 🎲 Rolling
 
