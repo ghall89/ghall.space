@@ -1,11 +1,10 @@
-name: Deploy ghall.space
-run-name: ${{ github.actor }} is deploying static website
 on: [push]
 jobs:
   deploy-static-site:
     runs-on: ubuntu-latest
     steps:
-      - uses: sevalla-hosting/sevalla-deploy@v1.0.0
+      - name: Sevalla Deploy
+        uses: sevalla-hosting/sevalla-deploy@v1.0.1
         with:
           action: deploy-static-site
           sevalla-token: ${{ secrets.SEVALLA_TOKEN }}
