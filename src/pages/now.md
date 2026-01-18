@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: January 14, 2026_
+_Last updated: January 17, 2026_
 
 Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on a website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
@@ -46,6 +46,10 @@ I bring this with me to board gaming sessions alongside Knarr, but it doesn't ge
 I've got one play of this in recently, and I'm not quite sure how I feel about it. I want to get more plays in to get a better idea if I like it. I did enjoy Point Salad, which this game is a reimplementation of.
 
 ## 📺 Watching
+
+**[Poker Face](https://www.themoviedb.org/tv/120998-poker-face)**
+
+Finally checking this show out after hearing it mentioned a million times on the [Triple Click podcast](https://maximumfun.org/podcasts/triple-click/). I have enjoyed everything I've seen from Rian Johnson so I figured I should finally just check it out.
 
 **[Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster)**
 
