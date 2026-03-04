@@ -17,6 +17,8 @@ const { post } = Astro.props;
 const { data } = post;
 
 const { Content } = await render(post);
+
+const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
 ---
 
 <Layout title={data.title}>
@@ -24,6 +26,7 @@ const { Content } = await render(post);
 		<BlogHeader title={data.title} date={data.pubDate} />
 		<Tags tags={data.tags} />
 		<Content />
+	<a href={`https://share.joinmastodon.org/#text=${data.title}%0A%0A${canonicalUrl}`} target="_blank" rel="noopener">Share on Mastodon</a>
 		<a href="https://notbyai.fyi/" target="_blank">
 			<i class="not-by-ai"></i>
 		</a>
