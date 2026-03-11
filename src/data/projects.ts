@@ -1,6 +1,7 @@
 import autodockImg from '@assets/projects/autodock.png';
 import bggClientImg from '@assets/projects/bgg-client.png';
 import keystashImg from '@assets/projects/keystash.png';
+import grooveImg from '@assets/projects/groove.png'
 
 export interface Project {
 	title: string;
@@ -10,6 +11,12 @@ export interface Project {
 }
 
 export const projects: Project[] = [
+	{
+		title: 'Groove',
+		description: 'An offline music player for iOS. ',
+		image: grooveImg,
+		link: "https://grooveplayer.app"
+	},
 	{
 		title: 'AutoDock',
 		description:
