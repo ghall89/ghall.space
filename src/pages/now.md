@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: March 11, 2026_
+_Last updated: March 29, 2026_
 
 Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on the website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
@@ -15,11 +15,9 @@ I'm currently building [Groove](https://grooveplayer.app), a music player for iP
 
 ## 🎧 Listening
 
-I've been listening to a ton of music for testing out Groove, so I'll instead list some vinyl records I've played recently.
-
-- [Flood - They Might Be Giants](https://www.last.fm/music/They+Might+Be+Giants/Flood)
-- [Pagans in Vegas - Metric](https://www.last.fm/music/Metric/Pagans+in+Vegas)
-- [1989 - Taylor Swift](https://www.last.fm/music/Taylor+Swift/1989)
+- [The Else - They Might Be Giants](https://www.last.fm/music/They+Might+Be+Giants/The+Else)
+- [DIPSHIT - Dishpit](https://www.last.fm/music/Dishpit/DIPSHIT)
+- [Jagged Little Pill - Alanis Morissette](https://www.last.fm/music/Alanis+Morissette/Jagged+Little+Pill)
 
 ## 🎮 Playing
 
@@ -33,17 +31,9 @@ Playing a co-op campaign with some friends. We've been playing for a few hours a
 
 ## 🎲 Rolling
 
-**[Grand Austria Hotel](https://boardgamegeek.com/boardgame/182874/grand-austria-hotel)**
+**[Lancaster](https://boardgamegeek.com/boardgame/96913/lancaster)**
 
 My favorite heavy game of the moment. I don't own a copy but I've been playing it anytime I get a chance.
-
-**[Knarr](https://boardgamegeek.com/boardgame/379629/knarr)**
-
-One of my favorite games in my collection, and it gets played more than any other. Read more [here](/blog/2025/knarr-a-pretty-cool-game).
-
-**[CuBirds](https://boardgamegeek.com/boardgame/245476/cubirds)**
-
-I bring this with me to board gaming sessions alongside Knarr, but it doesn't get played quite as much. Would love to get more plays in.
 
 ## 📺 Watching
 
