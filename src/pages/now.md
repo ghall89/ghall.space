@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: March 29, 2026_
+_Last updated: April 11, 2026_
 
 Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on the website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
@@ -37,4 +37,6 @@ My favorite heavy game of the moment. I don't own a copy but I've been playing i
 
 ## 📺 Watching
 
--[Random Keanue Reeves films](https://www.themoviedb.org/person/6384-keanu-reeves?language=en-US)
+- [Daredevil: Born Again](https://www.themoviedb.org/tv/202555-daredevil-born-again?language=en-US) – Season 2
+- [Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster?language=en-US) – Series 21
+
