@@ -4,7 +4,7 @@ pubDate: '4/14/2026'
 tags: ['Music', 'Tech']
 ---
 
-For several months now, I've been running an old M1 Mac Mini (weird to think of that as old) as a music server. It's mainly served as source for me to bring into [Groove](https://grooveplayer.app), the iOS music app I've been building, but I've wanted to do more with it – namely, use it as a source of music for my stereo.
+For several months now, I've been running an old M1 Mac Mini (weird to think of that as old) as a music server. It's mainly served as source for me to bring music into [Groove](https://grooveplayer.app), the iOS music app I've been building, but I've wanted to do more with it – namely, use it as a source of music for my stereo.
 
 So, a little over a month ago, I moved the Mac Mini into my living room and connected it to my stereo system – that was the easy part.
 
