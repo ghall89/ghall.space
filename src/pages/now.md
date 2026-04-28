@@ -7,23 +7,23 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: April 11, 2026_
+_Last updated: April 28, 2026_
 
 Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on the website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
-I'm currently building [Groove](https://grooveplayer.app), a music player for iPhone, because I [recently liberated my music collection from streaming](/blog/2026/setting-my-music-free), and I've not been happy with any of the existing options.
+I'm also building [Groove](https://grooveplayer.app), a music player for iPhone, because I [recently liberated my music collection from streaming](/blog/2026/setting-my-music-free), and I've not been happy with any of the existing options.
 
 ## 🎧 Listening
 
-- [The Else - They Might Be Giants](https://www.last.fm/music/They+Might+Be+Giants/The+Else)
-- [DIPSHIT - Dishpit](https://www.last.fm/music/Dishpit/DIPSHIT)
-- [Jagged Little Pill - Alanis Morissette](https://www.last.fm/music/Alanis+Morissette/Jagged+Little+Pill)
+- [Apollo 18 - They Might Be Giants](https://www.last.fm/music/They+Might+Be+Giants/Apollo+18)
+- [Memory - Vivian Girls](https://www.last.fm/music/Vivian+Girls/Memory)
+- [Mikaela Davis - Mikaela Davis](https://www.last.fm/music/Mikaela+Davis/Mikaela+Davis)
 
 ## 🎮 Playing
 
-**[Pokemon FireRed](https://www.igdb.com/games/pokemon-firered-version) - Switch**
+**[Persona 5 Royal](https://www.igdb.com/games/persona-5-royal) - Switch**
 
-Been having fun diving back into my childhood with this one. I still consider this the definitive version of the original Pokémon games, and I'm excited to be playing this on a modern console.
+I've dove back into this game after an extended break and my goal is to focus on finishing it up. It's one of my favorite RPGs but I've been playing the Switch version on and off for the last 2 years.
 
 **[Baldur's Gate 3](https://www.igdb.com/games/baldurs-gate-iii) - PS5**
 
@@ -39,4 +39,3 @@ My favorite heavy game of the moment. I don't own a copy but I've been playing i
 
 - [Daredevil: Born Again](https://www.themoviedb.org/tv/202555-daredevil-born-again?language=en-US) – Season 2
 - [Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster?language=en-US) – Series 21
-
