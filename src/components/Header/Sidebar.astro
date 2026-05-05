@@ -1,0 +1,83 @@
+---
+import { navLinks } from '../../data/nav-links';
+---
+
+<aside>
+	<div class="logo">
+		<a href="/">ghall.space</a>
+	</div>
+	<nav>
+		<ul>
+			{
+				navLinks.map((link) => (
+					<li>
+						<a href={`/${link.path}`}>{link.label}</a>
+					</li>
+				))
+			}
+		</ul>
+	</nav>
+</aside>
+
+<style lang="scss">
+	@use '../../styles/variables.scss' as *;
+
+	aside {
+		display: none;
+	}
+
+	.logo {
+		padding: 16px;
+		border-bottom: var(--border);
+
+		a {
+			font-size: 1.6rem;
+			color: var(--text);
+			font-weight: bold;
+			text-decoration: none;
+
+			&:hover {
+				opacity: 0.75;
+			}
+		}
+	}
+
+	nav {
+		ul {
+			display: flex;
+			flex-direction: column;
+			list-style: none;
+			gap: 8px;
+			padding: 0;
+			margin: 0;
+		}
+
+		a {
+			color: var(--text);
+			padding: 8px 16px;
+			text-decoration: none;
+			font-weight: 600;
+			font-size: 1.1rem;
+			border-radius: $radius;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.05);
+			}
+		}
+	}
+
+	@media screen and (min-width: $max-mobile-width + 1) {
+		aside {
+			display: block;
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 220px;
+			height: 100vh;
+			background-color: var(--background);
+			border-right: var(--border);
+			z-index: 1;
+			overflow-y: auto;
+		}
+	}
+</style>
