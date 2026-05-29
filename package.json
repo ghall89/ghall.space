@@ -11,7 +11,9 @@
 		"astro": "astro",
 		"check:lint": "eslint --ext .js --ext .ts --ext .astro",
 		"check:format": "prettier . --check",
-		"format": "prettier . --write"
+		"format": "prettier . --write",
+		"preinstall": "corepack enable && corepack prepare pnpm@latest --activate",
+		"postinstall": "pnpm approve-builds --yes || true"
 	},
 	"dependencies": {
 		"@alpinejs/persist": "^3.15.1",
