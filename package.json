@@ -11,9 +11,7 @@
 		"astro": "astro",
 		"check:lint": "eslint --ext .js --ext .ts --ext .astro",
 		"check:format": "prettier . --check",
-		"format": "prettier . --write",
-		"preinstall": "corepack enable && corepack prepare pnpm@latest --activate",
-		"postinstall": "pnpm approve-builds --yes || true"
+		"format": "prettier . --write"
 	},
 	"dependencies": {
 		"@alpinejs/persist": "^3.15.1",
@@ -48,5 +46,6 @@
 	"module": "index.ts",
 	"peerDependencies": {
 		"typescript": "^5.9.3"
-	}
+	},
+	"packageManager": "pnpm@11.5.0+sha512.dbfcc4f81cf48597afd4bc391ffdf12c11f1a9fb83a395bfa6b0a2d9cc2fd8ffebafdb1ccbd529632153f793904c2615b7f09fe1a345473fd1c35845172a8eb1"
 }
