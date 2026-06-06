@@ -1,7 +1,8 @@
 import autodockImg from '@assets/projects/autodock.png';
 import bggClientImg from '@assets/projects/bgg-client.png';
 import keystashImg from '@assets/projects/keystash.png';
-import grooveImg from '@assets/projects/groove.png'
+import grooveImg from '@assets/projects/groove.png';
+import paletteImg from '@assets/projects/palette.png';
 
 export interface Project {
 	title: string;
@@ -13,9 +14,15 @@ export interface Project {
 export const projects: Project[] = [
 	{
 		title: 'Groove',
-		description: 'An offline music player for iOS. ',
+		description: 'An offline music player for iOS.',
 		image: grooveImg,
-		link: "https://grooveplayer.app"
+		link: 'https://grooveplayer.app',
+	},
+	{
+		title: 'Palette',
+		description: 'A global command palette for macOS.',
+		image: paletteImg,
+		link: 'https://codeberg.org/ghalldev/Palette',
 	},
 	{
 		title: 'AutoDock',
@@ -29,7 +36,7 @@ export const projects: Project[] = [
 		description:
 			'A MacOS application for managing software license keys for software purchased outside the Mac App Store.',
 		image: keystashImg,
-		link: 'https://github.com/ghall89/KeyStash',
+		link: 'https://codeberg.org/ghalldev/KeyStash',
 	},
 	{
 		title: 'bgg-client',

@@ -1,0 +1,43 @@
+{
+  "tasks": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check:lint": "eslint --ext .js --ext .ts --ext .astro",
+    "check:format": "prettier . --check",
+    "format": "prettier . --write"
+  },
+  "imports": {
+    "@alpinejs/persist": "npm:@alpinejs/persist@^3.15.1",
+    "@astrojs/alpinejs": "npm:@astrojs/alpinejs@^0.5.0",
+    "@astrojs/mdx": "npm:@astrojs/mdx@^5.0.4",
+    "@astrojs/rss": "npm:@astrojs/rss@^4.0.18",
+    "@types/alpinejs": "npm:@types/alpinejs@^3.13.11",
+    "@types/markdown-it": "npm:@types/markdown-it@^14.1.2",
+    "alpinejs": "npm:alpinejs@^3.15.0",
+    "astro": "npm:astro@^6.2.1",
+    "astro-pagefind": "npm:astro-pagefind@^1.8.5",
+    "date-fns": "npm:date-fns@^4.1.0",
+    "markdown-it": "npm:markdown-it@^14.1.0",
+    "pagefind": "npm:pagefind@^1.4.0",
+    "rehype-external-links": "npm:rehype-external-links@^3.0.0",
+    "sanitize-html": "npm:sanitize-html@^2.17.0",
+    "sharp": "npm:sharp@^0.34.4",
+    "@astrojs/ts-plugin": "npm:@astrojs/ts-plugin@1.10.7",
+    "@eslint/js": "npm:@eslint/js@^9.39.2",
+    "@types/alpinejs__persist": "npm:@types/alpinejs__persist@^3.13.4",
+    "eslint": "npm:eslint@^9.39.1",
+    "eslint-config-prettier": "npm:eslint-config-prettier@^10.1.8",
+    "eslint-plugin-astro": "npm:eslint-plugin-astro@^1.5.0",
+    "prettier": "npm:prettier@^3.6.2",
+    "prettier-plugin-astro": "npm:prettier-plugin-astro@^0.14.1",
+    "sass": "npm:sass@^1.94.2",
+    "typescript-eslint": "npm:typescript-eslint@^8.47.0"
+  },
+  "nodeModulesDir": "auto",
+  "compilerOptions": {
+    "lib": ["dom", "dom.iterable", "esnext"]
+  }
+}
