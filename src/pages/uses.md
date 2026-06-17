@@ -19,7 +19,7 @@ My current workstation is an M2 MacBook Air, which I have connected to an [LG Ul
 - Storage: 512GB SSD + external 1TB Samsung SSD 
 
 ### iPhone 14
-- OS: iOS 26
+- OS: iOS 27 Beta
 - Storage: 128GB
 
 ## Software
