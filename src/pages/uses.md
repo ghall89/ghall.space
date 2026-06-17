@@ -7,34 +7,42 @@ title: Uses
 
 As both a professional web developer, an amatuer Mac and iPhone developer, as well as a hobbyist blogger, I have a variety of tools I use to get my work done. 
 
-_Last updated: March 5, 2026_
+_Last updated: June 17, 2026_
 
 ## Hardware
 
 My current workstation is an M2 MacBook Air, which I have connected to an [LG UltraFine 27"](https://www.lg.com/us/monitors/lg-27up850k-w-4k-uhd-led-monitor) display, with a [NuPhy Air75 V2](https://nuphy.com/products/air75-v2) keyboard (with classic Mac-style keycaps), and a [Logitech M720](https://www.logitech.com/en-us/shop/p/m720-triathlon) mouse. 
 
-### MacBook Air Specs
+### MacBook Air M4
 - OS: macOS Tahoe
 - RAM: 24GB 
 - Storage: 512GB SSD + external 1TB Samsung SSD 
 
+### iPhone 14
+- OS: iOS 26
+- Storage: 128GB
+
 ## Software
+
+### Music
+
+- [Groove](https://grooveplayer.app/) - Full disclaimer, this is my own app. It's my primary music player on my iPhone. 
+- [Doppler](https://brushedtype.co/doppler/) - My primary music player on Mac. It doesn't have all the features I'd like, but it works a lot better for my needs than the Music app.
 
 ### Text Editors
 
 - [Zed](https://zed.dev/) - My daily driver for web development. I like it because it's fast, minimal, and just works. 
 - [Nova](https://nova.app/) - I very much want this to be my daily driver for web development...
-- [Xcode](https://developer.apple.com/xcode/) - Where I do all my iPhone and Mac dev, but also _anything_ Swift-related.
+- [Xcode](https://developer.apple.com/xcode/) - Where I do all my iPhone and Mac dev.
 - [BBEdit](https://www.barebones.com/products/bbedit/index.html) - My go-to app for making quick edits, and for writing.
 
 ### Productivity
 
 - [Zen Browser](https://zen-browser.app/) - Primary web browser.
-- [Bear](https://bear.app/) - Jotting down and organizing notes across my Mac, iPad, and iPhone.
+- [Obsidian](https://obsidian.md/) - Jotting down and organizing notes across my Mac, iPad, and iPhone.
 
 ### Other Desktop Apps
 
-- [Doppler](https://brushedtype.co/doppler/) - My desktop music player of choice.
 - [WindowKeys](https://www.apptorium.com/windowkeys) - For assigning custom keyboard shortcuts to macOS's built-in window management.
 - [ForkLift](https://binarynights.com/) - Finder alternative I mainly use for moving or copying files quickly.
 
