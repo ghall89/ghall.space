@@ -7,7 +7,9 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: May 29, 2026_
+_Last updated: June 17, 2026_
+
+## 🔨 Doing
 
 Currently unemployed, looking for a new job in web development. In between applying for jobs, I've been volunteering as a maintainer on the website for a humanitarian aid organization, and working on side projects on both web and Mac.
 
@@ -20,17 +22,22 @@ I'm also building [Groove](https://grooveplayer.app), a music player for iPhone,
 
 ## 🎮 Playing
 
-**[Persona 5 Royal](https://www.igdb.com/games/persona-5-royal) - Switch**
+### [Balatro](https://www.igdb.com/games/balatro) - Switch
 
-I've dove back into this game after an extended break and my goal is to focus on finishing it up. It's one of my favorite RPGs but I've been playing the Switch version on and off for the last 2 years.
+I put quite a few hours into this game back when it originally launched, but I've recently become obsessed again. 
+
+### [Horizon: Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered) - PS5
+
+One of my favorite games of the past decade, I've jumped back in for the first time since playing the sequel. I picked up the remastered PS5 version back when it came out a while ago, but I'm only just diving into it now. 
 
 ## 🎲 Rolling
 
-**[Lancaster](https://boardgamegeek.com/boardgame/96913/lancaster)**
+### [Lancaster](https://boardgamegeek.com/boardgame/96913/lancaster)
 
 My favorite heavy game of the moment. I don't own a copy but I've been playing it anytime I get a chance.
 
 ## 📺 Watching
 
-- [Taskmaster](https://www.themoviedb.org/tv/63404-taskmaster?language=en-US) – Series 21
-- [Would I Lie To You](https://www.themoviedb.org/tv/4775-would-i-lie-to-you?language=en-US)
+### [Torchwood](https://www.themoviedb.org/tv/424-torchwood)
+
+### [Would I Lie To You](https://www.themoviedb.org/tv/4775-would-i-lie-to-you?language=en-US)
