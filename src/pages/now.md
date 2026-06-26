@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: June 17, 2026_
+_Last updated: June 25, 2026_
 
 ## 🔨 Doing
 
@@ -22,22 +22,14 @@ I'm also building [Groove](https://grooveplayer.app), a music player for iPhone,
 
 ## 🎮 Playing
 
-### [Balatro](https://www.igdb.com/games/balatro) - Switch
+### [Splatoon 3](https://www.igdb.com/games/splatoon-3) - Switch
 
-I put quite a few hours into this game back when it originally launched, but I've recently become obsessed again. 
+It's been a while, but I've decided to dive back into the multiplayer, and might take a stab at finally finishing the single player story. 
 
 ### [Horizon: Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered) - PS5
 
 One of my favorite games of the past decade, I've jumped back in for the first time since playing the sequel. I picked up the remastered PS5 version back when it came out a while ago, but I'm only just diving into it now. 
 
-## 🎲 Rolling
-
-### [Lancaster](https://boardgamegeek.com/boardgame/96913/lancaster)
-
-My favorite heavy game of the moment. I don't own a copy but I've been playing it anytime I get a chance.
-
 ## 📺 Watching
 
-### [Torchwood](https://www.themoviedb.org/tv/424-torchwood)
-
-### [Would I Lie To You](https://www.themoviedb.org/tv/4775-would-i-lie-to-you?language=en-US)
+Nothing at the moment...
