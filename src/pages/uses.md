@@ -5,20 +5,22 @@ title: Uses
 
 # Uses
 
-As both a professional web developer, an amatuer Mac and iPhone developer, as well as a hobbyist blogger, I have a variety of tools I use to get my work done. 
+As both a professional web developer, an amatuer Mac and iPhone developer, as well as a hobbyist blogger, I have a variety of tools I use to get my work done.
 
-_Last updated: June 17, 2026_
+_Last updated: July 27, 2026_
 
 ## Hardware
 
-My current workstation is an M2 MacBook Air, which I have connected to an [LG UltraFine 27"](https://www.lg.com/us/monitors/lg-27up850k-w-4k-uhd-led-monitor) display, with a [NuPhy Air75 V2](https://nuphy.com/products/air75-v2) keyboard (with classic Mac-style keycaps), and a [Logitech M720](https://www.logitech.com/en-us/shop/p/m720-triathlon) mouse. 
+My current workstation is an M2 MacBook Air, which I have connected to an [LG UltraFine 27"](https://www.lg.com/us/monitors/lg-27up850k-w-4k-uhd-led-monitor) display, with a [NuPhy Air75 V2](https://nuphy.com/products/air75-v2) keyboard (with classic Mac-style keycaps), and a [Logitech M720](https://www.logitech.com/en-us/shop/p/m720-triathlon) mouse.
 
 ### MacBook Air M4
+
 - OS: macOS Tahoe
-- RAM: 24GB 
-- Storage: 512GB SSD + external 1TB Samsung SSD 
+- RAM: 24GB
+- Storage: 512GB SSD + external 1TB Samsung SSD
 
 ### iPhone 14
+
 - OS: iOS 27 Beta
 - Storage: 128GB
 
@@ -26,12 +28,12 @@ My current workstation is an M2 MacBook Air, which I have connected to an [LG Ul
 
 ### Music
 
-- [Groove](https://grooveplayer.app/) - Full disclaimer, this is my own app. It's my primary music player on my iPhone. 
+- [Groove](https://grooveplayer.app/) - Full disclaimer, this is my own app. It's my primary music player on my iPhone.
 - [Doppler](https://brushedtype.co/doppler/) - My primary music player on Mac. It doesn't have all the features I'd like, but it works a lot better for my needs than the Music app.
 
 ### Text Editors
 
-- [Zed](https://zed.dev/) - My daily driver for web development. I like it because it's fast, minimal, and just works. 
+- [Zed](https://zed.dev/) - My daily driver for web development. I like it because it's fast, minimal, and just works.
 - [Nova](https://nova.app/) - I very much want this to be my daily driver for web development...
 - [Xcode](https://developer.apple.com/xcode/) - Where I do all my iPhone and Mac dev.
 - [BBEdit](https://www.barebones.com/products/bbedit/index.html) - My go-to app for making quick edits, and for writing.
@@ -50,7 +52,7 @@ My current workstation is an M2 MacBook Air, which I have connected to an [LG Ul
 
 My terminal emulator of choice is [Ghostty](https://ghostty.org/). These are some of the CLI tools I find useful:
 
-- [Homebrew](https://brew.sh/)
 - [Atuin](https://atuin.sh/)
-- [Zoxide](https://github.com/ajeetdsouza/zoxide)
 - [trash](https://hasseg.org/trash/)
+- [wut](https://github.com/simonbs/wut)
+- [Zoxide](https://github.com/ajeetdsouza/zoxide)
