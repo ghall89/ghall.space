@@ -22,7 +22,7 @@ export const projects: Project[] = [
 		title: 'Palette',
 		description: 'A global command palette for macOS.',
 		image: paletteImg,
-		link: 'https://codeberg.org/ghalldev/Palette',
+		link: 'https://ko-fi.com/s/2d729ab6da',
 	},
 	{
 		title: 'AutoDock',
