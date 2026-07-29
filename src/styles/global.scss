@@ -1,6 +1,12 @@
 @use './variables.scss' as *;
 @use 'fonts.scss';
 
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
 :root {
 	--blue: #{$blue};
 	--sky: #{$sky};
