@@ -6,8 +6,14 @@ import { navLinks } from '../../data/nav-links';
 
 <!-- drawerOpened is defined in /src/layouts/Layout.astro -->
 <div class="drawer-container" @keydown.escape="drawerOpen = false">
-	<button class="menu-button" @click="drawerOpen = !drawerOpen">
-		<BarsIcon width={24} height={24} />
+	<button
+		class="menu-button"
+		@click="drawerOpen = !drawerOpen"
+		:aria-expanded="drawerOpen"
+		aria-controls="mobile-drawer"
+		aria-label="Open menu"
+	>
+		<BarsIcon width={24} height={24} aria-hidden="true" />
 	</button>
 	<div
 		class="overlay"
@@ -17,10 +23,15 @@ import { navLinks } from '../../data/nav-links';
 		x-transition:enter-end="visible-overlay"
 		x-transition:leave-start="visible-overlay"
 		x-transition:leave-end="hidden-overlay"
+		aria-hidden="true"
 	>
 	</div>
 	<div
+		id="mobile-drawer"
 		class="drawer"
+		role="dialog"
+		aria-modal="true"
+		aria-label="Mobile navigation"
 		x-show="drawerOpen"
 		x-transition:enter-start="hidden-drawer"
 		x-transition:enter-end="visible-drawer"
@@ -28,11 +39,15 @@ import { navLinks } from '../../data/nav-links';
 		x-transition:leave-end="hidden-drawer"
 	>
 		<div>
-			<button class="icon-button" @click="drawerOpen = !drawerOpen">
-				<CloseIcon width={24} height={24} /></button
+			<button
+				class="icon-button"
+				@click="drawerOpen = !drawerOpen"
+				aria-label="Close menu"
+			>
+				<CloseIcon width={24} height={24} aria-hidden="true" /></button
 			>
 		</div>
-		<nav>
+		<nav aria-label="Mobile menu">
 			{navLinks.map((link) => <a href={`/${link.path}`}>{link.label}</a>)}
 		</nav>
 	</div>

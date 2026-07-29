@@ -27,6 +27,7 @@ const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
 		<Tags tags={data.tags} />
 		<hr />
 		<Content />
+		<hr />
 		<div class="badges">
 			<a
 				class="share-button"
@@ -34,8 +35,12 @@ const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
 				target="_blank"
 				rel="noopener">Share on Mastodon</a
 			>
-			<a href="https://notbyai.fyi/" target="_blank">
-				<i class="not-by-ai"></i>
+			<a
+				href="https://notbyai.fyi/"
+				target="_blank"
+				aria-label="Written by human, not by AI"
+			>
+				<i class="not-by-ai" aria-hidden="true"></i>
 			</a>
 		</div>
 	</article>

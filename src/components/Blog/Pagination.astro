@@ -24,7 +24,7 @@ const { page } = Astro.props;
 		{
 			Array.from({ length: page.lastPage }, (_, i) => i + 1).map((n) =>
 				page.currentPage === n ? (
-					<span class="page-number current">{n}</span>
+					<span class="page-number current" aria-current="page">{n}</span>
 				) : (
 					<a class="page-number" href={`/blog/page/${n}`}>
 						{n}

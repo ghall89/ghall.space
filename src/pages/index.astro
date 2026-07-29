@@ -33,7 +33,7 @@ const latestPost = posts.sort(
 			class="portrait"
 		/>
 		<section>
-			<h2>Welcome to my home on the World Wide Web!</h2>
+			<h1>Welcome to my home on the World Wide Web!</h1>
 			<p>
 				My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
 				tech enthusiast living in the United States.
@@ -68,16 +68,23 @@ const latestPost = posts.sort(
 			</p>
 			<p>
 				If you want to get in touch, I'm on <a
-					rel="me"
+					rel="me noopener noreferrer"
 					href="https://mastodon.social/@ghalldev"
 					target="_blank"
-					rel="noopener noreferrer"
-					><MastodonIcon width={ICON_SIZE} height={ICON_SIZE} />Mastodon</a
+					><MastodonIcon
+						width={ICON_SIZE}
+						height={ICON_SIZE}
+						aria-hidden="true"
+					/>Mastodon</a
 				> and <a
 					href="https://bsky.app/profile/ghalldev.bsky.social"
 					target="_blank"
 					rel="noopener noreferrer"
-					><BlueskyIcon width={ICON_SIZE} height={ICON_SIZE} />Bluesky</a
+					><BlueskyIcon
+						width={ICON_SIZE}
+						height={ICON_SIZE}
+						aria-hidden="true"
+					/>Bluesky</a
 				>.
 			</p>
 		</section>
@@ -98,7 +105,6 @@ const latestPost = posts.sort(
 				It was built with Astro, Alpine.js, and Sass, using the Deno JavaScript
 				runtime.
 			</p>
-			<p></p>
 
 			<span class="acknowledgment">
 				Avatar created with <a
@@ -118,6 +124,10 @@ const latestPost = posts.sort(
 			const originalSrcset = img.srcset;
 			let isHovered = false;
 			let isBlinking = false;
+
+			const prefersReducedMotion = window.matchMedia(
+				'(prefers-reduced-motion: reduce)'
+			).matches;
 
 			const updateImage = () => {
 				if (isHovered) {
@@ -141,6 +151,10 @@ const latestPost = posts.sort(
 				isHovered = false;
 				updateImage();
 			});
+
+			if (prefersReducedMotion) {
+				return;
+			}
 
 			const randomInterval = () => Math.floor(Math.random() * 4000) + 2000;
 

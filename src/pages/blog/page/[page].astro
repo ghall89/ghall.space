@@ -25,6 +25,7 @@ const { page } = Astro.props;
 ---
 
 <Layout title="Blog Archive">
+	<h1>Blog Archive</h1>
 	{page.data.map((post) => <PostPreview post={post} />)}
 
 	<Pagination page={page} />
