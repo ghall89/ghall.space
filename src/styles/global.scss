@@ -9,6 +9,7 @@
 	--text: #{$text};
 	--highlight: #{$highlight};
 	--background: #{$background};
+	--background-secondary: #{$background-secondary};
 	--border: #{$border};
 	--font: #{$web-font};
 	--mono-font: #{$mono-font};
@@ -26,6 +27,7 @@ body.theme-dark {
 	--orange: #{$dark-orange};
 	--text: #{$dark-text};
 	--background: #{$dark-background};
+	--background-secondary: #{$dark-background-secondary};
 	--border: #{$dark-border};
 	--header-gradient: #{$header-gradient-dark};
 	--card-header-gradient: #{$card-header-gradient-dark};
@@ -33,7 +35,7 @@ body.theme-dark {
 
 body {
 	color: var(--text);
-	background-color: var(--background);
+	background-color: var(--background-secondary);
 	background-image: radial-gradient(
 		circle at 50% 0,
 		rgba(0, 174, 239, 0.08),
@@ -60,10 +62,11 @@ body.theme-dark {
 main {
 	max-width: $max-page-width;
 	margin: 0 auto;
-	padding: 0 1rem;
+	padding: 0 2rem 2rem;
 	padding-top: 120px;
 	flex: 1 0 auto;
 	width: 100%;
+	background-color: var(--background);
 }
 
 a {
