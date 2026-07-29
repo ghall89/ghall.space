@@ -1,24 +1,22 @@
 ---
 import MastodonIcon from '../assets/svg/mastodon.svg';
 import RssIcon from '../assets/svg/rss.svg';
-import ThemeToggle from './ThemeToggle.astro';
 
 const year = new Date().getFullYear();
 ---
 
 <footer>
-	<ThemeToggle />
 	<div class="socials">
 		<a
 			href="https://mastodon.social/@ghalldev"
 			target="_blank"
 			rel="noopener noreferrer"
-			><MastodonIcon class="mastodon-icon" width={20} height={20} /> Follow me on
+			><MastodonIcon class="mastodon-icon" width={20} height={20} aria-hidden="true" /> Follow me on
 			Mastodon</a
 		>
 
 		<a href="/rss.xml"
-			><RssIcon class="rss-icon" width={20} height={20} /> Subscribe with RSS</a
+			><RssIcon class="rss-icon" width={20} height={20} aria-hidden="true" /> Subscribe with RSS</a
 		>
 	</div>
 	<p>
@@ -32,11 +30,15 @@ const year = new Date().getFullYear();
 </footer>
 
 <style lang="scss">
+	@use '../styles/variables.scss' as *;
+
 	footer {
-		margin: 2rem 0;
 		text-align: center;
+		padding: 2rem 1rem;
+		background: var(--card-header-gradient);
 		border-top: var(--border);
-		padding-top: 24px;
+
+		box-shadow: var(--soft-shadow);
 	}
 
 	.rss-icon {
@@ -47,9 +49,16 @@ const year = new Date().getFullYear();
 		display: flex;
 		gap: 24px;
 		justify-content: center;
+		margin-top: 1rem;
 
 		& a {
 			color: var(--text);
+			padding: 8px 16px;
+			border-radius: 999px;
+			background: rgba(0, 119, 204, 0.08);
+			border: 1px solid rgba(0, 119, 204, 0.15);
+			transition: $quick-transition;
+			text-decoration: none;
 
 			& .rss-icon {
 				color: var(--orange);
@@ -61,8 +70,7 @@ const year = new Date().getFullYear();
 			}
 
 			&:hover {
-				opacity: 0.75;
-				text-decoration: none;
+				background: rgba(0, 119, 204, 0.15);
 			}
 		}
 	}
@@ -70,6 +78,7 @@ const year = new Date().getFullYear();
 	@media (max-width: 516px) {
 		.socials {
 			flex-direction: column;
+			align-items: center;
 		}
 	}
 </style>

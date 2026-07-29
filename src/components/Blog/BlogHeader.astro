@@ -1,7 +1,8 @@
 ---
+import { Image } from 'astro:assets';
 import { add, format } from 'date-fns';
 
-import CalendarIcon from '@assets/svg/calendar.svg';
+import CalendarIcon from '@assets/calendar.png';
 
 interface Props {
 	title: string;
@@ -15,29 +16,46 @@ const { title, date, slug } = Astro.props;
 <div class="blog-header">
 	{slug ? <a href={`/blog/${slug}`}>{title}</a> : <h1>{title}</h1>}
 	<div>
-		<CalendarIcon class="calendar-icon" width={24} height={24} />
-		<strong>{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}</strong>
+		<span aria-hidden="true">
+			<Image
+				src={CalendarIcon}
+				class="calendar-icon"
+				alt=""
+				width={24}
+				height={24}
+			/>
+		</span>
+		<time datetime={new Date(date).toISOString()}>
+			{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
+		</time>
 	</div>
 </div>
 
 <style lang="scss">
+	@use '../../styles/variables.scss' as *;
+
 	a {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
+		text-decoration: none;
 	}
 
 	strong {
-		font-weight: bolder;
+		font-weight: 700;
+		color: var(--text);
 	}
 
 	.blog-header {
-		margin: 1rem 0;
+		margin-bottom: 1.5rem;
 
+		& h1,
 		& h2 {
-			margin: 0;
+			margin: 0 0 0.5rem;
 		}
 	}
 
 	.calendar-icon {
+		display: inline;
 		transform: translateY(0.3rem);
+		box-shadow: none;
 	}
 </style>

@@ -6,8 +6,14 @@ import { navLinks } from '../../data/nav-links';
 
 <!-- drawerOpened is defined in /src/layouts/Layout.astro -->
 <div class="drawer-container" @keydown.escape="drawerOpen = false">
-	<button class="icon-button" @click="drawerOpen = !drawerOpen">
-		<BarsIcon width={24} height={24} />
+	<button
+		class="menu-button"
+		@click="drawerOpen = !drawerOpen"
+		:aria-expanded="drawerOpen"
+		aria-controls="mobile-drawer"
+		aria-label="Open menu"
+	>
+		<BarsIcon width={24} height={24} aria-hidden="true" />
 	</button>
 	<div
 		class="overlay"
@@ -17,10 +23,15 @@ import { navLinks } from '../../data/nav-links';
 		x-transition:enter-end="visible-overlay"
 		x-transition:leave-start="visible-overlay"
 		x-transition:leave-end="hidden-overlay"
+		aria-hidden="true"
 	>
 	</div>
 	<div
+		id="mobile-drawer"
 		class="drawer"
+		role="dialog"
+		aria-modal="true"
+		aria-label="Mobile navigation"
 		x-show="drawerOpen"
 		x-transition:enter-start="hidden-drawer"
 		x-transition:enter-end="visible-drawer"
@@ -28,11 +39,15 @@ import { navLinks } from '../../data/nav-links';
 		x-transition:leave-end="hidden-drawer"
 	>
 		<div>
-			<button class="icon-button" @click="drawerOpen = !drawerOpen">
-				<CloseIcon width={24} height={24} /></button
+			<button
+				class="icon-button"
+				@click="drawerOpen = !drawerOpen"
+				aria-label="Close menu"
+			>
+				<CloseIcon width={24} height={24} aria-hidden="true" /></button
 			>
 		</div>
-		<nav>
+		<nav aria-label="Mobile menu">
 			{navLinks.map((link) => <a href={`/${link.path}`}>{link.label}</a>)}
 		</nav>
 	</div>
@@ -43,6 +58,28 @@ import { navLinks } from '../../data/nav-links';
 
 	.drawer-container {
 		display: none;
+	}
+
+	.menu-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px;
+		border-radius: 999px;
+		color: #ffffff;
+		background: var(--button-gradient);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+		transition: $quick-transition;
+		cursor: pointer;
+
+		&:hover {
+			filter: brightness(1.08);
+		}
+
+		& svg {
+			color: #ffffff;
+		}
 	}
 
 	.overlay {
@@ -69,24 +106,39 @@ import { navLinks } from '../../data/nav-links';
 		height: 100vh;
 		z-index: 3;
 		transition: $transition;
+		box-shadow: -4px 0 16px rgba(0, 0, 0, 0.18);
 
 		& div {
-			padding: 8px 6px 4px;
+			padding: 18px 16px 14px;
 			border-bottom: var(--border);
+			background: var(--header-gradient);
+
+			& svg {
+				color: #ffffff;
+			}
 		}
 	}
 
 	nav {
 		text-align: left;
-		padding: 12px;
+		padding: 16px;
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 10px;
 		font-size: 1.2rem;
-    
-    & a {
-      text-decoration: none;  
-    }
+
+		& a {
+			text-decoration: none;
+			padding: 10px 14px;
+			border-radius: 999px;
+			background: rgba(0, 174, 239, 0.08);
+			border: 1px solid rgba(0, 174, 239, 0.15);
+			transition: $quick-transition;
+
+			&:hover {
+				background: rgba(0, 174, 239, 0.18);
+			}
+		}
 	}
 
 	.hidden-drawer {

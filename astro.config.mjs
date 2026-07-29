@@ -18,14 +18,13 @@ export default defineConfig({
 			},
 		},
 		rehypePlugins: [
-			[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+			[
+				rehypeExternalLinks,
+				{ target: '_blank', rel: ['noopener', 'noreferrer'] },
+			],
 		],
 	},
-	integrations: [
-		mdx(),
-		alpinejs({ entrypoint: '/src/entrypoint' }),
-		pagefind(),
-	],
+	integrations: [mdx(), alpinejs(), pagefind()],
 	redirects: {
 		'/posts/[...slug]': '/blog/[...slug]',
 		'/blog': '/blog/page/1',
