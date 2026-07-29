@@ -6,7 +6,7 @@ import { navLinks } from '../../data/nav-links';
 
 <!-- drawerOpened is defined in /src/layouts/Layout.astro -->
 <div class="drawer-container" @keydown.escape="drawerOpen = false">
-	<button class="icon-button" @click="drawerOpen = !drawerOpen">
+	<button class="menu-button" @click="drawerOpen = !drawerOpen">
 		<BarsIcon width={24} height={24} />
 	</button>
 	<div
@@ -45,6 +45,28 @@ import { navLinks } from '../../data/nav-links';
 		display: none;
 	}
 
+	.menu-button {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding: 6px;
+		border-radius: 999px;
+		color: #ffffff;
+		background: var(--button-gradient);
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+		transition: $quick-transition;
+		cursor: pointer;
+
+		&:hover {
+			filter: brightness(1.08);
+		}
+
+		& svg {
+			color: #ffffff;
+		}
+	}
+
 	.overlay {
 		position: absolute;
 		top: 0;
@@ -72,7 +94,7 @@ import { navLinks } from '../../data/nav-links';
 		box-shadow: -4px 0 16px rgba(0, 0, 0, 0.18);
 
 		& div {
-			padding: 8px 6px 4px;
+			padding: 18px 16px 14px;
 			border-bottom: var(--border);
 			background: var(--header-gradient);
 
