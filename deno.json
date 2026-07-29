@@ -10,7 +10,6 @@
 		"format": "prettier . --write"
 	},
 	"imports": {
-		"@alpinejs/persist": "npm:@alpinejs/persist@^3.15.1",
 		"@astrojs/alpinejs": "npm:@astrojs/alpinejs@^0.5.0",
 		"@astrojs/mdx": "npm:@astrojs/mdx@^5.0.4",
 		"@astrojs/rss": "npm:@astrojs/rss@^4.0.18",
@@ -27,7 +26,6 @@
 		"sharp": "npm:sharp@^0.34.4",
 		"@astrojs/ts-plugin": "npm:@astrojs/ts-plugin@1.10.7",
 		"@eslint/js": "npm:@eslint/js@^9.39.2",
-		"@types/alpinejs__persist": "npm:@types/alpinejs__persist@^3.13.4",
 		"eslint": "npm:eslint@^9.39.1",
 		"eslint-config-prettier": "npm:eslint-config-prettier@^10.1.8",
 		"eslint-plugin-astro": "npm:eslint-plugin-astro@^1.5.0",

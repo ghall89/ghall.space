@@ -24,11 +24,7 @@ export default defineConfig({
 			],
 		],
 	},
-	integrations: [
-		mdx(),
-		alpinejs({ entrypoint: '/src/entrypoint' }),
-		pagefind(),
-	],
+	integrations: [mdx(), alpinejs(), pagefind()],
 	redirects: {
 		'/posts/[...slug]': '/blog/[...slug]',
 		'/blog': '/blog/page/1',
