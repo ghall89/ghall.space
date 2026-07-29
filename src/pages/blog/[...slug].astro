@@ -25,21 +25,35 @@ const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
 	<article>
 		<BlogHeader title={data.title} date={data.pubDate} />
 		<Tags tags={data.tags} />
+		<hr />
 		<Content />
-		<a
-			class="share-button"
-			href={`https://share.joinmastodon.org/#text=${data.title}%0A%0A${canonicalUrl}`}
-			target="_blank"
-			rel="noopener">Share on Mastodon</a
-		>
-		<a href="https://notbyai.fyi/" target="_blank">
-			<i class="not-by-ai"></i>
-		</a>
+		<div class="badges">
+			<a
+				class="share-button"
+				href={`https://share.joinmastodon.org/#text=${data.title}%0A%0A${canonicalUrl}`}
+				target="_blank"
+				rel="noopener">Share on Mastodon</a
+			>
+			<a href="https://notbyai.fyi/" target="_blank">
+				<i class="not-by-ai"></i>
+			</a>
+		</div>
 	</article>
 </Layout>
 
 <style lang="scss">
 	@use '../../styles/variables.scss' as *;
+
+	hr {
+		border: var(--border);
+		margin: 1rem 0;
+	}
+
+	.badges {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+	}
 
 	.share-button {
 		display: inline-block;

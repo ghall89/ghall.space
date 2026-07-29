@@ -3,10 +3,13 @@ export const prerender = true;
 
 import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import LatestPost from '@components/LatestPost.astro';
+import Card from '@components/Card.astro';
+import PillList from '@components/PillList.astro';
 import Layout from '@layouts/Layout.astro';
 import BlueskyIcon from '../assets/svg/bluesky.svg';
 import MastodonIcon from '../assets/svg/mastodon.svg';
+
+import { aboutMe } from '@data/about-me';
 
 import avatarPng from '@assets/avatar.png';
 import avatarHoverPng from '@assets/avatar-hover.png';
@@ -29,17 +32,25 @@ const latestPost = posts.sort(
 			alt="Illustrated portrait of a person with glasses and a beard, wearing a red and black plaid shirt. The background is a solid green color."
 			class="portrait"
 		/>
-		<div>
+		<section>
+			<h2>Welcome to my home on the World Wide Web!</h2>
 			<p>
 				My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
-				tech enthusiast.
+				tech enthusiast living in the United States.
 			</p>
 			<p>
-				When I'm not writing code, I'm usually enjoying one of my other hobbies;
-				video games, board games, music, photography, art, the list goes on...
+				When I'm not writing code, I'm usually enjoying one of my other hobbies.
+				I enjoy playing video games (mainly RPGs) and board games, solving
+				crossword puzzles, and doing the daily Wordle. I'm passionate about
+				music, though I am not very musical, and ocassionally enjoy a good
+				movie.
 			</p>
 			<p>
-				I also like writing about stuff, so I put together this site to share
+				I'm not super outdoorsy, but when I am outside I prefer to spend my time
+				in nature. Even better if there are cute animals around. 🐰
+			</p>
+			<p>
+				I also like writing about stuff, so I built this website to share
 				whatever's on my mind about the world of tech, gaming, life, web
 				development, and whatever else strikes my fancy.
 			</p>
@@ -69,14 +80,33 @@ const latestPost = posts.sort(
 					><BlueskyIcon width={ICON_SIZE} height={ICON_SIZE} />Bluesky</a
 				>.
 			</p>
-		</div>
+		</section>
 
-		<span class="acknowledgment">
-			Avatar created with <a
-				href="https://www.avatarsinpixels.com/minipix/clothing/Eyes"
-				target="_blank">Avatars in Pixels</a
-			>
-		</span>
+		<section class="likes-dislikes">
+			<Card title="Likes">
+				<PillList items={aboutMe.likes} />
+			</Card>
+			<Card title="Dislikes">
+				<PillList items={aboutMe.dislikes} />
+			</Card>
+		</section>
+
+		<section>
+			<h2>About This Website</h2>
+			<p>This website is my little home on the web. It's inspired by</p>
+			<p>
+				It was built with Astro, Alpine.js, and Sass, using the Deno JavaScript
+				runtime.
+			</p>
+			<p></p>
+
+			<span class="acknowledgment">
+				Avatar created with <a
+					href="https://www.avatarsinpixels.com/minipix/clothing/Eyes"
+					target="_blank">Avatars in Pixels</a
+				>.
+			</span>
+		</section>
 	</div>
 
 	<script
@@ -138,6 +168,8 @@ const latestPost = posts.sort(
 </Layout>
 
 <style lang="scss">
+	@use '../styles/variables.scss' as *;
+
 	.portrait {
 		float: left;
 		margin-inline-end: 1rem;
@@ -146,6 +178,18 @@ const latestPost = posts.sort(
 
 	.acknowledgment {
 		font-style: italic;
+	}
+
+	.likes-dislikes {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 1rem;
+		clear: left;
+		margin: 2rem;
+
+		@media (max-width: $max-mobile-width) {
+			grid-template-columns: 1fr;
+		}
 	}
 
 	a > svg {

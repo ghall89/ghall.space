@@ -1,0 +1,23 @@
+---
+import Pill from './Pill.astro';
+
+interface Props {
+	items: string[];
+	hrefBuilder?: (item: string) => string;
+}
+
+const { items, hrefBuilder } = Astro.props;
+const sortedItems = [...items].sort();
+---
+
+<span class="pill-list">
+	{sortedItems.map((item) => <Pill href={hrefBuilder?.(item)}>{item}</Pill>)}
+</span>
+
+<style lang="scss">
+	.pill-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px;
+	}
+</style>

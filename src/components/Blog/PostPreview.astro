@@ -16,8 +16,15 @@ const { post } = Astro.props;
 </article>
 
 <style lang="scss">
+	@use '../../styles/variables.scss' as *;
+
 	article {
-		padding-bottom: 20px;
+		padding: 0.75rem 1rem;
+		margin-bottom: 1rem;
+		background: var(--background);
+		border: var(--border);
+		border-radius: $radius;
+		box-shadow: var(--soft-shadow);
 
 		&:not(:first-child) {
 			border-top: var(--border);
