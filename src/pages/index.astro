@@ -1,12 +1,16 @@
 ---
 export const prerender = true;
 
+import { Image } from 'astro:assets';
 import { getCollection } from 'astro:content';
-import Avatar from '@components/Avatar.astro';
 import LatestPost from '@components/LatestPost.astro';
 import Layout from '@layouts/Layout.astro';
 import BlueskyIcon from '../assets/svg/bluesky.svg';
 import MastodonIcon from '../assets/svg/mastodon.svg';
+
+import avatarPng from '@assets/avatar.png';
+import avatarHoverPng from '@assets/avatar-hover.png';
+import avatarBlinkPng from '@assets/avatar-blink.png';
 
 const ICON_SIZE = 16;
 
@@ -19,56 +23,131 @@ const latestPost = posts.sort(
 ---
 
 <Layout title="Welcome">
-	<Avatar size={200} />
-	<p>
-		My name is <strong>Graham</strong> (he/him), a full-stack web developer, and tech
-		enthusiast.
-	</p>
-	<p>
-		When I'm not writing code, I'm usually enjoying one of my other hobbies;
-		video games, board games, music, photography, art, the list goes on...
-	</p>
-	<p>
-		I also like writing about stuff, so I put together this site to share
-		whatever's on my mind about the world of tech, gaming, life, web
-		development, and whatever else strikes my fancy.
-	</p>
-	<p>
-		Read my latest blog post, <a href={`blog/${latestPost.id}`}
-			>{latestPost.data.title}</a
-		>, posted on {new Date(latestPost.data.pubDate).toLocaleDateString()}.
-	</p>
-	<p>
-		If your interested in checking out my web dev projects, check out <a
-			href="https://ghall.dev/"
-			target="_blank"
-			rel="noopener noreferrer">my portfolio</a
-		>.
-	</p>
-	<p>
-		If you want to get in touch, I'm on <a
-			rel="me"
-			href="https://mastodon.social/@ghalldev"
-			target="_blank"
-			rel="noopener noreferrer"
-			><MastodonIcon width={ICON_SIZE} height={ICON_SIZE} />Mastodon</a
-		> and <a
-			href="https://bsky.app/profile/ghalldev.bsky.social"
-			target="_blank"
-			rel="noopener noreferrer"
-			><BlueskyIcon width={ICON_SIZE} height={ICON_SIZE} />Bluesky</a
-		>.
-	</p>
-	<p>
-		My portrait was drawn by <a
-			href="https://www.nataliavazquezgarcia.com"
-			target="_blank"
-			rel="noopener noreferrer">Natalia Vazquez</a
-		>.
-	</p>
+	<div class="container">
+		<Image
+			src={avatarPng}
+			alt="Illustrated portrait of a person with glasses and a beard, wearing a red and black plaid shirt. The background is a solid green color."
+			class="portrait"
+		/>
+		<div>
+			<p>
+				My name is <strong>Graham</strong> (he/him), a full-stack web developer, and
+				tech enthusiast.
+			</p>
+			<p>
+				When I'm not writing code, I'm usually enjoying one of my other hobbies;
+				video games, board games, music, photography, art, the list goes on...
+			</p>
+			<p>
+				I also like writing about stuff, so I put together this site to share
+				whatever's on my mind about the world of tech, gaming, life, web
+				development, and whatever else strikes my fancy.
+			</p>
+			<p>
+				Read my latest blog post, <a href={`blog/${latestPost.id}`}
+					>{latestPost.data.title}</a
+				>, posted on {new Date(latestPost.data.pubDate).toLocaleDateString()}.
+			</p>
+			<p>
+				If your interested in checking out my web dev projects, check out <a
+					href="https://ghall.dev/"
+					target="_blank"
+					rel="noopener noreferrer">my portfolio</a
+				>.
+			</p>
+			<p>
+				If you want to get in touch, I'm on <a
+					rel="me"
+					href="https://mastodon.social/@ghalldev"
+					target="_blank"
+					rel="noopener noreferrer"
+					><MastodonIcon width={ICON_SIZE} height={ICON_SIZE} />Mastodon</a
+				> and <a
+					href="https://bsky.app/profile/ghalldev.bsky.social"
+					target="_blank"
+					rel="noopener noreferrer"
+					><BlueskyIcon width={ICON_SIZE} height={ICON_SIZE} />Bluesky</a
+				>.
+			</p>
+		</div>
+
+		<span class="acknowledgment">
+			Avatar created with <a
+				href="https://www.avatarsinpixels.com/minipix/clothing/Eyes"
+				target="_blank">Avatars in Pixels</a
+			>
+		</span>
+	</div>
+
+	<script
+		define:vars={{ hoverSrc: avatarHoverPng.src, blinkSrc: avatarBlinkPng.src }}
+	>
+		const img = document.querySelector('.portrait');
+		if (img) {
+			const originalSrc = img.src;
+			const originalSrcset = img.srcset;
+			let isHovered = false;
+			let isBlinking = false;
+
+			const updateImage = () => {
+				if (isHovered) {
+					img.src = hoverSrc;
+					img.srcset = '';
+				} else if (isBlinking) {
+					img.src = blinkSrc;
+					img.srcset = '';
+				} else {
+					img.src = originalSrc;
+					img.srcset = originalSrcset;
+				}
+			};
+
+			img.addEventListener('mouseenter', () => {
+				isHovered = true;
+				updateImage();
+			});
+
+			img.addEventListener('mouseleave', () => {
+				isHovered = false;
+				updateImage();
+			});
+
+			const randomInterval = () => Math.floor(Math.random() * 4000) + 2000;
+
+			const scheduleBlink = () => {
+				setTimeout(() => {
+					if (isHovered) {
+						scheduleBlink();
+						return;
+					}
+
+					isBlinking = true;
+					updateImage();
+
+					setTimeout(() => {
+						isBlinking = false;
+						updateImage();
+						scheduleBlink();
+					}, 200);
+				}, randomInterval());
+			};
+
+			scheduleBlink();
+		}
+	</script>
 </Layout>
 
 <style lang="scss">
+	.portrait {
+		float: left;
+		margin-inline-end: 1rem;
+		margin-block-end: 0.5rem;
+	}
+
+	.acknowledgment {
+		font-style: italic;
+	}
+
 	a > svg {
 		transform: translateY(0.1rem);
 	}
