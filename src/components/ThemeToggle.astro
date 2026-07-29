@@ -4,10 +4,6 @@
 
 <div class="toggles">
 	<div>
-		<input id="sans-serif-toggle" type="checkbox" x-model="monospaceFont" />
-		<label for="sans-serif-toggle">Monospace</label>
-	</div>
-	<div>
 		<input id="dark-mode-toggle" type="checkbox" x-model="darkMode" />
 		<label for="dark-mode-toggle">Dark Mode</label>
 	</div>
@@ -36,23 +32,27 @@
 		height: 24px;
 		width: 38px;
 		padding: 10px;
-		background-color: var(--orange);
+		background: linear-gradient(180deg, #ffcc66 0%, #ff9900 100%);
 		border-radius: 120px;
+		border: 1px solid rgba(0, 0, 0, 0.12);
+		box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15);
+		cursor: pointer;
 
 		&:checked {
-			background-color: var(--sky);
+			background: linear-gradient(180deg, #66ddff 0%, #00aeef 100%);
 		}
 
 		&:after {
 			content: '';
 			position: absolute;
-			height: 22px;
-			width: 22px;
+			height: 20px;
+			width: 20px;
 			border-radius: 100%;
-			background-color: var(--background);
+			background: linear-gradient(180deg, #ffffff 0%, #e8eef5 100%);
 			left: 1px;
 			top: 1px;
 			transition: $quick-transition;
+			box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 		}
 
 		&:checked:after {

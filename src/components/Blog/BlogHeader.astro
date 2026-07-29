@@ -21,23 +21,34 @@ const { title, date, slug } = Astro.props;
 </div>
 
 <style lang="scss">
+	@use '../../styles/variables.scss' as *;
+
 	a {
-		font-size: 1.3rem;
+		font-size: 1.5rem;
+		text-decoration: none;
 	}
 
 	strong {
-		font-weight: bolder;
+		font-weight: 700;
+		color: var(--text);
 	}
 
 	.blog-header {
-		margin: 1rem 0;
+		margin: 1.5rem 0;
+		padding: 1rem;
+		background: var(--card-header-gradient);
+		border: var(--border);
+		border-radius: $radius;
+		box-shadow: var(--soft-shadow);
 
+		& h1,
 		& h2 {
-			margin: 0;
+			margin: 0 0 0.5rem;
 		}
 	}
 
 	.calendar-icon {
 		transform: translateY(0.3rem);
+		color: var(--orange);
 	}
 </style>

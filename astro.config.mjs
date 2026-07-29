@@ -18,7 +18,10 @@ export default defineConfig({
 			},
 		},
 		rehypePlugins: [
-			[rehypeExternalLinks, { target: '_blank', rel: ['noopener', 'noreferrer'] }],
+			[
+				rehypeExternalLinks,
+				{ target: '_blank', rel: ['noopener', 'noreferrer'] },
+			],
 		],
 	},
 	integrations: [

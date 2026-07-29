@@ -69,24 +69,39 @@ import { navLinks } from '../../data/nav-links';
 		height: 100vh;
 		z-index: 3;
 		transition: $transition;
+		box-shadow: -4px 0 16px rgba(0, 0, 0, 0.18);
 
 		& div {
 			padding: 8px 6px 4px;
 			border-bottom: var(--border);
+			background: var(--header-gradient);
+
+			& svg {
+				color: #ffffff;
+			}
 		}
 	}
 
 	nav {
 		text-align: left;
-		padding: 12px;
+		padding: 16px;
 		display: flex;
 		flex-direction: column;
-		gap: 12px;
+		gap: 10px;
 		font-size: 1.2rem;
-    
-    & a {
-      text-decoration: none;  
-    }
+
+		& a {
+			text-decoration: none;
+			padding: 10px 14px;
+			border-radius: 999px;
+			background: rgba(0, 174, 239, 0.08);
+			border: 1px solid rgba(0, 174, 239, 0.15);
+			transition: $quick-transition;
+
+			&:hover {
+				background: rgba(0, 174, 239, 0.18);
+			}
+		}
 	}
 
 	.hidden-drawer {

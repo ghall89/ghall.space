@@ -26,7 +26,12 @@ const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
 		<BlogHeader title={data.title} date={data.pubDate} />
 		<Tags tags={data.tags} />
 		<Content />
-	<a href={`https://share.joinmastodon.org/#text=${data.title}%0A%0A${canonicalUrl}`} target="_blank" rel="noopener">Share on Mastodon</a>
+		<a
+			class="share-button"
+			href={`https://share.joinmastodon.org/#text=${data.title}%0A%0A${canonicalUrl}`}
+			target="_blank"
+			rel="noopener">Share on Mastodon</a
+		>
 		<a href="https://notbyai.fyi/" target="_blank">
 			<i class="not-by-ai"></i>
 		</a>
@@ -34,6 +39,27 @@ const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
 </Layout>
 
 <style lang="scss">
+	@use '../../styles/variables.scss' as *;
+
+	.share-button {
+		display: inline-block;
+		margin: 1.5rem 0;
+		padding: 8px 18px;
+		border-radius: 999px;
+		color: #ffffff;
+		background: var(--button-gradient);
+		text-decoration: none;
+		font-weight: 700;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+		transition: $quick-transition;
+
+		&:hover {
+			filter: brightness(1.08);
+			text-decoration: none;
+		}
+	}
+
 	.not-by-ai {
 		display: block;
 		width: 134px;

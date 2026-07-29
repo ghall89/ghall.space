@@ -16,10 +16,37 @@
 
 <style lang="scss">
 	.sidebar {
-		padding: 16px;
+		padding: 0 0 16px;
 		border: var(--border);
 		min-width: 140px;
 		margin-left: 14px;
 		height: fit-content;
+		background: var(--background);
+		border-radius: $radius;
+		box-shadow: var(--soft-shadow);
+
+		& h2 {
+			margin: 0 0 12px;
+			padding: 12px 16px;
+			background: var(--card-header-gradient);
+			border-bottom: var(--border);
+			border-radius: $radius $radius 0 0;
+			font-size: 1.1rem;
+		}
+
+		& ul {
+			margin: 0;
+			padding: 0 16px;
+			list-style: none;
+		}
+
+		& li {
+			padding: 6px 0;
+			border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+
+			&:last-child {
+				border-bottom: none;
+			}
+		}
 	}
 </style>
