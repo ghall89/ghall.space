@@ -1,8 +1,9 @@
 ---
-import { Image } from 'astro:assets';
+import { getImage, Image } from 'astro:assets';
 
 import '../styles/global.scss';
 
+import avatarPng from '@assets/avatar.png';
 import catPng from '@assets/cat.png';
 
 import Footer from '@components/Footer.astro';
@@ -10,12 +11,25 @@ import Header from '@components/Header/Header.astro';
 
 export interface Props {
 	title: string;
+	description?: string;
+	image?: ImageMetadata;
+	type?: 'website' | 'article';
 	frontmatter?: {
 		title: string;
 	};
 }
 
+const {
+	description = 'My little space on the World Wide Web.',
+	image = avatarPng,
+	type = 'website',
+} = Astro.props;
+
 const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
+
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site).href;
+const ogImage = await getImage({ src: image, width: 1200, format: 'jpg' });
+const ogImageUrl = new URL(ogImage.src, Astro.site).href;
 ---
 
 <!doctype html>
@@ -38,6 +52,20 @@ const title = Astro.props.title || Astro.props.frontmatter?.title || 'Unknown';
 			href={`${Astro.site}rss.xml`}
 		/>
 		<title>{`ghall.space - ${title}`}</title>
+
+		<meta property="og:type" content={type} />
+		<meta property="og:title" content={`ghall.space - ${title}`} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonicalUrl} />
+		<meta property="og:image" content={ogImageUrl} />
+		<meta
+			property="og:image:width"
+			content={String(ogImage.attributes.width)}
+		/>
+		<meta
+			property="og:image:height"
+			content={String(ogImage.attributes.height)}
+		/>
 	</head>
 	<body
 		class="layout-simple"
