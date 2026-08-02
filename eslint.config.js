@@ -12,6 +12,18 @@ export default defineConfig([
 	prettier,
 	...eslintPluginAstro.configs.recommended,
 	{
-		files: ['**/*.ts'],
+		files: ['**/*.astro'],
+		languageOptions: {
+			parserOptions: {
+				parser: tseslint.parser,
+				extraFileExtensions: ['.astro'],
+			},
+		},
+	},
+	{
+		files: ['**/*.ts', '**/*.astro'],
+		rules: {
+			'no-undef': 'off',
+		},
 	},
 ]);

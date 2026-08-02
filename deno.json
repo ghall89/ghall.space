@@ -6,11 +6,13 @@
 		"preview": "astro preview",
 		"astro": "astro",
 		"check:lint": "eslint --ext .js --ext .ts --ext .astro",
+		"check:types": "astro check",
 		"check:format": "prettier . --check",
 		"format": "prettier . --write"
 	},
 	"imports": {
 		"@astrojs/alpinejs": "npm:@astrojs/alpinejs@^0.5.0",
+		"@astrojs/check": "npm:@astrojs/check@^0.9.10",
 		"@astrojs/mdx": "npm:@astrojs/mdx@^5.0.4",
 		"@astrojs/rss": "npm:@astrojs/rss@^4.0.18",
 		"@types/alpinejs": "npm:@types/alpinejs@^3.13.11",
