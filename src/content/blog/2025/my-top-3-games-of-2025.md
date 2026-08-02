@@ -14,17 +14,17 @@ I’m not a big rogue-like fan, but I did enjoy the original Hades back in 2020 
 
 In my gaming journal, I had a hard time identifying what really grabbed me about this game that led me to actually finish it. But, upon further reflection, I think it's a combination of the more interesting progression system, and the fact that there were two paths to follow – a path down to Tarturus, and another up to Mount Olympus. This added enough gameplay variety that, when I was bored with o path, I'd just switch to trying to make progress in another.
 
-I also enjoyed the concrete goals, outside of the main objective of defeating Chronos, via "prophecies". It made me feel like I was accomplishing things even when failing runs, and they continue to keep me invested in playing even though I've finished the main story. 
+I also enjoyed the concrete goals, outside of the main objective of defeating Chronos, via "prophecies". It made me feel like I was accomplishing things even when failing runs, and they continue to keep me invested in playing even though I've finished the main story.
 
 ## Clair Obscur: Expedition 33
 
-Clair Obcur, in many ways, feels like the natural evolution Final Fantasy could have taken in another universe where they stuck with turn-based combat. Though visually, and in terms of story, it's very much its own thing. 
+Clair Obcur, in many ways, feels like the natural evolution Final Fantasy could have taken in another universe where they stuck with turn-based combat. Though visually, and in terms of story, it's very much its own thing.
 
-To say this game has ruined turn-based JRPG style games for me is far from an understatement. Each party memeber not only has their own set of skills, they also have unique mechanics that make each feel very distinct, and makes combat strategy far more interesting than just picking a character's best skill for a given situation. Maelle is probably my favorite, with her stances that are applied by using certain moves – usually alongside some otehr condition – and apply different effects, like, "Deal 50% more damage, but take 50% more damage". 
+To say this game has ruined turn-based JRPG style games for me is far from an understatement. Each party memeber not only has their own set of skills, they also have unique mechanics that make each feel very distinct, and makes combat strategy far more interesting than just picking a character's best skill for a given situation. Maelle is probably my favorite, with her stances that are applied by using certain moves – usually alongside some otehr condition – and apply different effects, like, "Deal 50% more damage, but take 50% more damage".
 
-I liked pretty much all the characters, which is a rarity for me. Generally there's one or two characters I cannot stand, but they're all so likable, and you come to care about all their stories, which makes a certain choice at the end of the game very heartbreaking. 
+I liked pretty much all the characters, which is a rarity for me. Generally there's one or two characters I cannot stand, but they're all so likable, and you come to care about all their stories, which makes a certain choice at the end of the game very heartbreaking.
 
-My favorite character overall though is Esquie, who serves as this game's equivient of the classic Final Fantasy airship. He's sometimes sad, rad, or even bad. But never mad. 
+My favorite character overall though is Esquie, who serves as this game's equivient of the classic Final Fantasy airship. He's sometimes sad, rad, or even bad. But never mad.
 
 ## Xenoblade Chronicles X: Definitive Edition
 
