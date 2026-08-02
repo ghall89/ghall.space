@@ -1,8 +1,14 @@
 ---
 import { getCollection, render } from 'astro:content';
+import { Image } from 'astro:assets';
 import BlogHeader from '@components/Blog/BlogHeader.astro';
 import Tags from '@components/Blog/Tags.astro';
 import Layout from '@layouts/Layout.astro';
+
+const headerImages = import.meta.glob<{ default: ImageMetadata }>(
+	'/src/assets/blog/_headers/*',
+	{ eager: true }
+);
 
 export async function getStaticPaths() {
 	const posts = await getCollection('blog');
@@ -19,10 +25,20 @@ const { data } = post;
 const { Content } = await render(post);
 
 const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
+const headerImg = data.headerImg
+	? headerImages[`/src/assets/blog/_headers/${data.headerImg}`]?.default
+	: undefined;
 ---
 
 <Layout title={data.title}>
 	<article>
+		{
+			headerImg && (
+				<div class="header-img">
+					<Image src={headerImg} alt="" />
+				</div>
+			)
+		}
 		<BlogHeader title={data.title} date={data.pubDate} />
 		<Tags tags={data.tags} />
 		<hr />
@@ -52,6 +68,19 @@ const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
 	hr {
 		border: var(--border);
 		margin: 1rem 0;
+	}
+
+	.header-img {
+		width: 100%;
+		height: 300px;
+		border-radius: $radius;
+		overflow: hidden;
+		margin-bottom: 1rem;
+		box-shadow: var(--soft-shadow);
+
+		img: {
+			border-radius: 0px !important;
+		}
 	}
 
 	.badges {

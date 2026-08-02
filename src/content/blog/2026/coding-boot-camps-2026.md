@@ -2,6 +2,7 @@
 title: 'Coding Boot Camps in 2026'
 pubDate: '7/30/2026'
 tags: ['Tech', 'Jobs']
+headerImg: 'coding-boot-camps-2026.jpg'
 ---
 
 I don't regret attending a coding boot camp in 2021, it seemed like the best decision at the time. Customer service and retail had devastated my mental health, I needed a change, and all the numbers seemed to add up on paper.
