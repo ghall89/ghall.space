@@ -1,9 +1,9 @@
 ---
 import { getCollection, render } from 'astro:content';
-import { Image } from 'astro:assets';
 import MarkdownIt from 'markdown-it';
 import BlogHeader from '@components/Blog/BlogHeader.astro';
 import Tags from '@components/Blog/Tags.astro';
+import ImageWrapper from '@components/ImageWrapper.astro';
 import Layout from '@layouts/Layout.astro';
 
 const headerImages = import.meta.glob<{ default: ImageMetadata }>(
@@ -46,18 +46,8 @@ const imgCreditHtml = data.imgCredit
 		{
 			headerImg && (
 				<div class="header-img">
-					<Image
-						class="placeholder"
-						src={headerImg}
-						alt=""
-						width={24}
-						quality={20}
-						loading="eager"
-					/>
-					<Image class="full" src={headerImg} alt="" loading="eager" />
-					{imgCreditHtml && (
-						<span class="img-credit" set:html={imgCreditHtml} />
-					)}
+					<ImageWrapper img={headerImg} alt="" loading="eager" />
+					{imgCreditHtml && <span set:html={imgCreditHtml} />}
 				</div>
 			)
 		}
@@ -112,48 +102,24 @@ const imgCreditHtml = data.imgCredit
 		margin-bottom: 1rem;
 		box-shadow: var(--soft-shadow);
 
-		img {
+		span {
 			position: absolute;
-			inset: 0;
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			object-position: center;
-			border-radius: 0px !important;
+			bottom: 10px;
+			right: 10px;
+			display: inline-block;
+			padding: 3px 10px;
+			border-radius: 999px;
+			font-size: 0.75rem;
+			font-weight: 700;
+			color: #fff;
+			background: rgba(0, 0, 0, 0.55);
+			border: 1px solid rgba(255, 255, 255, 0.25);
+			backdrop-filter: blur(4px);
 
-			&.placeholder {
-				filter: blur(20px);
-				transform: scale(1.1);
+			:global(a) {
+				color: inherit;
+				text-decoration: underline;
 			}
-
-			&.full {
-				opacity: 0;
-				transition: opacity 0.4s ease;
-
-				&.loaded {
-					opacity: 1;
-				}
-			}
-		}
-	}
-
-	.img-credit {
-		position: absolute;
-		bottom: 10px;
-		right: 10px;
-		display: inline-block;
-		padding: 3px 10px;
-		border-radius: 999px;
-		font-size: 0.75rem;
-		font-weight: 700;
-		color: #fff;
-		background: rgba(0, 0, 0, 0.55);
-		border: 1px solid rgba(255, 255, 255, 0.25);
-		backdrop-filter: blur(4px);
-
-		:global(a) {
-			color: inherit;
-			text-decoration: underline;
 		}
 	}
 

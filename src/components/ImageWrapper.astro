@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+
+interface Props {
+	img: ImageMetadata;
+	alt: string;
+	loading: 'eager' | 'lazy' | undefined | null;
+}
+
+const { img, alt, loading } = Astro.props;
+---
+
+<div class="img-wrapper">
+	<Image
+		class="placeholder"
+		src={img}
+		alt=""
+		width={24}
+		quality={20}
+		loading="eager"
+	/>
+	<Image class="full" src={img} alt={alt} loading={loading ?? 'eager'} />
+</div>
+
+<style lang="scss">
+	.img-wrapper {
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		img {
+			position: absolute;
+			inset: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+			border-radius: 0px !important;
+
+			&.placeholder {
+				filter: blur(20px);
+				transform: scale(1.1);
+			}
+
+			&.full {
+				opacity: 0;
+				transition: opacity 0.4s ease;
+
+				&.loaded {
+					opacity: 1;
+				}
+			}
+		}
+	}
+</style>
