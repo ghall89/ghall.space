@@ -67,11 +67,7 @@ const ogImageUrl = new URL(ogImage.src, Astro.site).href;
 			content={String(ogImage.attributes.height)}
 		/>
 	</head>
-	<body
-		class="layout-simple"
-		x-data="{ drawerOpen: false }"
-		:class="{ 'lock-scroll': drawerOpen }"
-	>
+	<body class="layout-simple">
 		<Image src={catPng} class="secret-cat" alt="" height={120} />
 		<a href="#main" class="skip-link">Skip to main content</a>
 		<span style="display:none" data-pagefind-ignore>
