@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: July 27, 2026_
+_Last updated: August 9, 2026_
 
 ## 🔨 Doing
 
@@ -17,18 +17,18 @@ I'm also building [Groove](https://grooveplayer.app), a music player for iPhone,
 
 ## 🎧 Listening
 
-- [Romanticize the Dive - Metric](https://www.last.fm/music/Metric/Romanticize+the+Dive)
-- [Clair Obscur: Expedition 33 (Original Soundtrack)](<https://www.last.fm/music/Lorien+Testard/Clair+Obscur:+Expedition+33+(Original+Soundtrack)>)
+- [Fantasies - Metric](https://www.last.fm/music/Metric/Fantasies)
+- [Star Wars: The Phantom Menace (Original Soundtrack)](<https://www.last.fm/music/John+Williams/Star+Wars:+The+Phantom+Menace+(Original+Motion+Picture+Soundtrack)>)
 
 ## 🎮 Playing
 
-### [Harvestella](https://www.igdb.com/games/harvestella) - Switch
+### [Spider-Man: Remastered](https://www.igdb.com/games/marvels-spider-man-remastered) - PS5
 
-This is an underappreciated RPG, with a side of farming sim. After taking a bit of a break, I've jumped back in and have been really enjoying it. I keep wanting to like farming sims, and this is the only one that's really kept my interest long-term. Probably because the farming aspect is more of a side activity.
+With all the hype around Spider-Man, what with the new movie making a bazillion dollars, I've been inspired to go back and re-play my favorite video game starring Spidey. This is at least my 4th time playing this game, and the second time playing the remaster – which I got with the also very good Spider-Man: Miles Morales when I first got my PS5.
 
-### [Horizon: Zero Dawn: Remastered](https://www.igdb.com/games/horizon-zero-dawn-remastered) - PS5
+### [Splatoon 3](https://www.igdb.com/games/splatoon-3) - Switch
 
-One of my favorite games of the past decade, I've jumped back in for the first time since playing the sequel. I picked up the remastered PS5 version back when it came out a while ago, and I'm finally approaching the end. This will be my 3rd time playing through this game, it's one of my favorites.
+I've been a fan of Splatoon since the Wii U (yes, I had one of those). I put a lot of time into the first 2 games, but only put about 20 hours or so into this one. I've decided to jump back in and attempt to finally finish the campaign and DLC.
 
 ## 📺 Watching
 
