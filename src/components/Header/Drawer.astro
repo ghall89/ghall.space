@@ -4,46 +4,26 @@ import CloseIcon from '../../assets/svg/xmark.svg';
 import { navLinks } from '../../data/nav-links';
 ---
 
-<!-- drawerOpened is defined in /src/layouts/Layout.astro -->
-<div class="drawer-container" @keydown.escape="drawerOpen = false">
+<div class="drawer-container" id="drawer-container">
 	<button
 		class="menu-button"
-		@click="drawerOpen = !drawerOpen"
-		:aria-expanded="drawerOpen"
+		id="drawer-toggle"
+		aria-expanded="false"
 		aria-controls="mobile-drawer"
 		aria-label="Open menu"
 	>
 		<BarsIcon width={24} height={24} aria-hidden="true" />
 	</button>
-	<div
-		class="overlay"
-		@click="drawerOpen = !drawerOpen"
-		x-show="drawerOpen"
-		x-transition:enter-start="hidden-overlay"
-		x-transition:enter-end="visible-overlay"
-		x-transition:leave-start="visible-overlay"
-		x-transition:leave-end="hidden-overlay"
-		aria-hidden="true"
-	>
-	</div>
+	<div class="overlay" id="drawer-overlay" aria-hidden="true"></div>
 	<div
 		id="mobile-drawer"
 		class="drawer"
 		role="dialog"
 		aria-modal="true"
 		aria-label="Mobile navigation"
-		x-show="drawerOpen"
-		x-transition:enter-start="hidden-drawer"
-		x-transition:enter-end="visible-drawer"
-		x-transition:leave-start="visible-drawer"
-		x-transition:leave-end="hidden-drawer"
 	>
 		<div>
-			<button
-				class="icon-button"
-				@click="drawerOpen = !drawerOpen"
-				aria-label="Close menu"
-			>
+			<button class="icon-button" id="drawer-close" aria-label="Close menu">
 				<CloseIcon width={24} height={24} aria-hidden="true" /></button
 			>
 		</div>
@@ -52,6 +32,28 @@ import { navLinks } from '../../data/nav-links';
 		</nav>
 	</div>
 </div>
+
+<script>
+	const container = document.getElementById('drawer-container');
+	const toggle = document.getElementById('drawer-toggle');
+	const closeButton = document.getElementById('drawer-close');
+	const overlay = document.getElementById('drawer-overlay');
+
+	const setOpen = (open: boolean) => {
+		container?.classList.toggle('open', open);
+		document.body.classList.toggle('lock-scroll', open);
+		toggle?.setAttribute('aria-expanded', String(open));
+	};
+
+	toggle?.addEventListener('click', () => {
+		setOpen(!container?.classList.contains('open'));
+	});
+	overlay?.addEventListener('click', () => setOpen(false));
+	closeButton?.addEventListener('click', () => setOpen(false));
+	container?.addEventListener('keydown', (event) => {
+		if (event.key === 'Escape') setOpen(false);
+	});
+</script>
 
 <style lang="scss">
 	@use '../../styles/variables.scss' as *;
@@ -90,11 +92,14 @@ import { navLinks } from '../../data/nav-links';
 		height: 100vh;
 		background-color: rgba(0, 0, 0, 0.6);
 		z-index: 2;
-		transition: $transition;
-	}
-
-	.hidden-overlay {
 		opacity: 0;
+		pointer-events: none;
+		transition: $transition;
+
+		.drawer-container.open & {
+			opacity: 1;
+			pointer-events: auto;
+		}
 	}
 
 	.drawer {
@@ -105,8 +110,13 @@ import { navLinks } from '../../data/nav-links';
 		width: 75vw;
 		height: 100vh;
 		z-index: 3;
+		transform: translateX(75vw);
 		transition: $transition;
 		box-shadow: -4px 0 16px rgba(0, 0, 0, 0.18);
+
+		.drawer-container.open & {
+			transform: translateX(0);
+		}
 
 		& div {
 			padding: 18px 16px 14px;
@@ -139,10 +149,6 @@ import { navLinks } from '../../data/nav-links';
 				background: rgba(0, 174, 239, 0.18);
 			}
 		}
-	}
-
-	.hidden-drawer {
-		transform: translateX(75vw);
 	}
 
 	@media screen and (max-width: $max-mobile-width) {

@@ -1,5 +1,3 @@
-import alpinejs from '@astrojs/alpinejs';
-
 // https://astro.build/config
 import mdx from '@astrojs/mdx';
 import { defineConfig } from 'astro/config';
@@ -24,7 +22,7 @@ export default defineConfig({
 			],
 		],
 	},
-	integrations: [mdx(), alpinejs(), pagefind()],
+	integrations: [mdx(), pagefind()],
 	redirects: {
 		'/posts/[...slug]': '/blog/[...slug]',
 		'/blog': '/blog/page/1',
