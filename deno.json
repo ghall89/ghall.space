@@ -14,6 +14,7 @@
 		"@astrojs/check": "npm:@astrojs/check@^0.9.10",
 		"@astrojs/mdx": "npm:@astrojs/mdx@^5.0.4",
 		"@astrojs/rss": "npm:@astrojs/rss@^4.0.18",
+		"@astrojs/sitemap": "npm:@astrojs/sitemap@^3.7.3",
 		"@types/markdown-it": "npm:@types/markdown-it@^14.1.2",
 		"astro": "npm:astro@^6.2.1",
 		"astro-pagefind": "npm:astro-pagefind@^1.8.5",
