@@ -6,7 +6,6 @@ import { getCollection } from 'astro:content';
 import Card from '@components/Card.astro';
 import PillList from '@components/PillList.astro';
 import Layout from '@layouts/Layout.astro';
-import BlueskyIcon from '../assets/svg/bluesky.svg';
 import MastodonIcon from '../assets/svg/mastodon.svg';
 
 import { aboutMe } from '@data/about-me';
@@ -76,15 +75,6 @@ const latestPost = posts.sort(
 						height={ICON_SIZE}
 						aria-hidden="true"
 					/>Mastodon</a
-				> and <a
-					href="https://bsky.app/profile/ghalldev.bsky.social"
-					target="_blank"
-					rel="noopener noreferrer"
-					><BlueskyIcon
-						width={ICON_SIZE}
-						height={ICON_SIZE}
-						aria-hidden="true"
-					/>Bluesky</a
 				>.
 			</p>
 		</section>
