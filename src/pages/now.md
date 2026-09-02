@@ -11,7 +11,7 @@ _Last updated: September 2, 2026_
 
 ## 🔨 Doing
 
-Currently unemployed, ande looking for a new job (hit me up on [LinkedIn](https://www.linkedin.com/in/ghalldev/)). In between applying for jobs, I've been volunteering as web developer for a humanitarian aid organization, and working on [side projects](/projects) on both web and Mac.
+Currently unemployed, and looking for a new job (hit me up on [LinkedIn](https://www.linkedin.com/in/ghalldev/)). In between applying for jobs, I've been volunteering as web developer for a humanitarian aid organization, and working on [side projects](/projects) on both web and Mac.
 
 I'm also building [Groove](https://grooveplayer.app), a music player for iPhone, because I've [liberated my music collection from streaming](/blog/2026/setting-my-music-free), and I've not been happy with any of the existing options for music players on iOS.
 
