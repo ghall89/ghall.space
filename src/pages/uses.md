@@ -50,7 +50,7 @@ My current workstation is an M2 MacBook Air, which I have connected to an [LG Ul
 
 ### CLI Tools
 
-My terminal emulator of choice is [Ghostty](https://ghostty.org/). These are some of the CLI tools I find useful:
+My terminal emulator of choice is [iTerm2](https://iterm2.com/). These are some of the CLI tools I find useful:
 
 - [Atuin](https://atuin.sh/)
 - [trash](https://hasseg.org/trash/)
