@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: September 2, 2026_
+_Last updated: September 10, 2026_
 
 ## 🔨 Doing
 
@@ -25,7 +25,11 @@ I'm also building [Groove](https://grooveplayer.app), a music player for iPhone,
 
 ### [Control](https://www.igdb.com/games/control) - PS5
 
-My favorite game of 2019, but I haven't played it since – nor have I played any of the DLC – despite picking up the "Definitive Edition" for PS5 on sale a while back. I'm not into horror games in the slightest, but I've coem to appreiate games of this type that go for more of a creepy/unsettling vibe than outright horror. Also, it scratches that Metroidvania itch I often feel.
+My favorite game of 2019, but I haven't played it since – nor have I played any of the DLC – despite picking up the "Definitive Edition" for PS5 on sale a while back. I'm not into horror games in the slightest, but I've come to appreciate games of this type that go for more of a creepy/unsettling vibe than outright horror. Also, it scratches that Metroidvania itch I often feel.
+
+### [Catherine](https://www.igdb.com/games/catherine-full-body) - Switch
+
+Despite being a sucker for games with an anime aesthetic, and a fan of the Persona series, I've never actually checked this game out before now. I'm intrigued by the puzzle mechanics and the branching narrative, and I'm hoping it lives up to the hype I've seen for it. I seem to be in the mood for creepy/unsettling games with one-word titles that start with "C".
 
 ## 📺 Watching
 
