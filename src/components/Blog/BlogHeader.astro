@@ -6,7 +6,7 @@ import CalendarIcon from '@assets/calendar.png';
 
 interface Props {
 	title: string;
-	date: Date;
+	date?: Date;
 	slug?: string;
 }
 
@@ -15,20 +15,22 @@ const { title, date, slug } = Astro.props;
 
 <div class="blog-header">
 	{slug ? <a href={`/blog/${slug}`}>{title}</a> : <h1>{title}</h1>}
-	<div>
-		<span aria-hidden="true">
-			<Image
-				src={CalendarIcon}
-				class="calendar-icon"
-				alt=""
-				width={24}
-				height={24}
-			/>
-		</span>
-		<time datetime={new Date(date).toDateString()}>
-			{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
-		</time>
-	</div>
+	{date && (
+		<div>
+			<span aria-hidden="true">
+				<Image
+					src={CalendarIcon}
+					class="calendar-icon"
+					alt=""
+					width={24}
+					height={24}
+				/>
+			</span>
+			<time datetime={new Date(date).toDateString()}>
+				{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
+			</time>
+		</div>
+	)}
 </div>
 
 <style lang="scss">
@@ -46,6 +48,9 @@ const { title, date, slug } = Astro.props;
 
 	.blog-header {
 		margin-bottom: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 
 		& h1,
 		& h2 {
@@ -57,5 +62,11 @@ const { title, date, slug } = Astro.props;
 		display: inline;
 		transform: translateY(0.3rem);
 		box-shadow: none;
+	}
+
+	@media screen and (max-width: $max-mobile-width) {
+		.blog-header {
+			flex-direction: column;
+		}
 	}
 </style>

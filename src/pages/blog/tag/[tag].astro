@@ -37,19 +37,11 @@ posts.sort(
 <Layout title={`Blog - ${tagName}`}>
 	<h1>All posts tagged: {tagName}</h1>
 	<ul>
-		{
-			posts.map((post) => (
-				<li>
-					<a href={`/blog/${post.id}`}>{post.data.title}</a> -
-					<span>
-						{format(
-							add(new Date(post.data.pubDate), { hours: 6 }),
-							'MMM do, y'
-						)}
-					</span>
-				</li>
-			))
-		}
+		{posts.map((post) => (
+			<li>
+				<a href={`/blog/${post.id}`}>{post.data.title}</a>
+			</li>
+		))}
 	</ul>
 </Layout>
 
