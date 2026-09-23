@@ -25,7 +25,7 @@ const { title, date, slug } = Astro.props;
 				height={24}
 			/>
 		</span>
-		<time datetime={new Date(date).toISOString()}>
+		<time datetime={new Date(date).toDateString()}>
 			{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
 		</time>
 	</div>
