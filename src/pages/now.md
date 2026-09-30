@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: September 10, 2026_
+_Last updated: September 30, 2026_
 
 ## 🔨 Doing
 
@@ -19,18 +19,18 @@ I'm also building [Groove](https://grooveplayer.app), a music player for iPhone,
 
 - [Romanticize the Dive - Metric](https://www.last.fm/music/Metric/Romanticize+the+Dive)
 - [Apollo 18 - They Might Be Giants](https://www.last.fm/music/They+Might+Be+Giants/Apollo+18)
-- [moisturizer - Wet Leg](https://www.last.fm/music/Wet+Leg/moisturizer)
+- [Nevermind - Nirvana](https://www.last.fm/music/Nirvana/Nevermind)
 
 ## 🎮 Playing
 
-### [Control](https://www.igdb.com/games/control) - PS5
+### [The Witcher 3](https://www.igdb.com/games/the-witcher-3-wild-hunt-remastered) - PS5
 
-My favorite game of 2019, but I haven't played it since – nor have I played any of the DLC – despite picking up the "Definitive Edition" for PS5 on sale a while back. I'm not into horror games in the slightest, but I've come to appreciate games of this type that go for more of a creepy/unsettling vibe than outright horror. Also, it scratches that Metroidvania itch I often feel.
+The game that keeps on giving. I bought the complete set the Witcher 3 with all the DLC on a deep discount on PS4. I played through it once then, and again after the next gen update. I don't have plans to start yet _another_ playthrough, but there's just so much content in this game that I could keep myself pretty busy cleaning up side content until the unexpected 3rd DLC drops next year.
 
-### [Catherine](https://www.igdb.com/games/catherine-full-body) - Switch
+### [Dragon Quest VII - Reimagined](https://www.igdb.com/games/dragon-quest-vii-reimagined) - Switch
 
-Despite being a sucker for games with an anime aesthetic, and a fan of the Persona series, I've never actually checked this game out before now. I'm intrigued by the puzzle mechanics and the branching narrative, and I'm hoping it lives up to the hype I've seen for it. I seem to be in the mood for creepy/unsettling games with one-word titles that start with "C".
+I originally played this game back on the 3DS, but I never finished it. I found it bloated, and very badly paced. This remake has been far more enjoyable though, and is incredibly pretty for a Switch game. I've reached the point I got to on the 3DS version, and I'm still motivated to keep playing so I suppose that is a good sign...
 
 ## 📺 Watching
 
-Nothing at the moment...
+- [Taskmaster - Season 22](https://www.themoviedb.org/tv/63404-taskmaster/season/22)
