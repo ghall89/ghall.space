@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: September 30, 2026_
+_Last updated: October 14, 2026_
 
 ## 🔨 Doing
 
@@ -34,3 +34,4 @@ I originally played this game back on the 3DS, but I never finished it. I found 
 ## 📺 Watching
 
 - [Taskmaster - Season 22](https://www.themoviedb.org/tv/63404-taskmaster/season/22)
+- [Star Trek: Strange New Worlds - Season 4](https://www.themoviedb.org/tv/103516-star-trek-strange-new-worlds/season/4)
