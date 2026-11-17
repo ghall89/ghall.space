@@ -7,7 +7,7 @@ title: Now
 
 What's a [Now page](https://nownownow.com/about)?
 
-_Last updated: October 28, 2026_
+_Last updated: November 17, 2026_
 
 ## 🔨 Doing
 
@@ -23,9 +23,13 @@ I'm also building [Groove](https://grooveplayer.app), a music player for iPhone,
 
 ## 🎮 Playing
 
-### [Dragon Quest VII - Reimagined](https://www.igdb.com/games/dragon-quest-vii-reimagined) - Switch
+### [Trials of Mana](https://www.igdb.com/games/trials-of-mana) - Switch
 
-I originally played this game back on the 3DS, but I never finished it. I found it bloated, and very badly paced. This was far more enjoyable though, and is incredibly pretty for a Switch game. I finished the main story, but I'm continuing to work through the post-game content
+This has been sitting in my backlog for ages, and I've finally decided to give it a shot. I've never played any of the Mana games, but I'm enjoying it so far. It does feel a little clunky for a game that came out 6 years ago but its not horrible.
+
+### [The Legend of Zelda: Ocarina of Time 3D](https://www.igdb.com/games/the-legend-of-zelda-ocarina-of-time-3d) - 3DS
+
+I don't have a Switch 2 (curse being jobless!) so I've been feeling some major FOMO with the Ocarina of Time remake that just came out. So, I dusted off my 3DS and have been playing that version, and honestly it still holds up – though to be honest I'm biased. I'll still pick up the remake and play that when I eventually get a Switch 2...somday.
 
 ## 📺 Watching
 
