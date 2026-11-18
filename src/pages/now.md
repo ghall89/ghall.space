@@ -17,9 +17,9 @@ I'm also building [Groove](https://grooveplayer.app), a music player for iPhone,
 
 ## 🎧 Listening
 
-- [Romanticize the Dive - Metric](https://www.last.fm/music/Metric/Romanticize+the+Dive)
-- [Apollo 18 - They Might Be Giants](https://www.last.fm/music/They+Might+Be+Giants/Apollo+18)
-- [Nevermind - Nirvana](https://www.last.fm/music/Nirvana/Nevermind)
+- [The Legend of Zelda: Ocarina of Time - Koji Kondo](https://www.last.fm/music/%E8%BF%91%E8%97%A4%E6%B5%A9%E6%B2%BB/The+Legend+Of+Zelda:+Ocarina+Of+Time+Soundtrack)
+- [Ego Death at a Bachelorette Party - Hayley Williams](https://www.last.fm/music/Hayley+Williams/EGO)
+- [moisturizer - Wet Leg](https://www.last.fm/music/Wet+Leg/moisturizer)
 
 ## 🎮 Playing
 
@@ -33,4 +33,4 @@ I don't have a Switch 2 (curse being jobless!) so I've been feeling some major F
 
 ## 📺 Watching
 
-- [Taskmaster - Season 22](https://www.themoviedb.org/tv/63404-taskmaster/season/22)
+- Basically a lot of Ocarina of Time challenge runs on YouTube.
