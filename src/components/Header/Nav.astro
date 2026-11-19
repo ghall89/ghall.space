@@ -15,35 +15,16 @@ import { navLinks } from '../../data/nav-links';
 </nav>
 
 <style lang="scss">
-	@use '../../styles/variables.scss' as *;
-
 	ul {
 		display: flex;
-		flex-direction: row;
+		flex-wrap: wrap;
 		list-style: none;
-		gap: 10px;
-		font-size: 1.15rem;
-		font-weight: 600;
-		align-items: center;
-
-		& a {
-			color: #ffffff;
-			padding: 6px 14px;
-			text-decoration: none;
-			font-weight: 700;
-			border-radius: 999px;
-			background: rgba(255, 255, 255, 0.15);
-			border: 1px solid rgba(255, 255, 255, 0.2);
-			transition: $quick-transition;
-
-			&:hover {
-				background: rgba(255, 255, 255, 0.3);
-				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-			}
-		}
+		gap: 1rem;
+		margin: 0;
+		padding: 0;
 	}
 
-	@media screen and (max-width: $max-mobile-width) {
+	@media screen and (max-width: 768px) {
 		nav {
 			display: none;
 		}

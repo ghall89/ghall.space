@@ -12,23 +12,10 @@ const Element = href ? 'a' : 'span';
 </Element>
 
 <style lang="scss">
-	@use '../styles/variables.scss' as *;
-
 	.pill {
 		display: inline-block;
-		padding: 3px 10px;
-		border-radius: 999px;
+		padding: 0 0.5rem;
 		font-size: 0.8rem;
-		font-weight: 700;
-		color: var(--text);
-		background: rgba(0, 174, 239, 0.1);
-		border: 1px solid rgba(0, 174, 239, 0.25);
-		text-decoration: none;
-		transition: $quick-transition;
-
-		&[href]:hover {
-			background: rgba(0, 174, 239, 0.2);
-			text-decoration: none;
-		}
+		border: var(--border);
 	}
 </style>

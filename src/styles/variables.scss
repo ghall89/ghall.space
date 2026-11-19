@@ -1,47 +1,16 @@
 $max-mobile-width: 768px;
 $max-page-width: 1200px;
-$radius: 12px;
-$border-style: 1px solid;
 
-/* transitions */
-$transition-duration: 0.3s;
-$quick-transition-duration: 0.1s;
+$text: #222222;
+$link: #0000ee;
+$background: #ffffff;
+$border-color: #cccccc;
 
-$transition: all $transition-duration ease-in-out;
-$quick-transition: all $quick-transition-duration ease-in-out;
-
-/* Web 2.0 colors */
-
-$blue: #0077cc;
-$sky: #00aeef;
-$red: #ff3366;
-$orange: #ff9900;
-$text: #333333;
-$highlight: #ffffcc;
-$background: #f5f8fa;
-$background-secondary: #e8eef5;
-$border: $border-style #d0d8e0;
-
-$dark-blue: #5da7fb;
-$dark-sky: #00ccff;
-$dark-red: #ff6699;
-$dark-orange: #ffbb66;
-$dark-text: #e8ecf1;
-$dark-background: #1a1d24;
-$dark-background-secondary: #1f242d;
-$dark-border: #{$border-style} #3a404d;
-
-/* Web 2.0 gradients */
-$header-gradient: linear-gradient(180deg, #00aeef 0%, #0077cc 100%);
-$header-gradient-dark: linear-gradient(180deg, #2a3f5f 0%, #1a2535 100%);
-$button-gradient: linear-gradient(180deg, #99cc00 0%, #66aa00 100%);
-$card-header-gradient: linear-gradient(180deg, #ffffff 0%, #e8eef5 100%);
-$card-header-gradient-dark: linear-gradient(180deg, #2d323d 0%, #1f242d 100%);
+$dark-text: #e6e6e6;
+$dark-link: #8ab4ff;
+$dark-background: #111111;
+$dark-border-color: #444444;
 
 /* fonts */
-$web-font: 'Verdana', 'Helvetica Neue', Arial, sans-serif;
-$mono-font: 'Maple Mono', 'Courier New', monospace;
-
-/* shadows */
-$soft-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-$header-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+$web-font: "Noto Sans", sans-serif;
+$mono-font: 'Maple Mono', monospace;
