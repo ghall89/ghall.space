@@ -1,5 +1,6 @@
 @use './variables.scss' as *;
-@use 'fonts.scss';
+@use './catppuccin.scss' as *;
+@use './fonts.scss';
 
 *,
 *::before,
@@ -8,20 +9,20 @@
 }
 
 :root {
-	--text: #{$text};
-	--link: #{$link};
-	--background: #{$background};
-	--border: 1px solid #{$border-color};
+	--text: #{$latte-text};
+	--link: #{$latte-blue};
+	--background: #{$latte-base};
+	--border: 1px solid #{$latte-surface2};
 	--font: #{$web-font};
 	--mono-font: #{$mono-font};
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--text: #{$dark-text};
-		--link: #{$dark-link};
-		--background: #{$dark-background};
-		--border: 1px solid #{$dark-border-color};
+		--text: #{$mocha-text};
+		--link: #{$mocha-blue};
+		--background: #{$mocha-base};
+		--border: 1px solid #{$mocha-surface2};
 	}
 }
 
@@ -46,6 +47,7 @@ main {
 
 a {
 	color: var(--link);
+	text-decoration-style: dotted;
 }
 
 article img {
@@ -68,6 +70,7 @@ kbd {
 
 kbd {
 	border: var(--border);
+	border-radius: $radius;
 	padding: 1px 4px;
 	white-space: nowrap;
 }
@@ -107,6 +110,7 @@ hr {
 
 .astro-code {
 	border: var(--border);
+	border-radius: $radius;
 	padding: 0.75rem;
 	overflow-x: auto;
 }
