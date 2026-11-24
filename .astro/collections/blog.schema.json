@@ -14,12 +14,6 @@
         "type": "string"
       }
     },
-    "headerImg": {
-      "type": "string"
-    },
-    "imgCredit": {
-      "type": "string"
-    },
     "$schema": {
       "type": "string"
     }

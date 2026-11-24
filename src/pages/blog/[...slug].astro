@@ -6,11 +6,6 @@ import Tags from '@components/Blog/Tags.astro';
 import ImageWrapper from '@components/ImageWrapper.astro';
 import Layout from '@layouts/Layout.astro';
 
-const headerImages = import.meta.glob<{ default: ImageMetadata }>(
-	'/src/assets/blog/_headers/*',
-	{ eager: true }
-);
-
 const md = new MarkdownIt({ html: false });
 md.renderer.rules.link_open = (tokens, idx, options, env, self) => {
 	tokens[idx].attrSet('target', '_blank');
@@ -33,24 +28,10 @@ const { data } = post;
 const { Content } = await render(post);
 
 const canonicalUrl = new URL(Astro.url.pathname, import.meta.env.SITE).href;
-const headerImg = data.headerImg
-	? headerImages[`/src/assets/blog/_headers/${data.headerImg}`]?.default
-	: undefined;
-const imgCreditHtml = data.imgCredit
-	? md.renderInline(data.imgCredit)
-	: undefined;
 ---
 
-<Layout title={data.title} type="article" image={headerImg}>
+<Layout title={data.title} type="article">
 	<article>
-		{
-			headerImg && (
-				<div class="header-img">
-					<ImageWrapper img={headerImg} alt="" loading="eager" />
-					{imgCreditHtml && <span set:html={imgCreditHtml} />}
-				</div>
-			)
-		}
 		<BlogHeader title={data.title} date={data.pubDate} />
 		<Tags tags={data.tags} />
 		<hr />
@@ -74,40 +55,8 @@ const imgCreditHtml = data.imgCredit
 	</article>
 </Layout>
 
-<script>
-	const fullImg = document.querySelector<HTMLImageElement>(
-		'.header-img img.full'
-	);
-	if (fullImg) {
-		const markLoaded = () => fullImg.classList.add('loaded');
-		if (fullImg.complete) markLoaded();
-		else fullImg.addEventListener('load', markLoaded, { once: true });
-	}
-</script>
-
 <style lang="scss">
 	@use '../../styles/variables.scss' as *;
-	.header-img {
-		position: relative;
-		width: 100%;
-		height: 300px;
-		overflow: hidden;
-		margin-bottom: 1rem;
-		border: var(--border);
-		border-radius: $radius;
-
-		span {
-			position: absolute;
-			bottom: 10px;
-			right: 10px;
-			padding: 0 0.5rem;
-			font-size: 0.75rem;
-			color: var(--text);
-			background: var(--background);
-			border: var(--border);
-			border-radius: $radius;
-		}
-	}
 
 	.badges {
 		display: flex;

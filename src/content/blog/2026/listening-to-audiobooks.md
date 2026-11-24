@@ -2,8 +2,6 @@
 title: 'Listening to Audiobooks'
 pubDate: '8/19/2026'
 tags: ['Life', 'Books']
-headerImg: 'listening-to-audiobooks.jpg'
-imgCredit: 'Photo by [Aaron Burden](https://unsplash.com/@aaronburden?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/photos/space-gray-iphone-6-on-book-near-black-wireless-headphones-v0HbU2CNJFs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)'
 ---
 
 I recently got my first library card, and the first thing I did with it was create an account on Libby. If you’re not familiar, Libby is a great service for borrowing audiobooks and ebooks from your local library.

@@ -2,8 +2,6 @@
 title: 'The Apple Advantage'
 pubDate: '09/10/2026'
 tags: ['Tech', 'Apps']
-headerImg: 'the-apple-advantage.jpg'
-imgCredit: 'Photo by [Sahej Brar](https://unsplash.com/@sahejbrar_) on [Unsplash](https://unsplash.com/photos/a-blue-laptop-with-a-black-keyboard-vtYpy1b8Nto)'
 ---
 
 It used to be that, while Apple’s software wasn’t always the best, it was worth it if you didn’t need anything fancy and just wanted something that played nice with the OS and “just worked”. Now, it seems Apple has been slowly "enshittifying" their apps to the point where I've been seriously considering alternatives for the first time.
