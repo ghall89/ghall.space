@@ -40,6 +40,7 @@ const { page } = Astro.props;
 </div>
 
 <style lang="scss">
+	@use '../../styles/variables.scss' as *;
 	.pagination {
 		display: flex;
 		flex-wrap: wrap;
@@ -51,6 +52,7 @@ const { page } = Astro.props;
 		& span {
 			padding: 0 0.5rem;
 			border: var(--border);
+			border-radius: $radius;
 		}
 	}
 

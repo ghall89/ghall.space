@@ -15,6 +15,8 @@ import { navLinks } from '../../data/nav-links';
 </nav>
 
 <style lang="scss">
+	@use '../../styles/variables.scss' as *;
+
 	ul {
 		display: flex;
 		flex-wrap: wrap;
@@ -22,6 +24,21 @@ import { navLinks } from '../../data/nav-links';
 		gap: 1rem;
 		margin: 0;
 		padding: 0;
+
+		li {
+			border-radius: $radius;
+			padding: 0 0.4rem;
+
+			&:hover {
+				background: var(--crust);
+			}
+
+			a {
+				color: var(--text);
+				text-decoration: none;
+				text-transform: uppercase;
+			}
+		}
 	}
 
 	@media screen and (max-width: 768px) {

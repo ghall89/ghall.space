@@ -12,10 +12,13 @@ const Element = href ? 'a' : 'span';
 </Element>
 
 <style lang="scss">
+	@use '../styles/variables.scss' as *;
+
 	.pill {
 		display: inline-block;
 		padding: 0 0.5rem;
 		font-size: 0.8rem;
 		border: var(--border);
+		border-radius: $radius;
 	}
 </style>

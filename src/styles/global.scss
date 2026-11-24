@@ -12,9 +12,17 @@
 	--text: #{$latte-text};
 	--link: #{$latte-blue};
 	--background: #{$latte-base};
+	--surface: #{$latte-surface0};
 	--border: 1px solid #{$latte-surface2};
 	--font: #{$web-font};
 	--mono-font: #{$mono-font};
+
+	--blue: #{$latte-blue};
+	--yellow: #{$latte-yellow};
+	--red: #{$latte-red};
+	--lavender: #{$latte-lavender};
+	--mantle: #{$latte-mantle};
+	--crust: #{$latte-crust};
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,7 +30,15 @@
 		--text: #{$mocha-text};
 		--link: #{$mocha-blue};
 		--background: #{$mocha-base};
+		--surface: #{$mocha-surface0};
 		--border: 1px solid #{$mocha-surface2};
+
+		--blue: #{$mocha-blue};
+		--yellow: #{$mocha-yellow};
+		--red: #{$mocha-red};
+		--lavender: #{$mocha-lavender};
+		--mantle: #{$mocha-mantle};
+		--crust: #{$mocha-crust};
 	}
 }
 

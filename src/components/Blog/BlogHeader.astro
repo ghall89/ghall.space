@@ -12,11 +12,13 @@ const { title, date, slug } = Astro.props;
 
 <div class="blog-header">
 	{slug ? <a href={`/blog/${slug}`}>{title}</a> : <h1>{title}</h1>}
-	{date && (
-		<time datetime={new Date(date).toDateString()}>
-			{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
-		</time>
-	)}
+	{
+		date && (
+			<time datetime={new Date(date).toDateString()}>
+				{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
+			</time>
+		)
+	}
 </div>
 
 <style lang="scss">
