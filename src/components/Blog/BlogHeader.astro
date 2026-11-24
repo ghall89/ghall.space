@@ -1,8 +1,5 @@
 ---
-import { Image } from 'astro:assets';
 import { add, format } from 'date-fns';
-
-import CalendarIcon from '@assets/calendar.png';
 
 interface Props {
 	title: string;
@@ -15,58 +12,30 @@ const { title, date, slug } = Astro.props;
 
 <div class="blog-header">
 	{slug ? <a href={`/blog/${slug}`}>{title}</a> : <h1>{title}</h1>}
-	{date && (
-		<div>
-			<span aria-hidden="true">
-				<Image
-					src={CalendarIcon}
-					class="calendar-icon"
-					alt=""
-					width={24}
-					height={24}
-				/>
-			</span>
+	{
+		date && (
 			<time datetime={new Date(date).toDateString()}>
 				{format(add(new Date(date), { hours: 6 }), 'MMM do, y')}
 			</time>
-		</div>
-	)}
+		)
+	}
 </div>
 
 <style lang="scss">
-	@use '../../styles/variables.scss' as *;
-
 	a {
 		font-size: 1.5rem;
-		text-decoration: none;
-	}
-
-	strong {
-		font-weight: 700;
-		color: var(--text);
 	}
 
 	.blog-header {
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
-		align-items: center;
+		align-items: baseline;
+		gap: 0 1rem;
 
-		& h1,
-		& h2 {
+		& h1 {
 			margin: 0 0 0.5rem;
-		}
-	}
-
-	.calendar-icon {
-		display: inline;
-		transform: translateY(0.3rem);
-		box-shadow: none;
-	}
-
-	@media screen and (max-width: $max-mobile-width) {
-		.blog-header {
-			flex-direction: column;
 		}
 	}
 </style>

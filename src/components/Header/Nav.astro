@@ -19,31 +19,29 @@ import { navLinks } from '../../data/nav-links';
 
 	ul {
 		display: flex;
-		flex-direction: row;
+		flex-wrap: wrap;
 		list-style: none;
-		gap: 10px;
-		font-size: 1.15rem;
-		font-weight: 600;
-		align-items: center;
+		gap: 1rem;
+		margin: 0;
+		padding: 0;
 
-		& a {
-			color: #ffffff;
-			padding: 6px 14px;
-			text-decoration: none;
-			font-weight: 700;
-			border-radius: 999px;
-			background: rgba(255, 255, 255, 0.15);
-			border: 1px solid rgba(255, 255, 255, 0.2);
-			transition: $quick-transition;
+		li {
+			border-radius: $radius;
+			padding: 0 0.4rem;
 
 			&:hover {
-				background: rgba(255, 255, 255, 0.3);
-				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+				background: var(--crust);
+			}
+
+			a {
+				color: var(--text);
+				text-decoration: none;
+				text-transform: uppercase;
 			}
 		}
 	}
 
-	@media screen and (max-width: $max-mobile-width) {
+	@media screen and (max-width: 768px) {
 		nav {
 			display: none;
 		}

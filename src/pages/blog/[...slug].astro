@@ -87,65 +87,36 @@ const imgCreditHtml = data.imgCredit
 
 <style lang="scss">
 	@use '../../styles/variables.scss' as *;
-
-	hr {
-		border: var(--border);
-		margin: 1rem 0;
-	}
-
 	.header-img {
 		position: relative;
 		width: 100%;
 		height: 300px;
-		border-radius: $radius;
 		overflow: hidden;
 		margin-bottom: 1rem;
-		box-shadow: var(--soft-shadow);
+		border: var(--border);
+		border-radius: $radius;
 
 		span {
 			position: absolute;
 			bottom: 10px;
 			right: 10px;
-			display: inline-block;
-			padding: 3px 10px;
-			border-radius: 999px;
+			padding: 0 0.5rem;
 			font-size: 0.75rem;
-			font-weight: 700;
-			color: #fff;
-			background: rgba(0, 0, 0, 0.55);
-			border: 1px solid rgba(255, 255, 255, 0.25);
-			backdrop-filter: blur(4px);
-
-			:global(a) {
-				color: inherit;
-				text-decoration: underline;
-			}
+			color: var(--text);
+			background: var(--background);
+			border: var(--border);
+			border-radius: $radius;
 		}
 	}
 
 	.badges {
 		display: flex;
 		align-items: center;
-		gap: 2rem;
+		gap: 1rem;
 	}
 
 	.share-button {
-		display: inline-block;
-		margin: 1.5rem 0;
-		padding: 8px 18px;
-		border-radius: 999px;
-		color: #ffffff;
-		background: var(--button-gradient);
-		text-decoration: none;
-		font-weight: 700;
-		border: 1px solid rgba(0, 0, 0, 0.1);
-		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
-		transition: $quick-transition;
-
-		&:hover {
-			filter: brightness(1.08);
-			text-decoration: none;
-		}
+		margin: 1rem 0;
 	}
 
 	.not-by-ai {

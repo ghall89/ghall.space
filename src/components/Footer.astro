@@ -1,32 +1,15 @@
 ---
-import MastodonIcon from '../assets/svg/mastodon.svg';
-import RssIcon from '../assets/svg/rss.svg';
-
 const year = new Date().getFullYear();
 ---
 
 <footer>
-	<div class="socials">
-		<a
-			href="https://mastodon.social/@ghalldev"
-			target="_blank"
-			rel="noopener noreferrer"
-			><MastodonIcon
-				class="mastodon-icon"
-				width={20}
-				height={20}
-				aria-hidden="true"
-			/> Follow me on Mastodon</a
-		>
-
-		<a href="/rss.xml"
-			><RssIcon class="rss-icon" width={20} height={20} aria-hidden="true" /> Subscribe
-			with RSS</a
-		>
-	</div>
+	<p>
+		<a href="https://mastodon.social/@ghalldev" rel="me noopener noreferrer"
+			>Mastodon</a
+		> | <a href="/rss.xml">RSS</a>
+	</p>
 	<p>
 		Copyright 2022 - {year}, Graham Hall
-
 		<br />
 		Built with <a href="https://astro.build">Astro</a> | <a href="/ai"
 			>AI Policy</a
@@ -35,55 +18,13 @@ const year = new Date().getFullYear();
 </footer>
 
 <style lang="scss">
-	@use '../styles/variables.scss' as *;
-
 	footer {
 		text-align: center;
-		padding: 2rem 1rem;
-		background: var(--card-header-gradient);
+		padding: 1rem;
 		border-top: var(--border);
-
-		box-shadow: var(--soft-shadow);
 	}
 
-	.rss-icon {
-		transform: translateY(0.18rem);
-	}
-
-	.socials {
-		display: flex;
-		gap: 24px;
-		justify-content: center;
-		margin-top: 1rem;
-
-		& a {
-			color: var(--text);
-			padding: 8px 16px;
-			border-radius: 999px;
-			background: rgba(0, 119, 204, 0.08);
-			border: 1px solid rgba(0, 119, 204, 0.15);
-			transition: $quick-transition;
-			text-decoration: none;
-
-			& .rss-icon {
-				color: var(--orange);
-			}
-
-			& .mastodon-icon {
-				color: var(--blue);
-				transform: translateY(4px);
-			}
-
-			&:hover {
-				background: rgba(0, 119, 204, 0.15);
-			}
-		}
-	}
-
-	@media (max-width: 516px) {
-		.socials {
-			flex-direction: column;
-			align-items: center;
-		}
+	p {
+		margin: 0.5rem 0;
 	}
 </style>

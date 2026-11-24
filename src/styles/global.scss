@@ -1,5 +1,6 @@
 @use './variables.scss' as *;
-@use 'fonts.scss';
+@use './catppuccin.scss' as *;
+@use './fonts.scss';
 
 *,
 *::before,
@@ -8,156 +9,73 @@
 }
 
 :root {
-	--blue: #{$blue};
-	--sky: #{$sky};
-	--red: #{$red};
-	--orange: #{$orange};
-	--text: #{$text};
-	--highlight: #{$highlight};
-	--background: #{$background};
-	--background-secondary: #{$background-secondary};
-	--border: #{$border};
+	--text: #{$latte-text};
+	--link: #{$latte-blue};
+	--background: #{$latte-base};
+	--surface: #{$latte-surface0};
+	--border: 1px solid #{$latte-surface2};
 	--font: #{$web-font};
 	--mono-font: #{$mono-font};
-	--soft-shadow: #{$soft-shadow};
-	--header-shadow: #{$header-shadow};
-	--header-gradient: #{$header-gradient};
-	--button-gradient: #{$button-gradient};
-	--card-header-gradient: #{$card-header-gradient};
+
+	--blue: #{$latte-blue};
+	--yellow: #{$latte-yellow};
+	--red: #{$latte-red};
+	--lavender: #{$latte-lavender};
+	--mantle: #{$latte-mantle};
+	--crust: #{$latte-crust};
 }
 
 @media (prefers-color-scheme: dark) {
-	body {
-		--blue: #{$dark-blue};
-		--sky: #{$dark-sky};
-		--red: #{$dark-red};
-		--orange: #{$dark-orange};
-		--text: #{$dark-text};
-		--background: #{$dark-background};
-		--background-secondary: #{$dark-background-secondary};
-		--border: #{$dark-border};
-		--header-gradient: #{$header-gradient-dark};
-		--card-header-gradient: #{$card-header-gradient-dark};
+	:root {
+		--text: #{$mocha-text};
+		--link: #{$mocha-blue};
+		--background: #{$mocha-base};
+		--surface: #{$mocha-surface0};
+		--border: 1px solid #{$mocha-surface2};
+
+		--blue: #{$mocha-blue};
+		--yellow: #{$mocha-yellow};
+		--red: #{$mocha-red};
+		--lavender: #{$mocha-lavender};
+		--mantle: #{$mocha-mantle};
+		--crust: #{$mocha-crust};
 	}
 }
 
 body {
-	position: relative;
 	color: var(--text);
-	background-color: var(--background-secondary);
-	background-image: radial-gradient(
-		circle at 50% 0,
-		rgba(0, 174, 239, 0.08),
-		transparent 50%
-	);
+	background-color: var(--background);
 	font-family: var(--font);
-	font-size: 1rem;
 	margin: 0;
-	padding: 0;
 	line-height: 1.6;
 	min-height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 
-@media (prefers-color-scheme: dark) {
-	body {
-		background-image: radial-gradient(
-			circle at 50% 0,
-			rgba(0, 174, 239, 0.12),
-			transparent 50%
-		);
-	}
-}
-
 main {
 	max-width: $max-page-width;
 	margin: 0 auto;
-	padding: 0 2rem 2rem;
-	padding-top: 120px;
+	padding: 1rem 1rem 2rem;
 	flex: 1 0 auto;
 	width: 100%;
-	background-color: var(--background);
 }
 
 a {
-	color: var(--blue);
-	text-decoration: none;
-	font-weight: 600;
-
-	&:hover {
-		color: var(--sky);
-		text-decoration: underline;
-	}
+	color: var(--link);
+	text-decoration-style: dotted;
 }
-
-main p {
-	line-height: 1.7;
-}
-
-/* Article image style */
 
 article img {
-	border-radius: $radius;
 	display: block;
-	margin: auto;
-	max-width: $max-page-width;
+	max-width: 100%;
 	height: auto;
-	box-shadow: var(--soft-shadow);
-}
-
-/* Typography */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: var(--text);
-	letter-spacing: -0.02em;
-}
-
-.footnotes {
-	font-size: 1rem;
-}
-.footnotes p {
-	display: inline;
 }
 
 blockquote {
-	border-left: 4px solid;
-	border-color: var(--sky);
-	margin-left: 1rem;
-	padding-left: 2rem;
-	font-style: italic;
-	background: rgba(0, 174, 239, 0.06);
-	border-radius: 0 $radius $radius 0;
-}
-
-code {
-	color: var(--red);
-	padding: 1px 4px;
-	margin: 0 2px;
-	user-select: all;
-	background: rgba(0, 0, 0, 0.05);
-	border-radius: 4px;
-}
-
-kbd {
-	border: var(--border);
-	border-radius: $radius;
-	padding: 1px 4px;
-	white-space: nowrap;
-	background: linear-gradient(180deg, #ffffff 0%, #e8eef5 100%);
-	box-shadow: 0 2px 0 #b0b8c0;
-}
-
-@media (prefers-color-scheme: dark) {
-	body kbd {
-		background: linear-gradient(180deg, #2d323d 0%, #1f242d 100%);
-		box-shadow: 0 2px 0 #0f1216;
-	}
+	border-left: var(--border);
+	margin-left: 0;
+	padding-left: 1rem;
 }
 
 code,
@@ -166,27 +84,25 @@ kbd {
 	font-size: 0.85rem;
 }
 
-/* Icon button */
-
-.icon-button {
-	background: none;
-	padding: 2px 2px -2px;
-	border: none;
-	line-height: 1;
-	aspect-ratio: square;
-	height: 24px;
-	width: 24px;
-
-	&:active {
-		opacity: 0.3;
-	}
-
-	& svg {
-		color: var(--text);
-	}
+kbd {
+	border: var(--border);
+	border-radius: $radius;
+	padding: 1px 4px;
+	white-space: nowrap;
 }
 
-/* visually hidden */
+hr {
+	border: 0;
+	border-top: var(--border);
+	margin: 1rem 0;
+}
+
+.footnotes {
+	font-size: 1rem;
+}
+.footnotes p {
+	display: inline;
+}
 
 .visually-hidden {
 	position: absolute;
@@ -205,11 +121,14 @@ kbd {
 .astro-code,
 .astro-code span {
 	background-color: var(--background) !important;
-	/* Optional, if you also want font styles */
 	font-family: var(--mono-font);
-	font-style: var(--shiki-light-font-style);
-	font-weight: var(--shiki-light-font-weight);
-	text-decoration: var(--shiki-light-text-decoration);
+}
+
+.astro-code {
+	border: var(--border);
+	border-radius: $radius;
+	padding: 0.75rem;
+	overflow-x: auto;
 }
 
 @media (prefers-color-scheme: dark) {
